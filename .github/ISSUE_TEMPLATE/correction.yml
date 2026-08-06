@@ -1,0 +1,25 @@
+name: Correction or fix
+description: Report a wrong entry, dead link, mis-categorization, or typo
+title: "[Fix] <short description>"
+labels: ["fix"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Quote the current entry or link to the line in README.md.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: What should it be?
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link backing the correction, if applicable.

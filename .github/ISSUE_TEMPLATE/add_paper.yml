@@ -1,0 +1,82 @@
+name: Add a paper
+description: Suggest a paper for the list
+title: "[Paper] <Paper Title>"
+labels: ["new paper"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Fill in what you know — we will format it.
+        If you would rather add it yourself, see [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md).
+
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+      placeholder: "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      description: Full list if short, otherwise "First Author, Second Author, et al."
+    validations:
+      required: true
+
+  - type: input
+    id: venue
+    attributes:
+      label: Venue and date
+      description: Venue plus YYYY.MM of the first public version.
+      placeholder: arXiv, 2026.08  —  or  —  CoRL 2025, 2025.06
+    validations:
+      required: true
+
+  - type: input
+    id: paper_link
+    attributes:
+      label: Paper link
+      placeholder: https://arxiv.org/abs/XXXX.XXXXX
+    validations:
+      required: true
+
+  - type: input
+    id: other_links
+    attributes:
+      label: Code / project / demo links
+      description: Leave blank if none.
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Which section does it belong in?
+      options:
+        - A. Related Surveys
+        - B. Multi-Modal Agents
+        - C. Robots
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: From the tag legend in CONTRIBUTING.md. Space-separated.
+      placeholder: VLA Manip.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Why does it belong here?
+      description: One or two sentences on the contribution and how it relates to the section.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the README and this paper is not already listed.
+          required: true
