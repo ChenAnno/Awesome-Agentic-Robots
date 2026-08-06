@@ -1,6 +1,6 @@
 <div align="center">
 
-# Awesome-Agentic-Robots
+# Awesome Multimodal-Embodied-Agent
 
 **A curated list of papers on multi-modal agents and robots.**
 
