@@ -120,9 +120,10 @@ Contributions are very welcome — new papers, corrections, better categorizatio
 
 Thanks to everyone who has contributed:
 
-<a href="https://github.com/ChenAnno/Awesome-Agentic-Robots/graphs/contributors">
+<!-- Add this one back when the repo goes to public to make the displace properly. -->
+<!-- <a href="https://github.com/ChenAnno/Awesome-Agentic-Robots/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ChenAnno/Awesome-Agentic-Robots" alt="Contributors" />
-</a>
+</a> -->
 
 ## Acknowledgements
 
