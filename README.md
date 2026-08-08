@@ -2,7 +2,7 @@
 
 # Awesome Multimodal-Embodied-Agent
 
-**A curated list of papers on multi-modal agents and robots.**
+**A curated list of papers on multimodal embodied agents.**
 
 *Companion repository for our survey:* ***&lt;Survey Title Here&gt;*** &nbsp;[[Paper](#)]&nbsp;[[Project Page](#)]
 
@@ -20,12 +20,11 @@
 ## About
 
 This repository tracks the literature surveyed in **&lt;Survey Title Here&gt;**. It collects work at the
-intersection of multi-modal foundation models, autonomous agents, and robotics, organized into three
+intersection of multimodal foundation models, autonomous agents, and robotics, organized into X
 parts:
 
-- **[A. Related Surveys](#a-related-surveys)** — prior surveys and reviews that overlap with our scope.
-- **[B. Multi-Modal Agents](#b-multi-modal-agents)** — agents that perceive and act across modalities in *digital* environments.
-- **[C. Robots](#c-robots)** — robot learning and control, including vision-language-action models.
+XXX
+
 
 > **Note**
 > This list is actively maintained. If we missed your paper, please
@@ -46,6 +45,7 @@ parts:
 
 ## Table of Contents
 
+<!--
 - [Awesome Multimodal-Embodied-Agent](#awesome-multimodal-embodied-agent)
   - [About](#about)
   - [News](#news)
@@ -62,7 +62,7 @@ parts:
   - [Citation](#citation)
   - [Star History](#star-history)
   - [License](#license)
-
+-->
 
 ---
 
@@ -82,7 +82,11 @@ already listed.
 
 ---
 
-## B. Multi-Modal Agents
+## B. Multimodal Embodied Agents
+
+---
+
+## C. Multimodal Agents
 
 Agents built on multi-modal foundation models that perceive and act in **digital** environments —
 screens, browsers, documents, and APIs — without a physical body.
@@ -98,7 +102,7 @@ screens, browsers, documents, and APIs — without a physical body.
 
 ---
 
-## C. Robots
+## C. Robotic Systems
 
 Robot learning, perception, and control in the **physical** world — vision-language-action models,
 manipulation, navigation, humanoids, and the data and simulators behind them.
@@ -117,7 +121,7 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
 ---
 
 ## D. Benchmarks
-### Multi-Modal Agents
+### Multimodal Agents
 
 #### Understanding
 
@@ -237,7 +241,7 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
 
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
-### Robot Systems
+### Robotic Systems
 
 #### Sim
 
@@ -402,7 +406,7 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
 
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
-### Robot-Agent
+### Multimodal Embodied Agents
 
 #### Sim
 
