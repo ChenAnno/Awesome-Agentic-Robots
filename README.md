@@ -120,195 +120,322 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
 ### Multi-Modal Agents
 
 - **MMMU-Pro: A More Robust Multi-discipline Multimodal Understanding Benchmark**  
-  [[Paper](https://arxiv.org/abs/2409.02813)] [[Code](https://github.com/MMMU-Benchmark/MMMU)] [[Project](https://mmmu-benchmark.github.io/)]
+  Team: Carnegie Mellon University  
+  *Xiang Yue, Tianyu Zheng, Yuansheng Ni, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2409.02813) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/MMMU-Benchmark/MMMU) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://mmmu-benchmark.github.io/)
 
 - **Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding**  
-  [[Paper](https://arxiv.org/abs/2604.05015)] [[Code](https://github.com/MME-Benchmarks/Video-MME-v2)] [[Project](https://video-mme-v2.netlify.app/)]
+  Team: Nanjing University  
+  *Chaoyou Fu, Haozhi Yuan, Yuhao Dong, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2604.05015) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/MME-Benchmarks/Video-MME-v2) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://video-mme-v2.netlify.app/)
 
 - **Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces**  
-  [[Paper](https://arxiv.org/abs/2412.14171)] [[Code](https://github.com/vision-x-nyu/thinking-in-space)] [[Project](https://vision-x-nyu.github.io/thinking-in-space.github.io/)]
+  Team: New York University  
+  *Jihan Yang, Shusheng Yang, Anjali W. Gupta, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2412.14171) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/vision-x-nyu/thinking-in-space) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://vision-x-nyu.github.io/thinking-in-space.github.io/)
 
 - **WebArena: A Realistic Web Environment for Building Autonomous Agents**  
-  [[Paper](https://arxiv.org/abs/2307.13854)] [[Code](https://github.com/web-arena-x/webarena)] [[Project](https://webarena.dev/og/)]
+  Team: Carnegie Mellon University  
+  *Shuyan Zhou, Frank F. Xu, Hao Zhu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2307.13854) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/web-arena-x/webarena) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://webarena.dev/og/)
 
 - **VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks**  
-  [[Paper](https://arxiv.org/abs/2401.13649)] [[Code](https://github.com/web-arena-x/visualwebarena)] [[Project](https://jykoh.com/vwa)]
+  Team: Carnegie Mellon University  
+  *Jing Yu Koh, Robert Lo, Lawrence Jang, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2401.13649) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/web-arena-x/visualwebarena) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://jykoh.com/vwa)
 
 - **OSWorld 2.0: Benchmarking Computer-Use Agents on Long-Horizon Real-World Tasks**  
-  [[Paper](https://arxiv.org/abs/2606.29537)] [[Code](https://github.com/xlang-ai/OSWorld-V2)] [[Project](https://osworld-v2.xlang.ai/)]
+  Team: XLANG Lab, The University of Hong Kong  
+  *Mengqi Yuan, Zilong Zhou, Xinzhuang Xiong, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2606.29537) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/xlang-ai/OSWorld-V2) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://osworld-v2.xlang.ai/)
 
 - **AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents**  
-  [[Paper](https://arxiv.org/pdf/2405.14573)] [[Code](https://github.com/google-research/android_world)] [[Project](https://google-research.github.io/android_world/)]
+  Team: Google DeepMind  
+  *Christopher Rawles, Sarah Clinckemaillie, Yifan Chang, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/pdf/2405.14573) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/google-research/android_world) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://google-research.github.io/android_world/)
 
 - **GAIA: A Benchmark for General AI Assistants**  
-  [[Paper](https://arxiv.org/abs/2311.12983)] [[Code](http://huggingface.co/gaia-benchmark)] [[Project](http://huggingface.co/gaia-benchmark)]
+  Team: Meta AI  
+  *Grégoire Mialon, Clémentine Fourrier, Craig Swift, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2311.12983) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](http://huggingface.co/gaia-benchmark) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](http://huggingface.co/gaia-benchmark)
 
 - **WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models**  
-  [[Paper](https://arxiv.org/abs/2401.13919)] [[Code](https://github.com/MinorJerry/WebVoyager)]
+  Team: Zhejiang University & Westlake University  
+  *Hongliang He, Wenlin Yao, Kaixin Ma, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2401.13919) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/MinorJerry/WebVoyager)
 
 - **AgentStudio: A Toolkit for Building General Virtual Agents**  
-  [[Paper](https://arxiv.org/abs/2403.17918)] [[Code](https://github.com/ltzheng/agent-studio)] [[Project](https://ltzheng.github.io/agent-studio/)]
+  Team: Nanyang Technological University  
+  *Longtao Zheng, Zhiyuan Huang, Zhenghai Xue, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2403.17918) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/ltzheng/agent-studio) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://ltzheng.github.io/agent-studio/)
 
 - **GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents**  
-  [[Paper](https://arxiv.org/abs/2604.07429)] [[Code](https://github.com/gameworld-project/gameworld)] [[Project](https://gameworld-project.github.io/)]
+  Team: Show Lab, National University of Singapore  
+  *Mingyu Ouyang, Siyuan Hu, Kevin Qinghong Lin, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2604.07429) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/gameworld-project/gameworld) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://gameworld-project.github.io/)
 
 - **MMInA: Benchmarking Multihop Multimodal Internet Agents**  
-  [[Paper](https://arxiv.org/abs/2404.09992)] [[Code](https://github.com/shulin16/mmina)] [[Project](https://mmina.cliangyu.com/)]
+  Team: S-Lab, Nanyang Technological University  
+  *Shulin Tian, Ziniu Zhang, Liangyu Chen, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2404.09992) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/shulin16/mmina) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://mmina.cliangyu.com/)
 
 - **CRAB: Cross-environment Agent Benchmark for Multimodal Language Model Agents**  
-  [[Paper](https://arxiv.org/abs/2407.01511)] [[Code](https://github.com/camel-ai/crab)] [[Project](https://crab.camel-ai.org/)]
+  Team: KAUST, Eigent.AI & CAMEL-AI  
+  *Tianqi Xu, Linyao Chen, Dai-Jie Wu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2407.01511) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/camel-ai/crab) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://crab.camel-ai.org/)
 
 - **iVISPAR -- An Interactive Visual-Spatial Reasoning Benchmark for VLMs**  
-  [[Paper](https://arxiv.org/abs/2502.03214)] [[Project](https://microcosm.ai/ivispar/)]
+  Team: Institute of Cognitive Science, Osnabrück University  
+  *Julius Mayer, Mohamad Ballout, Serwan Jassim, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2502.03214) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://microcosm.ai/ivispar/)
 
 - **MMSearch-Plus: Benchmarking Provenance-Aware Search for Multimodal Browsing Agents**  
-  [[Paper](https://arxiv.org/abs/2508.21475)] [[Code](https://github.com/mmsearch-plus/MMSearch-Plus)] [[Project](https://mmsearch-plus.github.io/)]
+  Team: The University of Hong Kong  
+  *Xijia Tao, Yihua Teng, Xinxing Su, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2508.21475) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/mmsearch-plus/MMSearch-Plus) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://mmsearch-plus.github.io/)
 
 - **OmniGAIA: Towards Native Omni-Modal AI Agents**  
-  [[Paper](https://arxiv.org/abs/2602.22897)] [[Code](https://github.com/RUC-NLPIR/OmniGAIA)]
+  Team: Gaoling School of Artificial Intelligence, Renmin University of China  
+  *Xiaoxi Li, Wenxiang Jiao, Jiarui Jin, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2602.22897) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/RUC-NLPIR/OmniGAIA)
 
 - **AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios**  
-  [[Paper](https://arxiv.org/abs/2602.23166)] [[Code](https://github.com/hkust-nlp/AgentVista)] [[Project](https://agentvista-bench.github.io/)]
+  Team: The Hong Kong University of Science and Technology  
+  *Zhaochen Su, Jincheng Gao, Hangyu Guo, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2602.23166) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/hkust-nlp/AgentVista) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://agentvista-bench.github.io/)
 
 - **SWE-BENCH: CAN LANGUAGE MODELS RESOLVE REAL-WORLD GITHUB ISSUES?**  
-  [[Paper](https://arxiv.org/abs/2310.06770)] [[Code](https://github.com/SWE-bench/SWE-bench)] [[Project](https://www.swebench.com/SWE-bench/)]
+  Team: Princeton University  
+  *Carlos E. Jimenez, John Yang, Alexander Wettig, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2310.06770) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/SWE-bench/SWE-bench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://www.swebench.com/SWE-bench/)
 
 - **GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?**  
-  [[Paper](https://arxiv.org/abs/2606.17861)] [[Code](https://github.com/FreedomIntelligence/gamecraft-bench)] [[Project](https://tongxuluo.github.io/gamecraft-bench-website/)]
+  Team: The Chinese University of Hong Kong, Shenzhen & Shenzhen Loop Area Institute  
+  *Tongxu Luo, Rongsheng Wang, Jiaxi Bi, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2606.17861) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/FreedomIntelligence/gamecraft-bench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://tongxuluo.github.io/gamecraft-bench-website/)
 
 - **WebGen-Bench: Evaluating LLMs on Generating Interactive and Functional Websites from Scratch**  
-  [[Paper](https://arxiv.org/abs/2505.03733)] [[Code](https://github.com/mnluzimu/WebGen-Bench)]
+  Team: MMLab, The Chinese University of Hong Kong  
+  *Zimu Lu, Yunqiao Yang, Houxing Ren, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2505.03733) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/mnluzimu/WebGen-Bench)
 
 - **WorldModelBench: Judging Video Generation Models As World Models**  
-  [[Paper](https://arxiv.org/abs/2502.20694)] [[Code](https://github.com/WorldModelBench-Team/WorldModelBench/tree/main?tab=readme-ov-file#evaluation)] [[Project](https://worldmodelbench-team.github.io/)]
+  Team: University of California, Berkeley  
+  *Dacheng Li, Yunhao Fang, Yukang Chen, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2502.20694) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/WorldModelBench-Team/WorldModelBench/tree/main?tab=readme-ov-file#evaluation) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://worldmodelbench-team.github.io/)
 
 - **PBench: A Physical AI Benchmark for World Models**  
-  [[Paper](https://research.nvidia.com/labs/cosmos-lab/pbench/)] [[Project](https://huggingface.co/datasets/nvidia/PBench)]
+  Team: NVIDIA  
+  *NVIDIA*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://research.nvidia.com/labs/cosmos-lab/pbench/) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://huggingface.co/datasets/nvidia/PBench)
 
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
 ### Robot Systems
 
+- **Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?**  
+  Team: Show Lab, National University of Singapore  
+  *Rui Zhao, Kaiming Yang, Jifeng Zhu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2606.04811) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/showlab/Dream.exe)
+
 - **Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments**  
-  [[Paper](https://arxiv.org/abs/1711.07280)] [[Project](https://bringmeaspoon.org)]
+  Team: Australian National University  
+  *Peter Anderson, Qi Wu, Damien Teney, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/1711.07280) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://bringmeaspoon.org)
 
 - **GOAT-Bench: A Benchmark for Multi-Modal Lifelong Navigation**  
-  [[Paper](https://arxiv.org/abs/2404.06609)] [[Code](https://github.com/Ram81/goat-bench)] [[Project](https://mukulkhanna.github.io/goat-bench/)]
+  Team: Georgia Institute of Technology  
+  *Mukul Khanna, Ram Ramrakhya, Gunjan Chhablani, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2404.06609) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/Ram81/goat-bench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://mukulkhanna.github.io/goat-bench/)
 
 - **VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks**  
-  [[Paper](https://arxiv.org/abs/2412.18194)] [[Code](https://github.com/OpenMOSS/VLABench)] [[Project](https://vlabench.github.io/)]
+  Team: Fudan University  
+  *Shiduo Zhang, Zhe Xu, Peiju Liu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2412.18194) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/OpenMOSS/VLABench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://vlabench.github.io/)
 
 - **CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks**  
-  [[Paper](https://arxiv.org/abs/2112.03227)] [[Code](https://github.com/mees/calvin)] [[Project](http://calvin.cs.uni-freiburg.de/)]
+  Team: University of Freiburg  
+  *Oier Mees, Lukas Hermann, Erick Rosete-Beas, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2112.03227) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/mees/calvin) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](http://calvin.cs.uni-freiburg.de/)
 
 - **ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks**  
-  [[Paper](https://arxiv.org/abs/1912.01734)] [[Code](https://github.com/askforalfred/alfred)] [[Project](https://askforalfred.com/)]
+  Team: University of Washington  
+  *Mohit Shridhar, Jesse Thomason, Daniel Gordon, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/1912.01734) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/askforalfred/alfred) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://askforalfred.com/)
 
 - **TEACh: Task-driven Embodied Agents that Chat**  
-  [[Paper](https://arxiv.org/abs/2110.00534)] [[Code](https://github.com/alexa/teach)]
+  Team: Amazon Alexa AI  
+  *Aishwarya Padmakumar, Jesse Thomason, Ayush Shrivastava, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2110.00534) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/alexa/teach)
 
 - **BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation**  
-  [[Paper](https://arxiv.org/abs/2403.09227)] [[Code](https://github.com/StanfordVL/BEHAVIOR-1K)] [[Project](https://behavior.stanford.edu/index.html)]
+  Team: Stanford University  
+  *Chengshu Li, Ruohan Zhang, Josiah Wong, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2403.09227) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/StanfordVL/BEHAVIOR-1K) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://behavior.stanford.edu/index.html)
 
 - **LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning**  
-  [[Paper](https://arxiv.org/abs/2306.03310)] [[Code](https://github.com/Lifelong-Robot-Learning/LIBERO)] [[Project](https://libero-project.github.io/intro.html)]
+  Team: The University of Texas at Austin  
+  *Bo Liu, Yifeng Zhu, Chongkai Gao, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2306.03310) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/Lifelong-Robot-Learning/LIBERO) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://libero-project.github.io/intro.html)
 
 - **LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization**  
-  [[Paper](https://arxiv.org/abs/2510.03827)] [[Code](https://github.com/Zxy-MLlab/LIBERO-PRO)] [[Project](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)]
+  Team: Huazhong University of Science and Technology  
+  *Xueyang Zhou, Yangming Xu, Guiyao Tie, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2510.03827) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/Zxy-MLlab/LIBERO-PRO) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)
 
 - **RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots**  
-  [[Paper](https://arxiv.org/abs/2603.04356)] [[Code](https://github.com/robocasa/robocasa)] [[Project](https://robocasa.ai/)]
+  Team: The University of Texas at Austin  
+  *Soroush Nasiriany, Sepehr Nasiriany, Abhiram Maddukuri, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2603.04356) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/robocasa/robocasa) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robocasa.ai/)
 
 - **RLBench: The Robot Learning Benchmark & Learning Environment**  
-  [[Paper](https://arxiv.org/abs/1909.12271)] [[Code](https://github.com/stepjam/RLBench)] [[Project](https://sites.google.com/view/rlbench)]
+  Team: Dyson Robotics Lab, Imperial College London  
+  *Stephen James, Zicong Ma, David Rovick Arrojo, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/1909.12271) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/stepjam/RLBench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://sites.google.com/view/rlbench)
 
 - **ManiSkill2: A Unified Benchmark for Generalizable Manipulation Skills**  
-  [[Paper](https://arxiv.org/abs/2302.04659)] [[Code](https://github.com/mani-skill/ManiSkill)] [[Project](https://maniskill2.github.io/)]
+  Team: ShanghaiTech University  
+  *Jiayuan Gu, Fanbo Xiang, Xuanlin Li, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2302.04659) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/mani-skill/ManiSkill) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://maniskill2.github.io/)
 
 - **Safety-Gymnasium: A Unified Safe Reinforcement Learning Benchmark**  
-  [[Paper](https://arxiv.org/abs/2310.12567)] [[Code](https://github.com/PKU-Alignment/safety-gymnasium)] [[Project](https://safety-gymnasium.readthedocs.io/en/latest/)]
+  Team: PKU-Alignment, Peking University  
+  *Jiaming Ji, Borong Zhang, Jiayi Zhou, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2310.12567) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/PKU-Alignment/safety-gymnasium) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://safety-gymnasium.readthedocs.io/en/latest/)
 
 - **SafeManip: A Property-Driven Benchmark for Temporal Safety Evaluation in Robotic Manipulation**  
-  [[Paper](https://arxiv.org/abs/2605.12386)] [[Code](https://github.com/chengyuehuang511/SafeManip)] [[Project](https://hvkhcm.github.io/projects/safemanip/)]
+  Team: Georgia Institute of Technology  
+  *Chengyue Huang, Khang Vo Huynh, Sebastian Elbaum, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2605.12386) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/chengyuehuang511/SafeManip) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://hvkhcm.github.io/projects/safemanip/)
 
 - **RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies**  
-  [[Paper](https://arxiv.org/abs/2604.09860)] [[Code](https://github.com/NVLabs/RoboLab)] [[Project](https://research.nvidia.com/labs/srl/projects/robolab/)]
+  Team: NVIDIA Research  
+  *Xuning Yang, Rishit Dagli, Alex Zook, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2604.09860) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/NVLabs/RoboLab) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://research.nvidia.com/labs/srl/projects/robolab/)
 
 - **Meta-World: A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning**  
-  [[Paper](https://arxiv.org/abs/1910.10897)] [[Code](https://github.com/Farama-Foundation/Metaworld)] [[Project](https://metaworld.farama.org/)]
+  Team: University of California, Berkeley  
+  *Tianhe Yu, Deirdre Quillen, Zhanpeng He, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/1910.10897) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/Farama-Foundation/Metaworld) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://metaworld.farama.org/)
 
 - **robosuite: A Modular Simulation Framework and Benchmark for Robot Learning**  
-  [[Paper](https://arxiv.org/abs/2009.12293)] [[Code](https://github.com/ARISE-Initiative/robosuite)] [[Project](https://robosuite.ai/)]
+  Team: ARISE Initiative  
+  *Yuke Zhu, Josiah Wong, Ajay Mandlekar, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2009.12293) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/ARISE-Initiative/robosuite) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robosuite.ai/)
 
 - **FurnitureBench: Reproducible Real-World Benchmark for Long-Horizon Complex Manipulation**  
-  [[Paper](https://arxiv.org/abs/2305.12821)] [[Code](https://github.com/clvrai/furniture-bench)] [[Project](https://clvrai.github.io/furniture-bench/)]
+  Team: KAIST  
+  *Minho Heo, Youngwoon Lee, Doohyun Lee, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2305.12821) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/clvrai/furniture-bench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://clvrai.github.io/furniture-bench/)
 
 - **FMB: a Functional Manipulation Benchmark for Generalizable Robotic Learning**  
-  [[Paper](https://arxiv.org/abs/2401.08553)] [[Code](https://github.com/rail-berkeley/fmb)] [[Project](https://functional-manipulation-benchmark.github.io/)]
+  Team: RAIL, University of California, Berkeley  
+  *Jianlan Luo, Charles Xu, Fangchen Liu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2401.08553) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/rail-berkeley/fmb) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://functional-manipulation-benchmark.github.io/)
 
 - **RoboArena: Distributed Real-World Evaluation of Generalist Robot Policies**  
-  [[Paper](https://arxiv.org/abs/2506.18123v2)] [[Code](https://github.com/robo-arena/roboarena)] [[Project](https://robo-arena.github.io/)]
+  Team: University of California, Berkeley  
+  *Pranav Atreya, Karl Pertsch, Tony Lee, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2506.18123v2) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/robo-arena/roboarena) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robo-arena.github.io/)
 
 - **BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities**  
-  [[Paper](https://arxiv.org/abs/2503.05652)] [[Code](https://github.com/behavior-robot-suite/brs-algo)] [[Project](https://behavior-robot-suite.github.io/)]
+  Team: Stanford University  
+  *Yunfan Jiang, Ruohan Zhang, Josiah Wong, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2503.05652) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/behavior-robot-suite/brs-algo) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://behavior-robot-suite.github.io/)
 
 - **VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models**  
-  [[Paper](https://arxiv.org/abs/2605.20774)] [[Code](https://github.com/IRVLUTD/VLAReplica)] [[Project](https://irvlutd.github.io/VLAReplica/)]
+  Team: Intelligent Robotics and Vision Lab, The University of Texas at Dallas  
+  *Alex S. Huang, Jiahui Zhang, Shiqing Tang, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2605.20774) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/IRVLUTD/VLAReplica) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://irvlutd.github.io/VLAReplica/)
 
 - **RoboChallenge: Large-scale Real-robot Evaluation of Embodied Policies**  
-  [[Paper](https://robochallenge.ai/robochallenge_techreport.pdf)] [[Project](https://robochallenge.ai/home)]
+  Team: RoboChallenge  
+  *RoboChallenge Team*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://robochallenge.ai/robochallenge_techreport.pdf) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robochallenge.ai/home)
 
 - **RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins**  
-  [[Paper](https://arxiv.org/abs/2504.13059)] [[Code](https://github.com/robotwin-Platform/RoboTwin)] [[Project](https://robotwin-platform.github.io/)]
+  Team: The University of Hong Kong & Shanghai AI Laboratory  
+  *Yao Mu, Tianxing Chen, Zanxin Chen, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2504.13059) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/robotwin-Platform/RoboTwin) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robotwin-platform.github.io/)
 
 - **RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation**  
-  [[Paper](https://arxiv.org/abs/2506.18088)] [[Code](https://github.com/robotwin-Platform/RoboTwin)] [[Project](https://robotwin-platform.github.io/)]
+  Team: MMLab@HKU & Lumina EAI  
+  *Tianxing Chen, Zanxin Chen, Baijun Chen, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2506.18088) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/robotwin-Platform/RoboTwin) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robotwin-platform.github.io/)
 
 - **RobotArena ∞: Scalable Robot Benchmarking via Real-to-Sim Translation**  
-  [[Paper](https://arxiv.org/abs/2510.23571)] [[Code](https://github.com/offjangir/RobotArena)] [[Project](https://robotarenainf.github.io/)]
+  Team: Carnegie Mellon University  
+  *Yash Jangir, Yidi Zhang, Pang-Chi Lo, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2510.23571) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/offjangir/RobotArena) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robotarenainf.github.io/)
 
 - **HomeRobot: Open-Vocabulary Mobile Manipulation**  
-  [[Paper](https://arxiv.org/abs/2306.11565)] [[Code](https://github.com/facebookresearch/home-robot)] [[Project](https://ovmm.github.io/)]
+  Team: Georgia Institute of Technology  
+  *Sriram Yenamandra, Arun Ramachandran, Karmesh Yadav, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2306.11565) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/facebookresearch/home-robot) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://ovmm.github.io/)
 
 - **RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies**  
-  [[Paper](https://arxiv.org/abs/2607.04434)] [[Code](https://github.com/robodojo-benchmark/RoboDojo)] [[Project](https://robodojo-benchmark.com/)]
+  Team: MMLab@HKU  
+  *Tianxing Chen, Yue Chen, Zixuan Li, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2607.04434) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/robodojo-benchmark/RoboDojo) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robodojo-benchmark.com/)
 
 - **RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation**  
-  [[Paper](https://arxiv.org/abs/2604.19092)] [[Code](https://github.com/fffstrong/RoboWM-Bench)] [[Project](https://robowm-bench.github.io/RoboWM-Bench/)]
+  Team: Peking University  
+  *Feng Jiang, Yang Chen, Kyle Xu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2604.19092) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/fffstrong/RoboWM-Bench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robowm-bench.github.io/RoboWM-Bench/)
 
 - **Assistance Without Interruption: A Benchmark and LLM-based Framework for Non-Intrusive Human-Robot Assistance**  
-  [[Paper](https://arxiv.org/abs/2605.01368)] [[Code](https://github.com/Cognition2Action-Lab/NIABench.git)] [[Project](https://renytek13.github.io/assistance-without-interruption/)]
+  Team: Institute of AI and Robotics, Xi’an Jiaotong University  
+  *Yuedi Zhang, Shuanghao Bai, Wanqi Zhou, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2605.01368) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/Cognition2Action-Lab/NIABench.git) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://renytek13.github.io/assistance-without-interruption/)
 
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
 ### Robot-Agent
 
 - **PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks**  
-  [[Paper](https://arxiv.org/abs/2411.00081)] [[Code](https://github.com/facebookresearch/partnr-planner/tree/main/)] [[Project](https://aihabitat.org/partnr/)]
+  Team: FAIR, Meta  
+  *Matthew Chang, Gunjan Chhablani, Alexander Clegg, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2411.00081) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/facebookresearch/partnr-planner/tree/main/) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://aihabitat.org/partnr/)
 
 - **EMBODIEDBENCH: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents**  
-  [[Paper](https://arxiv.org/abs/2502.09560)] [[Code](https://github.com/EmbodiedBench/EmbodiedBench)] [[Project](https://embodiedbench.github.io/)]
+  Team: University of Illinois Urbana-Champaign  
+  *Rui Yang, Hanyang Chen, Junyu Zhang, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2502.09560) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/EmbodiedBench/EmbodiedBench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://embodiedbench.github.io/)
 
 - **RoboCerebra: A Large-scale Benchmark for Long-horizon Robotic Manipulation Evaluation**  
-  [[Paper](https://arxiv.org/abs/2506.06677)] [[Code](https://github.com/qiuboxiang/RoboCerebra)] [[Project](https://robocerebra.github.io/)]
+  Team: Beihang University  
+  *Songhao Han, Boxiang Qiu, Yue Liao, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2506.06677) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/qiuboxiang/RoboCerebra) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://robocerebra.github.io/)
 
 - **RoCo: Dialectic Multi-Robot Collaboration with Large Language Models**  
-  [[Paper](https://arxiv.org/abs/2307.04738)] [[Code](https://github.com/MandiZhao/robot-collab)] [[Project](https://project-roco.github.io/)]
+  Team: Columbia University  
+  *Zhao Mandi, Shreeya Jain, Shuran Song*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2307.04738) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/MandiZhao/robot-collab) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://project-roco.github.io/)
 
 - **EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents**  
-  [[Paper](https://arxiv.org/abs/2410.22662v2)] [[Code](https://github.com/SgtVincent/EMOS)] [[Project](https://emos-project.github.io/)]
+  Team: National University of Singapore  
+  *Junting Chen, Checheng Yu, Xunzhe Zhou, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2410.22662v2) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/SgtVincent/EMOS) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://emos-project.github.io/)
 
 - **IS-Bench: Evaluating Interactive Safety of VLM-Driven Embodied Agents in Daily Household Tasks**  
-  [[Paper](https://arxiv.org/abs/2506.16402)] [[Code](https://github.com/AI45Lab/IS-Bench)]
+  Team: Shanghai Jiao Tong University & Shanghai Artificial Intelligence Laboratory  
+  *Xiaoya Lu, Zeren Chen, Xuhao Hu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2506.16402) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/AI45Lab/IS-Bench)
 
 - **ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop**  
-  [[Paper](https://arxiv.org/abs/2605.18746)] [[Code](https://github.com/ESI-Bench/ESI-Bench)] [[Project](https://esi-bench.github.io/)]
+  Team: Stanford University  
+  *Yining Hong, Jiageng Liu, Han Yin, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2605.18746) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/ESI-Bench/ESI-Bench) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://esi-bench.github.io/)
 
 - **PLanAR: Planning-Language-Grounded Agentic Reasoning for Robot Manipulation**  
-  [[Paper](https://arxiv.org/abs/2602.01662v4)] [[Project](https://planar-robot.github.io/)]
+  Team: Purdue University  
+  *Pengyuan Guo, Zhonghao Mai, Zhengtong Xu, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2602.01662v4) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://planar-robot.github.io/)
 
 - **CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation**  
-  [[Paper](https://arxiv.org/abs/2603.22435)] [[Code](https://github.com/capgym/cap-x)] [[Project](https://capgym.github.io/)]
+  Team: NVIDIA & University of California, Berkeley  
+  *Letian Fu, Justin Yu, Karim El-Refai, et al.*  
+  [![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv&logoColor=white&style=plastic)](https://arxiv.org/abs/2603.22435) [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white&style=plastic)](https://github.com/capgym/cap-x) [![Project](https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&logoColor=white&style=plastic)](https://capgym.github.io/)
 
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
