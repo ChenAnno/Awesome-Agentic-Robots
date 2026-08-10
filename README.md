@@ -71,13 +71,6 @@ XXX
 Prior surveys and reviews adjacent to our scope. In the PR, note how a new survey differs from the ones
 already listed.
 
-<!-- TEMPLATE — swap each value for the real one; delete any [[link]] you don't have. Newest first.
-     Remove this template once real papers are listed here. -->
-
-- **Paper Title Goes Here** `Survey`  
-  *Author One, Author Two, Author Three, et al.*  
-  arXiv, 2026.08 [[Paper](https://arxiv.org/abs/0000.00000)] [[Code](https://github.com/org/repo)] [[Project](https://org.github.io/project)]
-
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
 ---
@@ -91,12 +84,61 @@ already listed.
 Agents built on multi-modal foundation models that perceive and act in **digital** environments —
 screens, browsers, documents, and APIs — without a physical body.
 
-<!-- TEMPLATE — swap each value for the real one; delete any [[link]] you don't have. Newest first.
-     Remove this template once real papers are listed here. -->
+- **ReAct: Synergizing Reasoning and Acting in Language Models**<br>
+  Citation key: `yao2023react`<br>
+  Team: Princeton University; Google Research | ICLR 2023<br>
+  *Shunyu Yao, Jeffrey Zhao, Dian Yu, et al.*<br>
+  Tags: `Framework` `Plan` `Act` `Language Agent`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2210.03629) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/ysymyth/ReAct) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://react-lm.github.io/)
 
-- **Paper Title Goes Here** `MLLM` `Tool Use`  
-  *Author One, Author Two, Author Three, et al.*  
-  arXiv, 2026.08 [[Paper](https://arxiv.org/abs/0000.00000)] [[Code](https://github.com/org/repo)] [[Project](https://org.github.io/project)]
+- **SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents**<br>
+  Citation key: `cheng2024seeclick`<br>
+  Team: Nanjing University; Shanghai AI Laboratory | ACL 2024<br>
+  *Kanzhi Cheng, Qiushi Sun, Yougang Chu, et al.*<br>
+  Tags: `Perceive` `Act` `GUI Grounding` `Computer Use`<br>
+  [![Paper](https://img.shields.io/badge/-ACL-0F6AB4?style=flat-square)](https://aclanthology.org/2024.acl-long.505/) [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2401.10935) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/njucckevin/SeeClick)
+
+- **OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments**<br>
+  Citation key: `xie2024osworld`<br>
+  Team: HKU; Salesforce Research; CMU; University of Waterloo | NeurIPS 2024<br>
+  *Tianbao Xie, Danyang Zhang, Jixuan Chen, et al.*<br>
+  Tags: `Perceive` `Verify` `Benchmark` `Computer Use`<br>
+  [![Paper](https://img.shields.io/badge/-NeurIPS-0F6AB4?style=flat-square)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5d413e48f84dc61244b6be550f1cd8f5-Abstract-Datasets_and_Benchmarks_Track.html) [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2404.07972) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/xlang-ai/OSWorld) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://os-world.github.io/)
+
+- **Position: LLMs Can’t Plan, But Can Help Planning in LLM-Modulo Frameworks**<br>
+  Citation key: `pmlr-v235-kambhampati24a`<br>
+  Team: Arizona State University | ICML 2024<br>
+  *Subbarao Kambhampati, Karthik Valmeekam, Lin Guan, et al.*<br>
+  Tags: `Plan` `Verification` `Position Paper` `Neuro-Symbolic`<br>
+  [![Paper](https://img.shields.io/badge/-PMLR-0F6AB4?style=flat-square)](https://proceedings.mlr.press/v235/kambhampati24a.html)
+
+- **GPT-4V(ision) Is a Generalist Web Agent, If Grounded**<br>
+  Citation key: `zheng2024gpt`<br>
+  Team: The Ohio State University | ICML 2024<br>
+  *Boyuan Zheng, Boyu Gou, Jihyung Kil, et al.*<br>
+  Tags: `Act` `Plan` `Web Agent` `Action Grounding`<br>
+  [![Paper](https://img.shields.io/badge/-PMLR-0F6AB4?style=flat-square)](https://proceedings.mlr.press/v235/zheng24e.html) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/OSU-NLP-Group/SeeAct) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://osu-nlp-group.github.io/SeeAct/)
+
+- **ShowUI: One Vision-Language-Action Model for GUI Visual Agent**<br>
+  Citation key: `shou2025showui`<br>
+  Team: Show Lab, NUS; Microsoft | CVPR 2025<br>
+  *Kevin Qinghong Lin, Linjie Li, Difei Gao, et al.*<br>
+  Tags: `Act` `GUI Agent` `VLA` `Action Grounding`<br>
+  [![Paper](https://img.shields.io/badge/-CVPR-0F6AB4?style=flat-square)](https://openaccess.thecvf.com/content/CVPR2025/papers/Lin_ShowUI_One_Vision-Language-Action_Model_for_GUI_Visual_Agent_CVPR_2025_paper.pdf) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/showlab/ShowUI)
+
+- **Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control**<br>
+  Citation key: `zheng2024synapse`<br>
+  Team: Nanyang Technological University | ICLR 2024<br>
+  *Longtao Zheng, Rundong Wang, Xinrun Wang, et al.*<br>
+  Tags: `Adapt` `Memory` `Trajectory Retrieval` `Computer Control`<br>
+  [![Paper](https://img.shields.io/badge/-OpenReview-8C1B13?style=flat-square)](https://openreview.net/forum?id=Pc8AU1aF5e) [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2306.07863) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/ltzheng/Synapse) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://ltzheng.github.io/Synapse/)
+
+- **Reflexion: Language Agents with Verbal Reinforcement Learning**<br>
+  Citation key: `shinn2023reflexion`<br>
+  Team: Northeastern University; Princeton University | NeurIPS 2023<br>
+  *Noah Shinn, Federico Cassano, Edward Berman, et al.*<br>
+  Tags: `Adapt` `Verbal Reflection` `Episodic Memory` `Language Agent`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2303.11366) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/noahshinn/reflexion)
 
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
@@ -107,14 +149,138 @@ screens, browsers, documents, and APIs — without a physical body.
 Robot learning, perception, and control in the **physical** world — vision-language-action models,
 manipulation, navigation, humanoids, and the data and simulators behind them.
 
-<!-- TEMPLATE — swap each value for the real one; delete any [[link]] you don't have. Newest first.
-     The "Team:" line is optional — keep it for major industry releases, delete it otherwise.
-     Remove this template once real papers are listed here. -->
+- **Going Beyond World Models & VLAs**<br>
+  Citation key: `florence2026going`<br>
+  Team: Generalist AI | Industry Perspective, 2026<br>
+  *Pete Florence and the Generalist Team*<br>
+  Tags: `Framework` `Industry Perspective` `VLA` `World Model`<br>
+  [![Article](https://img.shields.io/badge/-Article-FF6D00?logo=rss&logoColor=white&style=flat-square)](https://generalistai.com/blog/beyond-world-models)
 
-- **Paper Title Goes Here** `VLA` `Manip.`  
-  Team: Lab or Company Name  
-  *Author One, Author Two, Author Three, et al.*  
-  arXiv, 2026.08 [[Paper](https://arxiv.org/abs/0000.00000)] [[Code](https://github.com/org/repo)] [[Project](https://org.github.io/project)]
+- **PaLM-E: An Embodied Multimodal Language Model**<br>
+  Citation key: `driess2023palm`<br>
+  Team: Robotics at Google; TU Berlin | ICML 2023<br>
+  *Danny Driess, Fei Xia, Mehdi S. M. Sajjadi, et al.*<br>
+  Tags: `Perceive` `Plan` `Multimodal Model` `Robotics`<br>
+  [![Paper](https://img.shields.io/badge/-PMLR-0F6AB4?style=flat-square)](https://proceedings.mlr.press/v202/driess23a.html) [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2303.03378) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://palm-e.github.io/)
+
+- **3D-ViTac: Learning Fine-Grained Manipulation with Visuo-Tactile Sensing**<br>
+  Citation key: `pmlr-v270-huang25e`<br>
+  Team: Columbia University; UIUC; University of Washington | CoRL 2024 (PMLR 270, 2025)<br>
+  *Binghao Huang, Yixuan Wang, Xinyi Yang, et al.*<br>
+  Tags: `Perceive` `Act` `Visuo-Tactile Sensing` `Dexterous Manipulation`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2410.24091) [![Paper](https://img.shields.io/badge/-Paper-2F6F9F?style=flat-square)](https://proceedings.mlr.press/v270/huang25e.html) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/binghao-huang/3d-vitac-training-code) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://binghao-huang.github.io/3D-ViTac/)
+
+- **ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning**<br>
+  Citation key: `gu2024conceptgraphs`<br>
+  Team: University of Toronto; Université de Montréal; MIT | ICRA 2024<br>
+  *Qiao Gu, Alihusein Kuwajerwala, Sacha Morin, et al.*<br>
+  Tags: `Perceive` `Plan` `3D Scene Graph` `Spatial Memory`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2309.16650) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/concept-graphs/concept-graphs) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://concept-graphs.github.io/)
+
+- **SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities**<br>
+  Citation key: `chen2024spatialvlm`<br>
+  Team: Google DeepMind; Google Research; MIT | CVPR 2024<br>
+  *Boyuan Chen, Zhuo Xu, Sean Kirmani, et al.*<br>
+  Tags: `Perceive` `Spatial Reasoning` `Vision-Language Model`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2401.12168) [![Paper](https://img.shields.io/badge/-Paper-2F6F9F?style=flat-square)](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_SpatialVLM_Endowing_Vision-Language_Models_with_Spatial_Reasoning_Capabilities_CVPR_2024_paper.html) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://spatial-vlm.github.io/)
+
+- **APPLE: Toward General Active Perception via Reinforcement Learning**<br>
+  Citation key: `schneider2026apple`<br>
+  Team: TU Darmstadt; TU Dresden; DFKI; LIRIS/CNRS & École Centrale de Lyon | ICLR 2026<br>
+  *Tim Schneider, Cristiana de Farias, Roberto Calandra, et al.*<br>
+  Tags: `Perceive` `Active Perception` `Reinforcement Learning`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2505.06182) [![Paper](https://img.shields.io/badge/-Paper-2F6F9F?style=flat-square)](https://openreview.net/forum?id=ldyyd9FqC6) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/TimSchneider42/apple/) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://timschneider42.github.io/apple/)
+
+- **Mastering diverse control tasks through world models**<br>
+  Citation key: `hafner2025dreamerv3`<br>
+  Team: Google DeepMind; University of Toronto | Nature 640, 647–653 (2025)<br>
+  *Danijar Hafner, Jurgis Pasukonis, Jimmy Ba, et al.*<br>
+  Tags: `Anticipate` `World Model` `Model-Based Reinforcement Learning`<br>
+  [![Paper](https://img.shields.io/badge/-Paper-2F6F9F?style=flat-square)](https://doi.org/10.1038/s41586-025-08744-2) [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2301.04104) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/danijar/dreamerv3) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://danijar.com/project/dreamerv3/)
+
+- **DayDreamer: World Models for Physical Robot Learning**<br>
+  Citation key: `pmlr-v205-wu23c`<br>
+  Team: University of California, Berkeley | CoRL 2022 (PMLR 205, 2023)<br>
+  *Philipp Wu, Alejandro Escontrela, Danijar Hafner, et al.*<br>
+  Tags: `Anticipate` `World Model` `Robot Learning`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2206.14176) [![Paper](https://img.shields.io/badge/-Paper-2F6F9F?style=flat-square)](https://proceedings.mlr.press/v205/wu23c.html) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/danijar/daydreamer) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://danijar.com/project/daydreamer/)
+
+- **Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents**<br>
+  Citation key: `pmlr-v162-huang22a`<br>
+  Team: UC Berkeley; Carnegie Mellon University; Google Brain | ICML 2022<br>
+  *Wenlong Huang, Pieter Abbeel, Deepak Pathak, et al.*<br>
+  Tags: `Plan` `LLM Planning` `Embodied Agent`<br>
+  [![Paper](https://img.shields.io/badge/-PMLR-0F6AB4?style=flat-square)](https://proceedings.mlr.press/v162/huang22a.html) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/huangwl18/language-planner) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://huangwl18.github.io/language-planner/)
+
+- **Do As I Can, Not As I Say: Grounding Language in Robotic Affordances**<br>
+  Citation key: `ahn2022do`<br>
+  Team: Robotics at Google; Everyday Robots | CoRL 2022 (PMLR 205, 2023)<br>
+  *Michael Ahn, Anthony Brohan, Noah Brown, et al.*<br>
+  Tags: `Plan` `Language Grounding` `Robot Affordances`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2204.01691) [![Paper](https://img.shields.io/badge/-Paper-2F6F9F?style=flat-square)](https://proceedings.mlr.press/v205/ichter23a.html) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/google-research/google-research/tree/master/saycan) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://say-can.github.io/)
+
+- **ProgPrompt: Generating Situated Robot Task Plans Using Large Language Models**<br>
+  Citation key: `singh2023progprompt`<br>
+  Team: University of Southern California; NVIDIA | ICRA 2023<br>
+  *Ishika Singh, Valts Blukis, Arsalan Mousavian, et al.*<br>
+  Tags: `Plan` `Program Generation` `Embodied Agent`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2209.11302) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/NVlabs/progprompt-vh) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://progprompt.github.io/)
+
+- **Code as Policies: Language Model Programs for Embodied Control**<br>
+  Citation key: `liang2023code`<br>
+  Team: Robotics at Google | ICRA 2023<br>
+  *Jacky Liang, Wenlong Huang, Fei Xia, et al.*<br>
+  Tags: `Plan` `Act` `Code Generation` `Robot Control`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2209.07753) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/google-research/google-research/tree/master/code_as_policies) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://code-as-policies.github.io/)
+
+- **RT-1: Robotics Transformer for Real-World Control at Scale**<br>
+  Citation key: `brohan2023rt1`<br>
+  Team: Robotics at Google; Everyday Robots | RSS 2023<br>
+  *Anthony Brohan, Noah Brown, Justice Carbajal, et al.*<br>
+  Tags: `Act` `VLA` `Robot Control` `Generalist Policy`<br>
+  [![Paper](https://img.shields.io/badge/-RSS-0F6AB4?style=flat-square)](https://roboticsproceedings.org/rss19/p025.html) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/google-research/robotics_transformer) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer1.github.io/)
+
+- **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**<br>
+  Citation key: `brohan2023rt2`<br>
+  Team: Google DeepMind | CoRL 2023<br>
+  *Anthony Brohan, Noah Brown, Justice Carbajal, et al.*<br>
+  Tags: `Act` `VLA` `Robot Control` `Knowledge Transfer`<br>
+  [![Paper](https://img.shields.io/badge/-PMLR-0F6AB4?style=flat-square)](https://proceedings.mlr.press/v229/zitkovich23a.html) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io/)
+
+- **π₀: A Vision-Language-Action Flow Model for General Robot Control**<br>
+  Citation key: `black2024pi0`<br>
+  Team: Physical Intelligence | arXiv 2024<br>
+  *Kevin Black, Noah Brown, Danny Driess, et al.*<br>
+  Tags: `Act` `VLA` `Flow Matching` `Generalist Policy`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2410.24164) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/Physical-Intelligence/openpi) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://www.pi.website/blog/pi0)
+
+- **RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation**<br>
+  Citation key: `liu2024rdt`<br>
+  Team: Tsinghua University, THBI Lab | ICLR 2025<br>
+  *Songming Liu, Lingxuan Wu, Bangguo Li, et al.*<br>
+  Tags: `Act` `Diffusion Policy` `Bimanual Manipulation` `Robot Foundation Model`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2410.07864) [![Paper](https://img.shields.io/badge/-Paper-2F6F9F?style=flat-square)](https://proceedings.iclr.cc/paper_files/paper/2025/hash/49f80e4d2471ad4f2edf4f5f1ab62339-Abstract-Conference.html) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/thu-ml/RoboticsDiffusionTransformer) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://rdt-robotics.github.io/rdt-robotics/)
+
+- **Claude Plays Robotics**<br>
+  Citation key: `berman2026claude`<br>
+  Team: Anthropic Frontier Red Team | Research Report, 2026<br>
+  *Shmuel Berman, Michael Ilie, Jia Deng, et al.*<br>
+  Tags: `Act` `Industry Report` `LLM Robotics` `Evaluation`<br>
+  [![Research](https://img.shields.io/badge/-Research-FF6D00?logo=anthropic&logoColor=white&style=flat-square)](https://www.anthropic.com/research/claude-plays-robotics)
+
+- **RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation**<br>
+  Citation key: `bousmalis2023robocat`<br>
+  Team: Google DeepMind | TMLR 2023<br>
+  *Konstantinos Bousmalis, Giulia Vezzani, Dushyant Rao, et al.*<br>
+  Tags: `Adapt` `Self-Improvement` `Generalist Policy` `Robot Learning`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2306.11706) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://deepmind.google/blog/robocat-a-self-improving-robotic-agent)
+
+- **RoboTTT: Context Scaling for Robot Policies**<br>
+  Citation key: `jiang2026robotttt`<br>
+  Team: NVIDIA GEAR Lab; Stanford University | arXiv 2026<br>
+  *Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng, et al.*<br>
+  Tags: `Adapt` `Test-Time Training` `Long Context` `VLA`<br>
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2607.15275) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://research.nvidia.com/labs/gear/robottt/)
 
 <div align="right"><a href="#table-of-contents">&uarr; back to top</a></div>
 
