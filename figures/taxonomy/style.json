@@ -1,0 +1,107 @@
+{
+  "graph": {
+    "rankdir": "LR",
+    "splines": "ortho",
+    "nodesep": "0.18",
+    "ranksep": "0.35",
+    "bgcolor": "white"
+  },
+
+  "node": {
+    "shape": "box",
+    "style": "rounded,filled",
+    "fontname": "Arial",
+    "fontsize": "10",
+    "penwidth": "1.2",
+    "margin": "0.12,0.06"
+  },
+
+  "edge": {
+    "color": "#777777",
+    "penwidth": "1.0",
+    "arrowhead": "none"
+  },
+
+  "levels": {
+    "0": {
+      "fillcolor": "#FFFFFF",
+      "color": "#444444"
+    },
+
+    "1": {
+      "fillcolor": "#DDEBF7",
+      "color": "#5B9BD5"
+    },
+
+    "2": {
+      "fillcolor": "#EAF2F8",
+      "color": "#7FAED3"
+    },
+
+    "3": {
+      "fillcolor": "#F4F8FB",
+      "color": "#9ABDD8"
+    },
+
+    "papers": {
+      "fillcolor": "#FFFFFF",
+      "color": "#BBBBBB",
+      "fontsize": "9",
+      "penwidth": "0.8"
+    }
+  },
+
+  "paper_box": {
+    "papers_per_line": 3
+  },
+
+  "latex": {
+    "level_distance": "18pt",
+    "sibling_distance": "8pt",
+    "fork_length": "7pt",
+    "rounded_corners": "3pt",
+    "font_family": "\\sffamily"
+  },
+
+  "branch_styles": {
+    "Roadmap/Capacities": {
+      "1": {
+        "fillcolor": "#DDEBF7",
+        "color": "#5B9BD5"
+      },
+      "2": {
+        "fillcolor": "#EAF2F8",
+        "color": "#7FAED3"
+      },
+      "3": {
+        "fillcolor": "#F4F8FB",
+        "color": "#9ABDD8"
+      },
+      "papers": {
+        "fillcolor": "#FFFFFF",
+        "color": "#B7CCE2"
+      }
+    },
+
+    "Roadmap/Benchmark": {
+      "1": {
+        "fillcolor": "#E4DFEC",
+        "color": "#8064A2"
+      },
+      "2": {
+        "fillcolor": "#EDE9F2",
+        "color": "#9E84BC"
+      },
+      "3": {
+        "fillcolor": "#F5F2F8",
+        "color": "#B7A6CC"
+      },
+      "papers": {
+        "fillcolor": "#FFFFFF",
+        "color": "#C8BDD8"
+      }
+    }
+  },
+
+  "node_overrides": {}
+}

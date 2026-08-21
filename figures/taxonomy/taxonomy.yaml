@@ -1,0 +1,74 @@
+Roadmap:
+  Capacities:
+    Perceive:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+
+    Anticipate:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+    
+    Plan:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+    
+    Act:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+    Verify:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+
+  Benchmark:
+    Multimodal Embodied Agent:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+
+    Multimodal Agent:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+      
+    Robotic System:
+      papers:
+        - name: showui
+          key: shou2025showui
+        - name: pi0
+          key: black2024pi0
+        - name: robot
+          key: gemini2025robotics
+
