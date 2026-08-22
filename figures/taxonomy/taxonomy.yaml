@@ -2,47 +2,117 @@ Roadmap:
   Capacities:
     Perceive:
       papers:
-        - name: showui
-          key: shou2025showui
-        - name: pi0
-          key: black2024pi0
-        - name: robot
-          key: gemini2025robotics
+        - name: SeeClick
+          key: cheng2024seeclick
+        - name: OSWorld
+          key: xie2024osworld
+        - name: Avis
+          key: hu2023avis
+        - name: VideoAgent
+          key: fan2024videoagent
+        - name: TimeChat
+          key: ren2024timechat
+        - name: Salmonn
+          key: tang2024salmonn
+        - name: SeeHearFeel
+          key: long2026seeing
 
     Anticipate:
       papers:
-        - name: showui
-          key: shou2025showui
-        - name: pi0
-          key: black2024pi0
-        - name: robot
-          key: gemini2025robotics
+        - name: MobileDreamer
+          key: cao2026mobiledreamer
+        - name: DeepVis
+          key: finn2017deep
+        - name: DreamerV1
+          key: hafner2019dream
+        - name: Genie
+          key: bruce2024genie
+        - name: PlaNet
+          key: hafner2019planet
+        - name: DreamerV3
+          key: hafner2025dreamerv3
+        - name: DayDreamer
+          key: pmlr-v205-wu23c
+        - name: VoxPoser
+          key: huang2023voxposer
+        - name: Code2World
+          key: zheng2026code2world
+        - name: Master
+          key: schrittwieser2020mastering
+
     
     Plan:
       papers:
-        - name: showui
-          key: shou2025showui
-        - name: pi0
-          key: black2024pi0
-        - name: robot
-          key: gemini2025robotics
+        - name: ZeroShotPlanner
+          key: pmlr-v162-huang22a
+        - name: SayCan
+          key: ahn2022do
+        - name: LLM-Modulo
+          key: pmlr-v235-kambhampati24a
+        - name: SayPlan
+          key: sayplan2023
+        - name: HPN
+          key: kaelbling2011hierarchical
+        - name: CodeAsPolicies
+          key: liang2023code
+        - name: ProgPrompt
+          key: singh2023progprompt
+        - name: Llava
+          key: liu2024llava
+        - name: Copilot
+          key: wu2024copilot
+        - name: HuggingGPT
+          key: shen2023hugginggpt
+        - name: Pddlstream
+          key: garrett2020pddlstream
     
     Act:
       papers:
-        - name: showui
+        - name: SeeClick
+          key: cheng2024seeclick
+        - name: CogAgent
+          key: hong2024cogagent
+        - name: VIMA
+          key: jiang2023vima
+        - name: GPT-4V
+          key: zheng2024gpt
+        - name: ShowUI
           key: shou2025showui
-        - name: pi0
+        - name: Pi0
           key: black2024pi0
-        - name: robot
-          key: gemini2025robotics
+        - name: RDT-1B
+          key: liu2024rdt
+        - name: RT-1
+          key: brohan2023rt1
+        - name: RT-2
+          key: brohan2023rt2
+        - name: Copilot
+          key: wu2024copilot
+        - name: DiT
+          key: chi2023diffusionpolicy
+        - name: Act
+          key: zhao2023act
+
+
     Verify:
       papers:
-        - name: showui
-          key: shou2025showui
-        - name: pi0
-          key: black2024pi0
-        - name: robot
-          key: gemini2025robotics
+        - name: OSWorld
+          key: xie2024osworld
+        - name: Inner Monologue
+          key: huang2022inner
+        - name: Liv
+          key: ma2023liv
+        - name: Rl-vlm-f
+          key: wang2024rl
+        - name: Reflect
+          key: liu2023reflect
+        - name: Voyager
+          key: wang2024voyager
+        - name: Reflexion
+          key: shinn2023reflexion
+        - name: Self-Refine
+          key: madaan2023self
+
 
   Benchmark:
     Multimodal Embodied Agent:
