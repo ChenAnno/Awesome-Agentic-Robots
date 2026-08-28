@@ -15,12 +15,13 @@ will add it for you.
 
 ## Entry format
 
-Each paper is a three-line block. Copy this and swap every value for the real one:
+Each paper is a four-line block. Copy this and swap every value for the real one:
 
 ```markdown
 - **Paper Title Goes Here** `Tag1` `Tag2`  
   *Author One, Author Two, Author Three, et al.*  
-  arXiv, 2026.08 [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/0000.00000) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/org/repo) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://org.github.io/project)
+  arXiv, 2026.08  
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/0000.00000) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/org/repo) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://org.github.io/project)
 ```
 
 The same template sits at the top of sections A, B, and C in the README — copy from whichever section
@@ -31,7 +32,8 @@ A filled-in entry:
 ```markdown
 - **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control** `VLA` `Manip.`  
   *Anthony Brohan, Noah Brown, Justice Carbajal, et al.*  
-  arXiv, 2023.07 [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2307.15818) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io)
+  arXiv, 2023.07  
+  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2307.15818) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io)
 ```
 
 Line by line:
@@ -40,7 +42,8 @@ Line by line:
 | :-- | :-- |
 | 1 | `- ` + **bold title** + optional backticked tags, then **two trailing spaces** |
 | 2 | two spaces of indent + *italic* author list, then **two trailing spaces** |
-| 3 | two spaces of indent + venue + `, ` + `YYYY.MM` + Shields badge link group |
+| 3 | two spaces of indent + venue + `, ` + `YYYY.MM`, then **two trailing spaces** |
+| 4 | two spaces of indent + Shields badge link group |
 
 What to put in each slot:
 
@@ -66,7 +69,7 @@ grep -n "Paper Title Goes Here\|Author One\|0000.00000" README.md
 
 The only matches should be the three templates in sections A, B, and C.
 
-The two trailing spaces on lines 1 and 2 are what produce the line breaks. Without them the entry
+The two trailing spaces on lines 1, 2, and 3 are what produce the line breaks. Without them the entry
 collapses into a single paragraph.
 
 ### Tag legend
@@ -107,7 +110,7 @@ Add a new tag only if several papers would use it, and update this table in the 
 
 ## Checklist before opening a PR
 
-- [ ] Entry follows the three-line format, including the two trailing spaces.
+- [ ] Entry follows the four-line format, including the two trailing spaces.
 - [ ] No template values left over (`grep -n "Paper Title Goes Here\|Author One\|0000.00000" README.md`).
 - [ ] Paper is not already listed (search the title in `README.md`).
 - [ ] All links resolve.
