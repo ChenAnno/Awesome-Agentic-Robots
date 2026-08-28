@@ -4,7 +4,7 @@
 
 **A curated list of papers on multimodal embodied agents.**
 
-*Companion repository for our survey:* ***&lt;Survey Title Here&gt;*** &nbsp;[[Paper](#)]&nbsp;[[Project Page](#)]
+*Companion repository for our survey:* ***&lt;Survey Title Here&gt;***
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](./LICENSE)
@@ -30,17 +30,14 @@ XXX
 > [open an issue](https://github.com/ChenAnno/Awesome-Agentic-Robots/issues/new/choose) or send a PR —
 > see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-<!-- Drop the survey's taxonomy figure here once it exists.
-<div align="center">
-  <img src="assets/overview.png" width="90%" alt="Taxonomy of agentic robots">
-</div>
--->
+<!-- Add the survey taxonomy figure here once the final asset is available. -->
 
 ## News
 
+- **[2026/08/28]** Synced all references currently cited by the Overleaf manuscript; added the six papers that were missing from this list.
 - **[2026/08/22]** Synced references from the survey's Capabilities section: added 215 papers across Sections A–E and populated Section B.
 - **[2026/08/05]** 🎉 Repository created.
-<!-- - **[YYYY/MM/DD]** Our survey is available on arXiv: [link](#). -->
+<!-- Add the survey release announcement once its public URL is available. -->
 <!-- - **[YYYY/MM/DD]** Added N new papers to Section X. -->
 
 ## Table of Contents
@@ -414,6 +411,10 @@ language-conditioned robot world models, and embodied memory.
   *Faseeh Ahmad, Hashim Ismail, Jonathan Styrud, et al.*  
   arXiv, 2025.03 [[Paper](https://arxiv.org/abs/2503.15202)]
 
+- **Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models**  
+  *Lucy Xiaoyang Shi, Brian Ichter, Michael Equi, et al.*  
+  ICML 2025, 2025.02 [[Paper](https://arxiv.org/abs/2502.19417)] [[Project](https://www.physicalintelligence.company/research/hirobot)]
+
 - **Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation** `Plan` `Planning` `MLLM`  
   *Yunhai Feng, Jiaming Han, Zhuoran Yang, et al.*  
   CoRL 2025, 2025.02 [[Paper](https://arxiv.org/abs/2502.16707)] [[Project](https://reflect-vlm.github.io)]
@@ -484,6 +485,10 @@ language-conditioned robot world models, and embodied memory.
 - **Hierarchical open-vocabulary 3d scene graphs for language-grounded robot navigation** `Perceive` `Memory` `Nav.`  
   *Abdelrhman Werby, Chenguang Huang, Martin Buchner, et al.*  
   ICRA 2024, 2024.03 [[Paper](https://arxiv.org/abs/2403.17846)] [[Code](https://github.com/hovsg/HOV-SG)] [[Project](https://hovsg.github.io/)]
+
+- **Vision-Language Models for Robot Success Detection**  
+  *Fiona Luo*  
+  AAAI 2024, 2024.03 [[Paper](https://doi.org/10.1609/aaai.v38i21.30552)]
 
 - **Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity** `Plan` `Planning` `HRI`  
   *Kaiqu Liang, Zixu Zhang, Jaime Fernandez Fisac*  
@@ -732,6 +737,10 @@ screens, browsers, documents, and APIs — without a physical body.
   *Kristian Kolthoff, Felix Kretzer, Simone Paolo Ponzetto, et al.*  
   arXiv, 2025.10 [[Paper](https://arxiv.org/abs/2510.04791)]
 
+- **Scaling Synthetic Task Generation for Agents via Exploration**  
+  *Ram Ramrakhya, Andrew Szot, Omar Attia, et al.*  
+  ICLR 2026, 2025.09 [[Paper](https://arxiv.org/abs/2509.25047)]
+
 - **Learning GUI Grounding with Spatial Reasoning from Visual Feedback** `Act` `GUI` `Memory`  
   *Yu Zhao, Wei-Ning Chen, Huseyin Atahan Inan, et al.*  
   arXiv, 2025.09 [[Paper](https://arxiv.org/abs/2509.21552)]
@@ -879,6 +888,10 @@ screens, browsers, documents, and APIs — without a physical body.
   Team: Tsinghua University; ByteDance  
   *Changli Tang, Wenyi Yu, Guangzhi Sun, et al.*  
   ICLR 2024, 2023.10 [[Paper](https://arxiv.org/abs/2310.13289)] [[Code](https://github.com/bytedance/SALMONN)]
+
+- **ControlLLM: Augment Language Models with Tools by Searching on Graphs**  
+  *Zhaoyang Liu, Zeqiang Lai, Zhangwei Gao, et al.*  
+  ECCV 2024, 2023.10 [[Paper](https://arxiv.org/abs/2310.17796)] [[Code](https://github.com/OpenGVLab/ControlLLM)]
 
 - **Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V** `Perceive` `MLLM`  
   Team: Microsoft Research; HKUST; UW-Madison  
@@ -1093,6 +1106,10 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
   *Bohan Wu, Suraj Nair, Li Fei-Fei, et al.*  
   CoRL 2022, 2021.09 [[Paper](https://arxiv.org/abs/2109.10312)]
 
+- **The PANDA Framework for Hierarchical Planning**  
+  *Daniel Höller, Gregor Behnke, Pascal Bercher, Susanne Biundo*  
+  KI - Künstliche Intelligenz, 2021.01 [[Paper](https://doi.org/10.1007/s13218-020-00699-y)]
+
 - **Multimodal sensor fusion with differentiable filters** `Perceive` `MLLM`  
   *Michelle A Lee, Brent Yi, Roberto Mart\'\in-Mart\'\in, et al.*  
   IROS 2020, 2020.10 [[Paper](https://arxiv.org/abs/2010.13021)]
@@ -1229,7 +1246,7 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
 - **GAIA: A Benchmark for General AI Assistants** `Bench`  
   Team: Meta AI  
   *Grégoire Mialon, Clémentine Fourrier, Craig Swift, et al.*  
-  ICLR 2024, 2023.11 [[Paper](https://arxiv.org/abs/2311.12983)] [[Code](http://huggingface.co/gaia-benchmark)] [[Project](http://huggingface.co/gaia-benchmark)]
+  ICLR 2024, 2023.11 [[Paper](https://arxiv.org/abs/2311.12983)] [[Code](https://huggingface.co/gaia-benchmark)] [[Project](https://huggingface.co/gaia-benchmark)]
 
 - **WebArena: A Realistic Web Environment for Building Autonomous Agents** `GUI` `Bench`  
   *Shuyan Zhou, Frank F. Xu, Hao Zhu, et al.*  
@@ -1286,6 +1303,10 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
 - **LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization** `VLA` `Bench`  
   *Xueyang Zhou, Yangming Xu, Guiyao Tie, et al.*  
   arXiv, 2025.10 [[Paper](https://arxiv.org/abs/2510.03827)] [[Code](https://github.com/Zxy-MLlab/LIBERO-PRO)] [[Project](https://zxy-mllab.github.io/LIBERO-PRO-Webpage/)]
+
+- **Meta-World+: An Improved, Standardized, RL Benchmark**  
+  *Reginald McLean, Evangelos Chatzaroulas, Luc McCutcheon, et al.*  
+  NeurIPS 2025, 2025.05 [[Paper](https://arxiv.org/abs/2505.11289)] [[Code](https://github.com/Farama-Foundation/Metaworld)] [[Project](https://metaworld.farama.org/)]
 
 - **VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks** `Bench` `Manip.`  
   *Shiduo Zhang, Zhe Xu, Peiju Liu, et al.*  
@@ -1471,16 +1492,11 @@ Contributions are very welcome — new papers, corrections, better categorizatio
 
 Thanks to everyone who has contributed:
 
-<!-- Add this one back when the repo goes to public to make the displace properly. -->
-<!-- <a href="https://github.com/ChenAnno/Awesome-Agentic-Robots/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ChenAnno/Awesome-Agentic-Robots" alt="Contributors" />
-</a> -->
+<!-- Add the contributors graphic when the repository becomes public. -->
 
 ## Acknowledgements
 
-This list is inspired by and partially built on the following excellent collections:
-
-- [dummy_name](https://google.com/)
+References to related collections will be added here.
 
 ## Citation
 
