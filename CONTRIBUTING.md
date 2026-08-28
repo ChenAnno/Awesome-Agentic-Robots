@@ -20,7 +20,7 @@ Each paper is a three-line block. Copy this and swap every value for the real on
 ```markdown
 - **Paper Title Goes Here** `Tag1` `Tag2`  
   *Author One, Author Two, Author Three, et al.*  
-  arXiv, 2026.08 [[Paper](https://arxiv.org/abs/0000.00000)] [[Code](https://github.com/org/repo)] [[Project](https://org.github.io/project)]
+  arXiv, 2026.08 [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/0000.00000) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/org/repo) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://org.github.io/project)
 ```
 
 The same template sits at the top of sections A, B, and C in the README — copy from whichever section
@@ -31,7 +31,7 @@ A filled-in entry:
 ```markdown
 - **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control** `VLA` `Manip.`  
   *Anthony Brohan, Noah Brown, Justice Carbajal, et al.*  
-  arXiv, 2023.07 [[Paper](https://arxiv.org/abs/2307.15818)] [[Project](https://robotics-transformer2.github.io)]
+  arXiv, 2023.07 [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2307.15818) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io)
 ```
 
 Line by line:
@@ -40,7 +40,7 @@ Line by line:
 | :-- | :-- |
 | 1 | `- ` + **bold title** + optional backticked tags, then **two trailing spaces** |
 | 2 | two spaces of indent + *italic* author list, then **two trailing spaces** |
-| 3 | two spaces of indent + venue + `, ` + `YYYY.MM` + link group |
+| 3 | two spaces of indent + venue + `, ` + `YYYY.MM` + Shields badge link group |
 
 What to put in each slot:
 
@@ -51,12 +51,12 @@ What to put in each slot:
 | `Author One, Author Two, ...` | Full author list if short, else first 3 + `et al.` | For major industry releases add a `Team: Lab or Company` line above (see section C) |
 | `arXiv` | `arXiv` for preprints, else the venue | Once accepted: `CoRL 2025`, `CVPR 2026`, ... |
 | `2026.08` | `YYYY.MM` of the **first public version** | v1 on arXiv, not the camera-ready date — keeps ordering stable |
-| `https://arxiv.org/abs/0000.00000` | arXiv **abs** page, or the DOI / publisher page | **Required.** Link the abstract, not the `/pdf/` URL |
-| `https://github.com/org/repo` | Official code repo | Delete the whole `[[Code](...)]` group if there is none |
-| `https://org.github.io/project` | Project page | Delete the whole `[[Project](...)]` group if there is none |
+| `https://arxiv.org/abs/0000.00000` | arXiv **abs** page, or the DOI / publisher page | **Required.** Use the red `arXiv` badge for arXiv and the blue `Paper` badge otherwise; link the abstract, not the `/pdf/` URL |
+| `https://github.com/org/repo` | Official code repo | Delete the whole `Code` badge if there is none |
+| `https://org.github.io/project` | Project page | Delete the whole `Project` badge if there is none |
 
-Optional extras, appended in this order: `[[Demo]]`, `[[Model]]`, `[[Dataset]]`, `[[Video]]`.
-`[[Paper]]` always comes first.
+Optional badge extras, appended in this order: `Demo`, `Model`, `Dataset`, `Video`.
+The `arXiv` or `Paper` badge always comes first.
 
 **Never leave a template value in a real entry.** Before opening a PR:
 
