@@ -1,5 +1,6 @@
 import EvolutionTree from './evolution-tree';
 import BenchmarkExplorer from './benchmark-explorer';
+import SimilarityDifference from './similarity-difference';
 
 const capabilities = [
   { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
@@ -38,6 +39,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#framework">Framework</a>
           <a href="#abstract">Abstract</a>
+          <a href="#comparison">Compare</a>
           <a href="#benchmarks">Benchmarks</a>
           <a href="#challenges">Challenges</a>
         </div>
@@ -140,6 +142,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <SimilarityDifference />
 
       <section className="domains-section" aria-labelledby="domains-title">
         <div className="domains-copy">
