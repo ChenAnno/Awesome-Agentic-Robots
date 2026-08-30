@@ -1,4 +1,5 @@
 import EvolutionTree from './evolution-tree';
+import BenchmarkExplorer from './benchmark-explorer';
 
 const capabilities = [
   { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
@@ -162,16 +163,7 @@ export default function Home() {
           </div>
           <p>The survey maps 62 benchmarks across three research families. Most evaluation still emphasizes aggregate outcomes, leaving capability bottlenecks and failure transitions difficult to identify.</p>
         </div>
-        <div className="stat-row">
-          <div><strong>62</strong><span>benchmarks reviewed</span></div>
-          <div><strong>79%</strong><span>outcome-based evaluation</span></div>
-          <div><strong>21%</strong><span>process-based evaluation</span></div>
-          <div><strong>5</strong><span>PAPAV capability axes</span></div>
-        </div>
-        <figure className="wide-figure">
-          <img src="/assets/benchmark-analysis.png" alt="Benchmark analysis comparing outcome and process based evaluation across PAPAV capabilities" />
-          <figcaption><span>Evaluation landscape</span> Outcome-only and outcome-augmented protocols dominate, while process-diagnostic evaluation remains limited.</figcaption>
-        </figure>
+        <BenchmarkExplorer />
       </section>
 
       <section className="challenges-section" id="challenges" aria-labelledby="challenges-title">
