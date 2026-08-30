@@ -1,3 +1,5 @@
+import EvolutionTree from './evolution-tree';
+
 const capabilities = [
   { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
   { letter: 'A', name: 'Anticipate', color: '#F2B56F', tag: 'Forecast', text: 'Estimate action-conditioned futures, risks, rewards, and task progress before commitment.' },
@@ -104,10 +106,6 @@ export default function Home() {
             multimodal embodied agents without prescribing a fixed architecture.
           </p>
         </div>
-        <figure className="overview-frame">
-          <img src="/assets/papav-overview.png" alt="Overview of the PAPAV capability loop across multimodal agents and robotic systems" />
-          <figcaption><span>Figure 01</span> The capability loop connects perception, prospective modeling, decision making, execution, and evidence-grounded verification.</figcaption>
-        </figure>
       </section>
 
       <section className="abstract-section" id="abstract">
@@ -153,10 +151,7 @@ export default function Home() {
             <div><span>03</span><strong>MM embodied agents</strong><small>Agentic reasoning under embodied constraints</small></div>
           </div>
         </div>
-        <figure className="domain-figure">
-          <img src="/assets/domain-evolution.png" alt="Evolution timeline of multimodal embodied agents, robotic systems, models, and benchmarks from 2017 to 2026" />
-          <figcaption>Evolution of multimodal embodied agents · 2017–2026</figcaption>
-        </figure>
+        <EvolutionTree />
       </section>
 
       <section className="benchmarks-section" id="benchmarks" aria-labelledby="benchmarks-title">
@@ -176,10 +171,6 @@ export default function Home() {
         <figure className="wide-figure">
           <img src="/assets/benchmark-analysis.png" alt="Benchmark analysis comparing outcome and process based evaluation across PAPAV capabilities" />
           <figcaption><span>Evaluation landscape</span> Outcome-only and outcome-augmented protocols dominate, while process-diagnostic evaluation remains limited.</figcaption>
-        </figure>
-        <figure className="wide-figure coverage-figure">
-          <img src="/assets/papav-coverage.png" alt="PAPAV benchmark coverage comparison for multimodal embodied agents, multimodal agents, and robotic systems" />
-          <figcaption><span>Cross-domain coverage</span> Direct, partial, and absent coverage reveal distinct capability profiles across the three research traditions.</figcaption>
         </figure>
       </section>
 
