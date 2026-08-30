@@ -3,11 +3,11 @@ import BenchmarkExplorer from './benchmark-explorer';
 import SimilarityDifference from './similarity-difference';
 
 const capabilities = [
-  { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
-  { letter: 'A', name: 'Anticipate', color: '#F2B56F', tag: 'Forecast', text: 'Estimate action-conditioned futures, risks, rewards, and task progress before commitment.' },
-  { letter: 'P', name: 'Plan', color: '#84C3B7', tag: 'Decide', text: 'Select an executable course of action under the current belief and applicable constraints.' },
-  { letter: 'A', name: 'Act', color: '#71B7ED', tag: 'Intervene', text: 'Realize a selected decision as an environment-valid, revisable intervention.' },
-  { letter: 'V', name: 'Verify', color: '#B8AEEB', tag: 'Judge', text: 'Use post-action evidence to determine whether the intended change actually occurred.' },
+  { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', question: 'What is true now?', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
+  { letter: 'A', name: 'Anticipate', color: '#F2B56F', tag: 'Forecast', question: 'What may happen next?', text: 'Estimate action-conditioned futures, risks, rewards, and task progress before commitment.' },
+  { letter: 'P', name: 'Plan', color: '#84C3B7', tag: 'Decide', question: 'What should be done?', text: 'Select an executable course of action under the current belief and applicable constraints.' },
+  { letter: 'A', name: 'Act', color: '#71B7ED', tag: 'Intervene', question: 'How is it executed?', text: 'Realize a selected decision as an environment-valid, revisable intervention.' },
+  { letter: 'V', name: 'Verify', color: '#B8AEEB', tag: 'Judge', question: 'Did the change occur?', text: 'Use post-action evidence to determine whether the intended change actually occurred.' },
 ];
 
 const challenges = [
@@ -126,19 +126,19 @@ export default function Home() {
       <section className="capabilities-section" aria-labelledby="capabilities-title">
         <div className="section-heading-row">
           <div>
-            <p className="section-kicker">Five analytical coordinates</p>
-            <h2 id="capabilities-title">Not a pipeline.<br />A way to compare.</h2>
+            <p className="section-kicker">Framework index</p>
+            <h2 id="capabilities-title">Five questions.<br />One reading key.</h2>
           </div>
-          <p>PAPAV does not prescribe five architectural modules or a fixed execution order. It offers an architecture-independent vocabulary for tracing where agency is grounded, imagined, committed, realized, and assessed.</p>
+          <p>This is the legend for the analyses below—not a five-stage pipeline. Use each coordinate as a question to compare where different systems ground, forecast, decide, intervene, and judge.</p>
         </div>
-        <div className="capability-cards">
+        <div className="capability-index">
           {capabilities.map((item, index) => (
-            <article key={item.name} style={{ '--accent': item.color } as React.CSSProperties}>
-              <header><span>0{index + 1}</span><i>{item.tag}</i></header>
-              <div className="cap-letter">{item.letter}</div>
-              <h3>{item.name}</h3>
-              <p>{item.text}</p>
-            </article>
+            <a href="#comparison" key={item.name} style={{ '--accent': item.color } as React.CSSProperties}>
+              <span className="index-number">0{index + 1}</span>
+              <span className="index-letter">{item.letter}</span>
+              <span className="index-copy"><small>{item.tag}</small><strong>{item.name}</strong><i>{item.question}</i></span>
+              <span className="index-arrow" aria-hidden="true">↘</span>
+            </a>
           ))}
         </div>
       </section>
