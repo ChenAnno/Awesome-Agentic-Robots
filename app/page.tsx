@@ -31,12 +31,11 @@ export default function Home() {
       <ImmersiveMotion />
       <nav className="site-nav" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="PAPAV home">
-          <span className="brand-mark" aria-hidden="true">
-            {capabilities.map((item) => (
-              <i key={item.name} style={{ background: item.color }} />
+          <span className="brand-word" aria-hidden="true">
+            {'PAPAV'.split('').map((letter, index) => (
+              <i key={`${letter}-${index}`} style={{ color: capabilities[index].color }}>{letter}</i>
             ))}
           </span>
-          <span>PAPAV</span>
         </a>
         <div className="nav-links">
           <a href="#framework">Framework</a>
@@ -213,9 +212,12 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top">
-          <span className="brand-mark" aria-hidden="true">{capabilities.map((item) => <i key={item.name} style={{ background: item.color }} />)}</span>
-          <span>PAPAV</span>
+        <a className="brand footer-brand" href="#top" aria-label="PAPAV home">
+          <span className="brand-word" aria-hidden="true">
+            {'PAPAV'.split('').map((letter, index) => (
+              <i key={`${letter}-${index}`} style={{ color: capabilities[index].color }}>{letter}</i>
+            ))}
+          </span>
         </a>
         <p>Multimodal Embodied Agents Survey · 2026</p>
         <a href="#top">Back to top ↑</a>
