@@ -29,7 +29,7 @@ Show Lab @ National University of Singapore<br>
 <p align="center">
   <a href="https://arxiv.org/abs/2510.01174">📄 Paper</a> &nbsp; | &nbsp;
   <a href="https://huggingface.co/papers/2510.01174">🤗 Daily Paper</a> &nbsp; | &nbsp;
-  <a href="https://showlab.github.io/Code2Video/">🌐 Project Website</a> &nbsp; | &nbsp;
+  <a href="https://seizethe-day.github.io/PAPAV/">🌐 Project Website</a> &nbsp; | &nbsp;
   <a href="https://x.com/KevinQHLin/status/1974199353695941114">💬 X (Twitter)</a>
 </p>
 
