@@ -3,6 +3,7 @@ import BenchmarkExplorer from './benchmark-explorer';
 import SimilarityDifference from './similarity-difference';
 import ImmersiveMotion from './immersive-motion';
 import HeroCapabilityLogo from './hero-capability-logo';
+import HeroCapabilityOrbit from './hero-capability-orbit';
 
 const capabilities = [
   { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', question: 'What is true now?', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
@@ -80,25 +81,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="PAPAV capability loop">
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
-          <div className="loop-core">
-            <span>Closed-loop</span>
-            <strong>AGENCY</strong>
-            <small>across worlds</small>
-          </div>
-          {capabilities.map((item, index) => (
-            <div
-              className={`cap-node cap-${index + 1}`}
-              key={item.name}
-              style={{ '--accent': item.color } as React.CSSProperties}
-            >
-              <span>{item.letter}</span>
-              <p>{item.name}</p>
-            </div>
-          ))}
-        </div>
+        <HeroCapabilityOrbit capabilities={capabilities} />
       </section>
 
       <section className="intro-section" id="framework">
