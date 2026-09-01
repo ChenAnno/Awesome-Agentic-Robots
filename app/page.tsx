@@ -2,6 +2,7 @@ import EvolutionTree from './evolution-tree';
 import BenchmarkExplorer from './benchmark-explorer';
 import SimilarityDifference from './similarity-difference';
 import ImmersiveMotion from './immersive-motion';
+import HeroCapabilityLogo from './hero-capability-logo';
 
 const capabilities = [
   { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', question: 'What is true now?', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
@@ -57,17 +58,8 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span /> Capability-centric survey · 2026</p>
+          <HeroCapabilityLogo capabilities={capabilities} />
           <h1>
-            <span className="hero-brand-logo">
-              <img src="papav-hero-cutout.png" alt="PAPAV" />
-              <span className="hero-brand-expansion">
-                {capabilities.map((item) => (
-                  <span key={item.name} style={{ '--accent': item.color } as React.CSSProperties}>
-                    <b>{item.name.slice(0, 1)}</b>{item.name.slice(1)}
-                  </span>
-                ))}
-              </span>
-            </span>
             <span className="title-rest">A Capability-Centric Survey of<br />Multimodal Embodied Agents</span>
           </h1>
           <p className="hero-deck">
@@ -107,16 +99,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="capability-strip" aria-label="Five capabilities">
-        {capabilities.map((item, index) => (
-          <a href="#framework" key={item.name} style={{ '--accent': item.color } as React.CSSProperties}>
-            <span>0{index + 1}</span>
-            <strong>{item.name}</strong>
-            <i>→</i>
-          </a>
-        ))}
       </section>
 
       <section className="intro-section" id="framework">
