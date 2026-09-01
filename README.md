@@ -11,7 +11,7 @@
 Qiming Huang · 
 Jifeng Zhu ·
 <a href="https://ziyi510.github.io/">Ziyi Yang</a> · 
-Ruihe An · 
+<a href="https://andy4evertot1.github.io/anruihe/">Ruihe An</a> ·
 Peiyao Xu ·
 Hesen Yang · 
 <a href="https://github.com/Jackupjcup">Runda Liu</a> ·
