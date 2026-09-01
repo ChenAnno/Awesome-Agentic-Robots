@@ -4,54 +4,39 @@ import { useState, type CSSProperties } from 'react';
 
 const comparisons = [
   {
-    letter: 'P', name: 'Perceive', color: '#E85F52', relation: 'Integrate evidence and ground an environment state',
-    rows: [
-      ['MMA', 'Multimodal agent', 'Multimodal observations', 'Integrate & ground', 'Digital environment state'],
-      ['RS', 'Robotic system', 'Sensors + proprioception', 'Integrate & estimate', 'Physical state estimate'],
-      ['MMEA', 'MM embodied agent', 'Task-formed information gap', 'Embodied acquisition + grounding', 'Qualified belief'],
-    ],
-    mma: { title: 'Digital evidence request → embodied inquiry', text: 'Viewpoint, contact, timing, energy, and disturbance now qualify how missing evidence can be acquired.' },
-    robot: { title: 'Supplied objective → task-formed question', text: 'The evolving task state forms the semantic question; the sensing specialist controls acquisition and cost.' },
+    letter: 'P', name: 'Perceive', color: '#E85F52',
+    mma: { similarity: 'Integrate multimodal evidence into a task-relevant state', difference: 'Evidence acquisition is qualified by viewpoint, contact, timing, energy, and disturbance.' },
+    robot: { similarity: 'Ground sensory evidence in an estimate of physical state', difference: 'The evolving task—not a fixed estimator—forms the information question.' },
+    synthesis: 'Task-directed embodied inquiry → qualified belief',
+    result: 'Perception becomes an active decision about what evidence the task still needs and how a body can safely obtain it.',
   },
   {
-    letter: 'A', name: 'Anticipate', color: '#D88A2D', relation: 'Model how a candidate intervention may change the environment',
-    rows: [
-      ['MMA', 'Multimodal agent', 'Digital state + candidate action', 'Predict consequences', 'Inspectable future'],
-      ['RS', 'Robotic system', 'Physical state + control', 'Model dynamics', 'Predicted motion / reward'],
-      ['MMEA', 'MM embodied agent', 'Task-selected counterfactual', 'Prospective modeling', 'Qualified action forecast'],
-    ],
-    mma: { title: 'Inspectable future → qualified physical forecast', text: 'A plausible future must also be calibrated against contact, dynamics, uncertainty, and physical realizability.' },
-    robot: { title: 'Control prediction → task-selected counterfactual', text: 'Prediction becomes agentic when the task chooses which possible future matters and uses it to alter commitment.' },
+    letter: 'A', name: 'Anticipate', color: '#D88A2D',
+    mma: { similarity: 'Predict consequences of candidate actions', difference: 'Forecasts must be calibrated against contact, dynamics, uncertainty, and physical realizability.' },
+    robot: { similarity: 'Model physical dynamics under candidate controls', difference: 'Task-level agency selects which counterfactual matters and uses it to alter commitment.' },
+    synthesis: 'Task-selected physical futures → commitment signal',
+    result: 'Prediction is useful only when a task chooses the relevant future and the body can plausibly realize it.',
   },
   {
-    letter: 'P', name: 'Plan', color: '#3A9A87', relation: 'Propose and select a course under goals and constraints',
-    rows: [
-      ['MMA', 'Multimodal agent', 'Goal + digital state', 'Propose & select', 'Tool / action sequence'],
-      ['RS', 'Robotic system', 'Goal + world state', 'Search / optimize', 'Feasible policy or motion'],
-      ['MMEA', 'MM embodied agent', 'Goal + belief + forecast', 'Authorize commitment', 'Executable, recoverable plan'],
-    ],
-    mma: { title: 'Digital recovery → altered-state recovery', text: 'Failed execution may irreversibly change the world, so recovery starts from a newly grounded physical state.' },
-    robot: { title: 'Local replanning → governance of commitment', text: 'The agent decides when to commit, stop, clarify, escalate, or hand recovery to a specialized controller.' },
+    letter: 'P', name: 'Plan', color: '#3A9A87',
+    mma: { similarity: 'Decompose goals and select a sequence under constraints', difference: 'Recovery begins from a physically altered—and sometimes irreversible—world state.' },
+    robot: { similarity: 'Search for feasible policies, motions, and controls', difference: 'The task-level agent governs when to commit, stop, clarify, escalate, or recover.' },
+    synthesis: 'Executable, recoverable commitment',
+    result: 'Planning connects semantic intent to feasible action while explicitly governing commitment and recovery.',
   },
   {
-    letter: 'A', name: 'Act', color: '#347FB8', relation: 'Ground a semantic intervention into an environment-valid action',
-    rows: [
-      ['MMA', 'Multimodal agent', 'Semantic intention', 'Schema grounding', 'API / GUI command'],
-      ['RS', 'Robotic system', 'Goal or reference', 'Body controller', 'Trajectory / control'],
-      ['MMEA', 'MM embodied agent', 'Authorized plan', 'Closed-loop physical execution', 'Task-visible progress / failure'],
-    ],
-    mma: { title: 'Agent-facing interface → physical execution', text: 'The action interface expands from tokens and tool calls to bodies, trajectories, contact, timing, and safety limits.' },
-    robot: { title: 'Goal-conditioned control → task-visible contract', text: 'Body-specific control remains local, while progress, interruption, and failure become visible to task-level agency.' },
+    letter: 'A', name: 'Act', color: '#347FB8',
+    mma: { similarity: 'Ground semantic intention into an interface-valid action', difference: 'The interface expands from tokens and calls to bodies, trajectories, contact, timing, and safety.' },
+    robot: { similarity: 'Realize decisions through closed-loop physical control', difference: 'Progress, interruption, and failure must remain visible to task-level agency.' },
+    synthesis: 'Authorized plan → task-visible physical progress',
+    result: 'Execution becomes a revisable contract between task-level intent and body-specific control.',
   },
   {
-    letter: 'V', name: 'Verify', color: '#7564BC', relation: 'Compare expected and observed outcomes to form a verdict',
-    rows: [
-      ['MMA', 'Multimodal agent', 'Expected + observed digital state', 'Compare outcomes', 'Functional result'],
-      ['RS', 'Robotic system', 'Desired + observed physical state', 'Monitor execution', 'Local success / failure'],
-      ['MMEA', 'MM embodied agent', 'Goal conditions + post-action evidence', 'Adjudicate outcome', 'Verdict consumed by plan'],
-    ],
-    mma: { title: 'Functional check → physically grounded verdict', text: 'Success must be supported by post-action physical evidence rather than model confidence or a digital return code.' },
-    robot: { title: 'Local monitoring → task-level verdict use', text: 'A verdict matters when it changes the plan, triggers recovery, stops execution, or revises the task belief.' },
+    letter: 'V', name: 'Verify', color: '#7564BC',
+    mma: { similarity: 'Compare expected and observed outcomes', difference: 'A verdict requires post-action physical evidence—not confidence or a digital return code.' },
+    robot: { similarity: 'Monitor execution against desired physical state', difference: 'The verdict must be consumed by planning, recovery, stopping, or belief revision.' },
+    synthesis: 'Physically grounded verdict → loop update',
+    result: 'Verification closes the agent loop only when grounded evidence changes what the task-level agent does next.',
   },
 ];
 
@@ -64,9 +49,9 @@ export default function SimilarityDifference() {
       <div className="comparison-heading">
         <div>
           <p className="section-kicker">Similarity × Difference</p>
-          <h2 id="comparison-title">Align the function.<br />Locate the shift.</h2>
+          <h2 id="comparison-title">Two inheritances.<br />One new capability.</h2>
         </div>
-        <p>The vertical band marks the functional relation shared by three agent traditions. The horizontal boundary shows what embodiment changes: the conditions of evidence, execution, and task-level closure.</p>
+        <p>MMEA is not the midpoint between a digital agent and a robot. It inherits a functional relation from each tradition, then changes the conditions under which that relation becomes embodied and task-level.</p>
       </div>
 
       <div className="comparison-tabs" aria-label="Select PAPAV capability">
@@ -86,57 +71,56 @@ export default function SimilarityDifference() {
         ))}
       </div>
 
-      <div className="alignment-visual" key={item.name} style={{ '--capability': item.color } as CSSProperties}>
-        <div className="alignment-summary">
-          <span>Shared capability relation</span>
-          <strong>{item.relation}</strong>
+      <div className="convergence-visual" key={item.name} style={{ '--capability': item.color } as CSSProperties}>
+        <div className="convergence-key">
+          <span><i className="key-source" /> Source tradition</span>
+          <span><i className="key-similarity" /> Similarity · inherited function</span>
+          <span><i className="key-difference" /> Difference · changed condition</span>
+          <span><i className="key-synthesis" /> MMEA synthesis</span>
         </div>
 
-        <div className="alignment-matrix">
-          <div className="matrix-head system-col">System</div>
-          <div className="matrix-head">Input / context</div>
-          <div className="matrix-head relation-col"><span>Similarity</span> Functional relation</div>
-          <div className="matrix-head">Observable result</div>
+        <div className="convergence-map">
+          <div className="path-headings" aria-hidden="true">
+            <span>Starts from</span><span>Retains</span><span>Transforms</span>
+          </div>
+          <div className="target-heading" aria-hidden="true">Converges as</div>
 
-          {item.rows.map((row, index) => (
-            <div className={`matrix-row ${index === 2 ? 'mmea-row' : ''}`} key={row[0]}>
-              {index === 2 && (
-                <div className="embodiment-boundary" aria-hidden="true">
-                  <span>Difference boundary</span>
-                  <strong>Embodiment changes the conditions of closure</strong>
-                </div>
-              )}
-              <div className="system-cell">
-                <b>{row[0]}</b>
-                <span>{row[1]}</span>
-              </div>
-              <div className="matrix-cell"><small>Receives</small><strong>{row[2]}</strong></div>
-              <div className="matrix-cell relation-cell"><small>Performs</small><strong>{row[3]}</strong></div>
-              <div className="matrix-cell"><small>Produces</small><strong>{row[4]}</strong></div>
-            </div>
-          ))}
-        </div>
+          <LineagePath code="MMA" name="Multimodal agent" tradition="Digital agency" similarity={item.mma.similarity} difference={item.mma.difference} />
+          <LineagePath code="RS" name="Robotic system" tradition="Embodied control" similarity={item.robot.similarity} difference={item.robot.difference} />
 
-        <div className="difference-notes">
-          <article>
-            <header><span>MMA</span><i>→</i><b>MMEA</b></header>
-            <small>Digital-to-physical shift</small>
-            <h3>{item.mma.title}</h3>
-            <p>{item.mma.text}</p>
-          </article>
-          <article>
-            <header><span>RS</span><i>→</i><b>MMEA</b></header>
-            <small>Control-to-agency shift</small>
-            <h3>{item.robot.title}</h3>
-            <p>{item.robot.text}</p>
+          <article className="synthesis-card">
+            <small>MMEA · {item.name}</small>
+            <span>{item.letter}</span>
+            <h3>{item.synthesis}</h3>
+            <p>{item.result}</p>
           </article>
         </div>
 
-        <div className="comparison-takeaway">
-          <span>Reading rule</span>
-          <p><b>Read down</b> to compare how each tradition realizes the same functional relation. <b>Cross the boundary</b> to see what must change when the loop closes through a physical body.</p>
+        <div className="comparison-rule">
+          <div><span>Similarity asks</span><strong>Which functional relation is inherited?</strong></div>
+          <div><span>Difference asks</span><strong>What must change for embodied, task-level agency?</strong></div>
         </div>
       </div>
     </section>
+  );
+}
+
+function LineagePath({ code, name, tradition, similarity, difference }: { code: string; name: string; tradition: string; similarity: string; difference: string }) {
+  return (
+    <div className={`lineage-path lineage-${code.toLowerCase()}`}>
+      <div className="lineage-source">
+        <b>{code}</b>
+        <strong>{name}</strong>
+        <small>{tradition}</small>
+      </div>
+      <div className="inheritance-cell similarity-cell">
+        <span>Similarity</span>
+        <strong>{similarity}</strong>
+      </div>
+      <div className="inheritance-cell difference-cell">
+        <span>Difference</span>
+        <strong>{difference}</strong>
+      </div>
+    </div>
   );
 }

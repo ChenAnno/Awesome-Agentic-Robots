@@ -99,6 +99,22 @@ export default function Home() {
         ))}
       </section>
 
+      <section className="citation-section" id="citation" aria-labelledby="paper-details-title">
+        <div className="paper-logo-wrap">
+          <img src="/papav-logo.png" alt="PAPAV — Perceive, Anticipate, Plan, Act, Verify" />
+        </div>
+        <div className="paper-details-copy">
+          <p className="section-kicker">Paper details</p>
+          <h2 id="paper-details-title">A Capability-Centric Survey of Multimodal Embodied Agents</h2>
+          <p className="author-list">{authors.join(' · ')}</p>
+          <div className="affiliations-grid">
+            <span><b>01</b> Show Lab, National University of Singapore</span>
+            <span><b>02</b> University of Oxford</span>
+            <span><b>2026</b> Preprint · Work in progress</span>
+          </div>
+        </div>
+      </section>
+
       <section className="intro-section" id="framework">
         <div className="section-kicker">The PAPAV framework</div>
         <div className="intro-grid">
@@ -185,20 +201,6 @@ export default function Home() {
               <i aria-hidden="true">↗</i>
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="citation-section" id="citation">
-        <div className="citation-mark" aria-hidden="true">
-          {capabilities.map((item) => <span key={item.name} style={{ color: item.color }}>{item.letter}</span>)}
-        </div>
-        <p className="section-kicker">Paper details</p>
-        <h2>A Capability-Centric Survey of Multimodal Embodied Agents</h2>
-        <p className="author-list">{authors.join(' · ')}</p>
-        <div className="affiliations-grid">
-          <span><b>01</b> Show Lab, National University of Singapore</span>
-          <span><b>02</b> University of Oxford</span>
-          <span><b>2026</b> Preprint · Work in progress</span>
         </div>
       </section>
 
