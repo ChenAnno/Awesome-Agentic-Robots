@@ -5,21 +5,38 @@
 
 <img src="./assets/readme/papav-logo.png" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
 
-Yanzhe Chen · Qiming Huang · Jifeng Zhu ·
-Ziyi Yang · Ruihe An · Peiyao Xu ·
-Hesen Yang · Runda Liu · Chang Gong ·
-Zhijun Cao · Zechen Bai · Wenzheng Zeng ·
-Kevin Qinghong Lin · Yiqi Lin · Guoqiang Liang ·
-Mike Zheng Shou<sup>†</sup>
+<a href="https://chenanno.github.io/">Yanzhe Chen</a> · 
+Qiming Huang · 
+Jifeng Zhu ·
+Ziyi Yang · 
+Ruihe An · 
+Peiyao Xu ·
+Hesen Yang · 
+Runda Liu · 
+Chang Gong ·
+Zhijun Cao · 
+Zechen Bai · 
+Wenzheng Zeng ·
+<a href="https://qhlin.me/">Kevin Qinghong Lin</a> · 
+Yiqi Lin · 
+Guoqiang Liang ·
+<a href="https://sites.google.com/view/showlab/home">Mike Zheng Shou<sup>†</sup>
 
 Show Lab @ National University of Singapore<br>
 
-[![Paper list](https://img.shields.io/badge/Resource-Paper_List-F4A12D?style=flat-square)](#contents)
+<p align="center">
+  <a href="https://arxiv.org/abs/2510.01174">📄 Paper</a> &nbsp; | &nbsp;
+  <a href="https://huggingface.co/papers/2510.01174">🤗 Daily Paper</a> &nbsp; | &nbsp;
+  <a href="https://showlab.github.io/Code2Video/">🌐 Project Website</a> &nbsp; | &nbsp;
+  <a href="https://x.com/KevinQHLin/status/1974199353695941114">💬 X (Twitter)</a>
+</p>
+
+<!--[![Paper list](https://img.shields.io/badge/Resource-Paper_List-F4A12D?style=flat-square)](#contents)
 [![Benchmarks](https://img.shields.io/badge/Resource-Benchmarks-2E9DE0?style=flat-square)](#e-benchmarks)
 [![Contribute](https://img.shields.io/badge/Community-Contribute-8056D9?style=flat-square)](./CONTRIBUTING.md)
 
 [![Awesome](https://img.shields.io/badge/Awesome-yes-FC60A8?style=flat-square&logo=awesomelists&logoColor=white)](https://awesome.re)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0--1.0-lightgrey?style=flat-square)](./LICENSE)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0--1.0-lightgrey?style=flat-square)](./LICENSE)-->
 
 </div>
 
@@ -49,7 +66,7 @@ multimodal agents, robotic systems, and MMEAs.
 
 ## News
 
-- **[2026-08-05]** 🎉 Repository created.
+- **[2026-09-05]** 🎉 Repository created.
 
 <!-- Add only verified project milestones or substantial collection updates here. -->
 
