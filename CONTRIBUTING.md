@@ -32,8 +32,8 @@ do not include author, affiliation, venue, date, PAPAV stage labels, or topic ta
 A filled-in entry:
 
 ```markdown
-- **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**  
-  [![MMEA](https://img.shields.io/badge/-MMEA-A8DDA8?style=flat)](#b-multimodal-embodied-agents) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2307.15818) [![Project](https://img.shields.io/badge/-Project-9AC7E8?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io)
+- **π₀.₅: a Vision-Language-Action Model with Open-World Generalization**  
+  [![MMEA](https://img.shields.io/badge/-MMEA-A8DDA8?style=flat)](#b-multimodal-embodied-agents) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.16054) [![Code](https://img.shields.io/github/stars/Physical-Intelligence/openpi?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/Physical-Intelligence/openpi) [![Project](https://img.shields.io/badge/-Project-9AC7E8?logo=googlechrome&logoColor=white&style=flat-square)](https://www.pi.website/blog/pi05)
 ```
 
 Line by line:
@@ -47,7 +47,7 @@ What to put in each slot:
 
 | Slot | Replace with | Notes |
 | :-- | :-- | :-- |
-| `Paper Title Goes Here` | The title as printed | Lead with the short name if it has one: `RT-2: Vision-Language-Action Models...` |
+| `Paper Title Goes Here` | The title as printed | Lead with the short name if it has one: `π₀.₅: a Vision-Language-Action Model...` |
 | `MMEA` section badge | The badge for the selected section | Use `Survey`, `MMEA`, `MMA`, `RS`, or `Bench` from the table below; it always comes first |
 | `https://arxiv.org/abs/0000.00000` | arXiv **abs** page, or the DOI / publisher page | **Required.** Use the coral `Paper` badge with the arXiv logo for arXiv sources and the light-blue `Paper` badge for DOI or publisher sources; link the abstract, not the `/pdf/` URL |
 | `https://github.com/org/repo` | Official code repo | Use the dynamic `Code` badge shown above so its right side displays the live star count; delete the whole badge if there is no official repository |
