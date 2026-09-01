@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 
 const staggerSelectors = [
   '.capability-strip a',
-  '.affiliations-grid span',
   '.capability-index a',
   '.domain-list div',
   '.benchmark-live-stats div',
@@ -18,7 +17,6 @@ export default function ImmersiveMotion() {
     const nav = document.querySelector<HTMLElement>('.site-nav');
     const hero = document.querySelector<HTMLElement>('.hero');
     const heroVisual = document.querySelector<HTMLElement>('.hero-visual');
-    const logo = document.querySelector<HTMLElement>('.paper-logo-wrap');
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     root.classList.add('motion-ready');
 
@@ -65,11 +63,6 @@ export default function ImmersiveMotion() {
         heroVisual?.style.setProperty('--visual-scroll', `${progress * 46}px`);
       }
 
-      if (!reduceMotion && logo) {
-        const rect = logo.getBoundingClientRect();
-        const centerOffset = (rect.top + rect.height / 2 - window.innerHeight / 2) / window.innerHeight;
-        logo.style.setProperty('--logo-parallax', `${Math.max(-18, Math.min(18, centerOffset * -24))}px`);
-      }
     };
 
     const onScroll = () => {

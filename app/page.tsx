@@ -61,11 +61,18 @@ export default function Home() {
             A unified lens for understanding how multimodal agents perceive,
             anticipate, plan, act, and verify across digital and physical worlds.
           </p>
+          <div className="hero-paper-details" id="citation" aria-label="Paper details">
+            <p className="hero-paper-label">Paper details</p>
+            <p className="hero-authors">{authors.join(' · ')}</p>
+            <div className="hero-paper-meta">
+              <span>Show Lab, National University of Singapore</span>
+              <span>2026 · Preprint · Work in progress</span>
+            </div>
+          </div>
           <div className="hero-actions" id="paper">
             <a className="button primary" href="#framework">Explore the framework <span>↓</span></a>
             <a className="button secondary" href="#abstract">Read abstract</a>
           </div>
-          <p className="affiliation">Show Lab · National University of Singapore · University of Oxford</p>
         </div>
 
         <div className="hero-visual" aria-label="PAPAV capability loop">
@@ -97,22 +104,6 @@ export default function Home() {
             <i>→</i>
           </a>
         ))}
-      </section>
-
-      <section className="citation-section" id="citation" aria-labelledby="paper-details-title">
-        <div className="paper-logo-wrap">
-          <img src="/papav-logo.png" alt="PAPAV — Perceive, Anticipate, Plan, Act, Verify" />
-        </div>
-        <div className="paper-details-copy">
-          <p className="section-kicker">Paper details</p>
-          <h2 id="paper-details-title">A Capability-Centric Survey of Multimodal Embodied Agents</h2>
-          <p className="author-list">{authors.join(' · ')}</p>
-          <div className="affiliations-grid">
-            <span><b>01</b> Show Lab, National University of Singapore</span>
-            <span><b>02</b> University of Oxford</span>
-            <span><b>2026</b> Preprint · Work in progress</span>
-          </div>
-        </div>
       </section>
 
       <section className="intro-section" id="framework">
