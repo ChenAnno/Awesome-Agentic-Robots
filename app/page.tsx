@@ -108,26 +108,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="capabilities-section" aria-labelledby="capabilities-title">
-        <div className="section-heading-row">
-          <div>
-            <p className="section-kicker">Framework index</p>
-            <h2 id="capabilities-title">Five questions.<br />One reading key.</h2>
-          </div>
-          <p>This is the legend for the analyses below—not a five-stage pipeline. Use each coordinate as a question to compare where different systems ground, forecast, decide, intervene, and judge.</p>
-        </div>
-        <div className="capability-index">
-          {capabilities.map((item, index) => (
-            <a href="#comparison" key={item.name} style={{ '--accent': item.color } as React.CSSProperties}>
-              <span className="index-number">0{index + 1}</span>
-              <span className="index-letter">{item.letter}</span>
-              <span className="index-copy"><small>{item.tag}</small><strong>{item.name}</strong><i>{item.question}</i></span>
-              <span className="index-arrow" aria-hidden="true">↘</span>
-            </a>
-          ))}
-        </div>
-      </section>
-
       <SimilarityDifference />
 
       <section className="domains-section" aria-labelledby="domains-title">

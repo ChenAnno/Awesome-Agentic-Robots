@@ -66,9 +66,9 @@ export default function HeroCapabilityLogo({ capabilities }: { capabilities: Her
             <b>{selected.letter}</b>
           </div>
           <div className="hero-explainer-copy">
-            <small>{selected.tag} · {selected.question}</small>
+            <small>{selected.tag}</small>
             <strong>{selected.name}</strong>
-            <p>{selected.text}</p>
+            <p>{selected.question}</p>
           </div>
           <button type="button" className="hero-explainer-close" aria-label="Close capability explanation" onClick={() => setActive(null)}>×</button>
         </div>

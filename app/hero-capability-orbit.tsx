@@ -31,7 +31,7 @@ export default function HeroCapabilityOrbit({ capabilities }: { capabilities: He
           <>
             <span>{String(active! + 1).padStart(2, '0')} · {selected.tag}</span>
             <strong><i>{selected.letter}</i>{selected.name}</strong>
-            <p>{selected.text}</p>
+            <p>{selected.question}</p>
             <small>Click to close</small>
           </>
         ) : (

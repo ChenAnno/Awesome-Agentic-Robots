@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 
 const staggerSelectors = [
-  '.capability-index a',
   '.domain-list div',
   '.benchmark-live-stats div',
   '.coverage-bars > button',
