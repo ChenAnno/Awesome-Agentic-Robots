@@ -1,6 +1,7 @@
 import EvolutionTree from './evolution-tree';
 import BenchmarkExplorer from './benchmark-explorer';
 import SimilarityDifference from './similarity-difference';
+import ImmersiveMotion from './immersive-motion';
 
 const capabilities = [
   { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', question: 'What is true now?', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
@@ -27,6 +28,7 @@ const authors = [
 export default function Home() {
   return (
     <main>
+      <ImmersiveMotion />
       <nav className="site-nav" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="PAPAV home">
           <span className="brand-mark" aria-hidden="true">
