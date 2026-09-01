@@ -14,7 +14,7 @@ Jifeng Zhu ·
 Ruihe An · 
 Peiyao Xu ·
 Hesen Yang · 
-Runda Liu · 
+<a href="https://github.com/Jackupjcup">Runda Liu</a> ·
 Chang Gong ·
 <a href="https://caozhijun.top/">Zhijun Cao</a> · 
 Zechen Bai · 
