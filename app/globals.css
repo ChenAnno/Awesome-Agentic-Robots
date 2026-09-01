@@ -432,11 +432,17 @@ h1 { margin: 0; letter-spacing: -.045em; }
 .comparison-column-left { animation: triptych-left-in .8s cubic-bezier(.16,1,.3,1) .08s both; }
 .shared-capability { animation: triptych-center-in .9s cubic-bezier(.16,1,.3,1) .22s both; }
 .comparison-column-right { animation: triptych-right-in .8s cubic-bezier(.16,1,.3,1) .12s both; }
-.triptych-reading { display: grid; grid-template-columns: 125px 1fr; gap: 28px; align-items: center; min-height: 96px; padding: 20px 28px; border: 1px solid #aeb9b6; border-top: 0; background: #fff; }
-.triptych-reading > span { color: #4a5f67; font-size: 10px; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
-.triptych-reading p { margin: 0; color: #304951; font-size: 14px; line-height: 1.6; }
-.triptych-reading b:first-child, .triptych-reading b:last-of-type { color: #a64e3e; }
-.triptych-reading b:nth-of-type(2) { color: #7152b0; }
+.triptych-reading { padding: 18px 20px 20px; border: 1px solid #aeb9b6; border-top: 0; background: #fff; }
+.triptych-reading > span { display: block; margin: 0 0 12px 3px; color: #4a5f67; font-size: 10px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.triptych-reading-grid { display: grid; grid-template-columns: 1.12fr .76fr 1.12fr; gap: 12px; }
+.triptych-reading article { min-width: 0; padding: 16px 18px 17px; border-top: 3px solid #a64e3e; background: #fbf5f3; }
+.triptych-reading article.reading-center { border-top-color: #7152b0; background: #f7f4fb; }
+.triptych-reading small { display: flex; align-items: center; gap: 9px; color: #7a625d; font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.triptych-reading .reading-center small { color: #675a83; }
+.triptych-reading small b { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; color: #fff; background: #a64e3e; font-size: 9px; }
+.triptych-reading .reading-center small b { background: #7152b0; }
+.triptych-reading strong { display: block; margin-top: 12px; color: #17313a; font: 400 clamp(17px,1.4vw,21px)/1.08 Georgia,serif; }
+.triptych-reading p { margin: 7px 0 0; color: #40565e; font-size: 11px; line-height: 1.5; }
 @keyframes triptych-stage-in { from { opacity: .45; } to { opacity: 1; } }
 @keyframes triptych-left-in { from { opacity: 0; filter: blur(8px); transform: translateX(-45px) scale(.97); } to { opacity: 1; filter: blur(0); transform: translateX(0) scale(1); } }
 @keyframes triptych-center-in { from { opacity: 0; filter: blur(11px); transform: translateY(34px) scale(.9); } to { opacity: 1; filter: blur(0); transform: translateY(0) scale(1); } }
@@ -701,7 +707,7 @@ footer > a:last-child { justify-self: end; }
   .triptych-visual { display: flex; overflow-x: auto; }
   .triptych-visual .comparison-column { min-width: 470px; }
   .triptych-visual .shared-capability { min-width: 330px; }
-  .triptych-reading { grid-template-columns: 1fr; gap: 10px; }
+  .triptych-reading-grid { grid-template-columns: 1fr; }
   .comparison-visual { overflow-x: auto; }
   .similarity-map, .difference-map, .embodiment-gate, .comparison-takeaway { min-width: 820px; }
   .alignment-visual { overflow-x: auto; }

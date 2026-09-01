@@ -124,9 +124,25 @@ export default function SimilarityDifference() {
         <ComparisonColumn label="Difference from Robotics" note="Supplied control → task-formed agency" flows={item.right} side="right" />
       </div>
 
-      <div className="triptych-reading">
-        <span>Reading order</span>
-        <p><b>Left:</b> what physical embodiment changes relative to multimodal agents. <b>Center:</b> the shared input–output relation. <b>Right:</b> what task-level agency changes relative to robotic systems.</p>
+      <div className="triptych-reading" aria-label="How to read the comparison">
+        <span>Reading guide</span>
+        <div className="triptych-reading-grid">
+          <article className="reading-left">
+            <small><b>01</b> Left boundary</small>
+            <strong>Embodiment shift</strong>
+            <p>What physical embodiment changes relative to multimodal agents.</p>
+          </article>
+          <article className="reading-center">
+            <small><b>02</b> Shared relation</small>
+            <strong>Common capability</strong>
+            <p>The input–output relation shared across all three traditions.</p>
+          </article>
+          <article className="reading-right">
+            <small><b>03</b> Right boundary</small>
+            <strong>Agency shift</strong>
+            <p>What task-level agency changes relative to robotic systems.</p>
+          </article>
+        </div>
       </div>
     </section>
   );
