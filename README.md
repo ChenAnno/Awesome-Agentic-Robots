@@ -8,7 +8,7 @@
 <a href="https://chenanno.github.io/">Yanzhe Chen</a> · 
 Qiming Huang · 
 Jifeng Zhu ·
-Ziyi Yang · 
+<a href="https://ziyi510.github.io/">Ziyi Yang</a> · 
 Ruihe An · 
 Peiyao Xu ·
 Hesen Yang · 
