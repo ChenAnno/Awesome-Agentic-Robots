@@ -4,7 +4,7 @@ Figures used by `README.md` — brand artwork, taxonomy diagrams, and section ov
 
 Current README assets:
 
-- `readme/papav-logo.png` — official PAPAV banner used in the hero.
+- `readme/papav-logo.pdf` — official PAPAV banner used in the hero.
 - `readme/papav-taxonomy.svg` — transparent vector export of the latest chronological research
   landscape.
 

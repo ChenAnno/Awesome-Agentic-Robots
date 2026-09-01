@@ -3,7 +3,7 @@
 
 # PAPAV: A Capability-Centric Survey of Multimodal Embodied Agents
 
-<img src="./assets/readme/papav-logo.png" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
+<img src="./assets/readme/papav-logo.pdf" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
 
 <a href="https://chenanno.github.io/">Yanzhe Chen</a> · 
 Qiming Huang · 
