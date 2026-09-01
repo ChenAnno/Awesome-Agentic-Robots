@@ -46,7 +46,7 @@ multimodal agents, robotic systems, and MMEAs.
   </a>
 </p>
 
-<p align="center"><sub>A chronological view of representative robotic systems, multimodal embodied agents, and multimodal agents. Click the figure to open the full-resolution image.</sub></p>
+<p align="center"><sub>A chronological view of representative robotic systems, multimodal embodied agents, and multimodal agents.</sub></p>
 
 ## News
 
