@@ -12,8 +12,7 @@ Zhijun Cao · Zechen Bai · Wenzheng Zeng ·
 Kevin Qinghong Lin · Yiqi Lin · Guoqiang Liang ·
 Mike Zheng Shou<sup>†</sup>
 
-Show Lab, National University of Singapore<br>
-<sup>†</sup>Corresponding author
+Show Lab @ National University of Singapore<br>
 
 [![Paper list](https://img.shields.io/badge/Resource-Paper_List-F4A12D?style=flat-square)](#contents)
 [![Benchmarks](https://img.shields.io/badge/Resource-Benchmarks-2E9DE0?style=flat-square)](#e-benchmarks)
