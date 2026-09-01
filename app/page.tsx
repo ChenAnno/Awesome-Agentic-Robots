@@ -59,7 +59,14 @@ export default function Home() {
           <p className="eyebrow"><span /> Capability-centric survey · 2026</p>
           <h1>
             <span className="hero-brand-logo">
-              <img src="papav-logo.svg" alt="PAPAV — Perceive, Anticipate, Plan, Act, Verify" />
+              <img src="papav-hero-cutout.png" alt="PAPAV" />
+              <span className="hero-brand-expansion">
+                {capabilities.map((item) => (
+                  <span key={item.name} style={{ '--accent': item.color } as React.CSSProperties}>
+                    <b>{item.name.slice(0, 1)}</b>{item.name.slice(1)}
+                  </span>
+                ))}
+              </span>
             </span>
             <span className="title-rest">A Capability-Centric Survey of<br />Multimodal Embodied Agents</span>
           </h1>
