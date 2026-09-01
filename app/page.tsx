@@ -60,7 +60,7 @@ export default function Home() {
           <p className="eyebrow"><span /> Capability-centric survey · 2026</p>
           <h1>
             <span className="hero-brand-logo">
-              <img src="papav-logo.png" alt="PAPAV — Perceive, Anticipate, Plan, Act, Verify" />
+              <img src="papav-logo.svg" alt="PAPAV — Perceive, Anticipate, Plan, Act, Verify" />
             </span>
             <span className="title-rest">A Capability-Centric Survey of<br />Multimodal Embodied Agents</span>
           </h1>
