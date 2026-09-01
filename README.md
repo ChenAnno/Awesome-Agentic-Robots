@@ -1,9 +1,9 @@
 <div align="center">
 <br>
 
-<img src="./assets/readme/papav-logo.png" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
-
 # PAPAV: A Capability-Centric Survey of Multimodal Embodied Agents
+
+<img src="./assets/readme/papav-logo.png" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
 
 Yanzhe Chen · Qiming Huang · Jifeng Zhu ·
 Ziyi Yang · Ruihe An · Peiyao Xu ·
