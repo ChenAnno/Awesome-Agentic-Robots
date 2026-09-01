@@ -20,14 +20,14 @@ do not include author, affiliation, venue, date, PAPAV stage labels, or topic ta
 
 ```markdown
 - **Paper Title Goes Here**  
-  [![arXiv](https://img.shields.io/badge/arXiv-Paper-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/0000.00000) [![Code](https://img.shields.io/github/stars/org/repo?style=flat-square&logo=github&label=Code)](https://github.com/org/repo) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://org.github.io/project)
+  [![MMEA](https://img.shields.io/badge/-MMEA-86CDB8?style=flat)](#b-multimodal-embodied-agents) [![arXiv](https://img.shields.io/badge/arXiv-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/0000.00000) [![Code](https://img.shields.io/github/stars/org/repo?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/org/repo) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://org.github.io/project)
 ```
 
 A filled-in entry:
 
 ```markdown
 - **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**  
-  [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2307.15818) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io)
+  [![MMEA](https://img.shields.io/badge/-MMEA-86CDB8?style=flat)](#b-multimodal-embodied-agents) [![arXiv](https://img.shields.io/badge/arXiv-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2307.15818) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io)
 ```
 
 Line by line:
@@ -35,19 +35,29 @@ Line by line:
 | Line | Contents |
 | :-- | :-- |
 | 1 | `- ` + **bold title**, then **two trailing spaces** |
-| 2 | two spaces of indent + Shields badge link group |
+| 2 | two spaces of indent + section badge + resource badge link group |
 
 What to put in each slot:
 
 | Slot | Replace with | Notes |
 | :-- | :-- | :-- |
 | `Paper Title Goes Here` | The title as printed | Lead with the short name if it has one: `RT-2: Vision-Language-Action Models...` |
+| `MMEA` section badge | The badge for the selected section | Use `Sur`, `MMEA`, `MMA`, `RS`, or `Bench` from the table below; it always comes first |
 | `https://arxiv.org/abs/0000.00000` | arXiv **abs** page, or the DOI / publisher page | **Required.** Use the red `arXiv` badge for arXiv and the blue `Paper` badge otherwise; link the abstract, not the `/pdf/` URL |
 | `https://github.com/org/repo` | Official code repo | Use the dynamic `Code` badge shown above so its right side displays the live star count; delete the whole badge if there is no official repository |
 | `https://org.github.io/project` | Project page | Delete the whole `Project` badge if there is none |
 
-Optional badge extras, appended in this order: `Demo`, `Model`, `Dataset`, `Video`.
-The `arXiv` or `Paper` badge always comes first.
+Use the pink `Blog` badge instead of `Paper` when the source is an official blog post rather than a
+paper. Optional badge extras, appended in this order: `Demo`, `Model`, `Dataset`, `Video`. After the
+section badge, the `arXiv`, `Paper`, or `Blog` badge always comes first.
+
+| Section | Badge | Color | Anchor |
+| :-- | :-- | :-- | :-- |
+| A. Related Surveys | `Sur` | `F29A8F` | `#a-related-surveys` |
+| B. Multimodal Embodied Agents | `MMEA` | `86CDB8` | `#b-multimodal-embodied-agents` |
+| C. Multimodal Agents | `MMA` | `80DDE3` | `#c-multimodal-agents` |
+| D. Robotic Systems | `RS` | `C4CC82` | `#d-robotic-systems` |
+| E. Benchmarks | `Bench` | `B9A3E3` | `#e-benchmarks` |
 
 **Never leave a template value in a real entry.** Before opening a PR:
 
@@ -82,6 +92,7 @@ The two trailing spaces on line 1 produce the line break between the title and b
 ## Checklist before opening a PR
 
 - [ ] Entry follows the two-line format, including the two trailing spaces after the title.
+- [ ] The correct section badge appears first in the badge group.
 - [ ] Entry contains no author, affiliation, venue, date, PAPAV stage label, or topic tag.
 - [ ] No template values left over (`grep -n "Paper Title Goes Here\|0000.00000" README.md`).
 - [ ] Paper is not already listed (search the title in `README.md`).
