@@ -571,9 +571,7 @@ h1 { margin: 0; letter-spacing: -.045em; }
 .coverage-name { display: flex; align-items: center; gap: 13px; font: 400 15px/1 Georgia,serif; }
 .coverage-name b { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--capability); font: 700 11px/1 Arial,sans-serif; }
 .coverage-stack { height: 17px; display: flex; overflow: hidden; border-radius: 3px; background: #e7eae7; }
-.coverage-stack i { display: block; height: 100%; transform-origin: left center; transition: width .45s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.16,1,.3,1); }
-.motion-ready .coverage-bars > button:not(.is-visible) .coverage-stack i { transform: scaleX(0); }
-.motion-ready .coverage-bars > button.is-visible .coverage-stack i { transform: scaleX(1); }
+.coverage-stack i { display: block; flex: 0 0 auto; height: 100%; transform: scaleX(1); transform-origin: left center; transition: width .45s cubic-bezier(.2,.8,.2,1),flex-basis .45s cubic-bezier(.2,.8,.2,1); }
 .coverage-counts { display: grid; grid-template-columns: repeat(3,1fr); text-align: center; }
 .coverage-counts b { color: #354b53; font-size: 12px; }
 .coverage-status-filter { min-height: 68px; display: flex; align-items: center; justify-content: flex-end; gap: 7px; padding: 12px 22px; border-top: 1px solid var(--line); }

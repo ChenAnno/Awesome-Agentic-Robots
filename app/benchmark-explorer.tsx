@@ -5,6 +5,11 @@ import { benchmarks, type Benchmark, type BenchmarkCategory, type Coverage } fro
 
 const capabilityNames = ['Perceive', 'Anticipate', 'Plan', 'Act', 'Verify'];
 const capabilityColors = ['#F57C6E', '#F2B56F', '#84C3B7', '#71B7ED', '#B8AEEB'];
+const coverageColors = {
+  direct: '#6DA5D4',
+  partial: '#EFAD67',
+  none: '#DE6867',
+};
 const categoryLabels: Record<BenchmarkCategory, string> = {
   MMEA: 'MM embodied agents',
   MMA: 'Multimodal agents',
@@ -38,16 +43,19 @@ export default function BenchmarkExplorer() {
     return Array.from(new Set(pool.map((item) => item.subcategory))).sort();
   }, [category]);
 
-  const filtered = useMemo(() => {
+  const profileRows = useMemo(() => {
     const normalized = query.trim().toLowerCase();
-    const rows = benchmarks.filter((item) => {
+    return benchmarks.filter((item) => {
       const matchesCategory = category === 'ALL' || item.category === category;
       const matchesSubcategory = subcategory === 'ALL' || item.subcategory === subcategory;
-      const matchesCoverage = coverageFilter === 'all' || item.coverage[capability] === coverageFilter;
       const matchesQuery = !normalized || [item.name, item.venue, item.task, item.subcategory, categoryLabels[item.category]]
         .some((value) => value.toLowerCase().includes(normalized));
-      return matchesCategory && matchesSubcategory && matchesCoverage && matchesQuery;
+      return matchesCategory && matchesSubcategory && matchesQuery;
     });
+  }, [category, subcategory, query]);
+
+  const filtered = useMemo(() => {
+    const rows = profileRows.filter((item) => coverageFilter === 'all' || item.coverage[capability] === coverageFilter);
 
     return rows.sort((a, b) => {
       if (sort === 'name') return a.name.localeCompare(b.name);
@@ -55,7 +63,7 @@ export default function BenchmarkExplorer() {
       if (sort === 'coverage') return score(b) - score(a) || b.year - a.year;
       return b.year - a.year || a.name.localeCompare(b.name);
     });
-  }, [category, subcategory, coverageFilter, capability, query, sort]);
+  }, [profileRows, coverageFilter, capability, sort]);
 
   useEffect(() => {
     setPage(0);
@@ -67,8 +75,8 @@ export default function BenchmarkExplorer() {
 
   const summaries = capabilityNames.map((_, index) => {
     const counts = { direct: 0, partial: 0, none: 0 };
-    filtered.forEach((item) => { counts[item.coverage[index]] += 1; });
-    const total = Math.max(filtered.length, 1);
+    profileRows.forEach((item) => { counts[item.coverage[index]] += 1; });
+    const total = Math.max(profileRows.length, 1);
     return {
       ...counts,
       directPct: (counts.direct / total) * 100,
@@ -143,9 +151,9 @@ export default function BenchmarkExplorer() {
             <button type="button" key={capabilityNames[index]} className={capability === index ? 'active' : ''} onClick={() => setCapability(index)} style={{ '--capability': capabilityColors[index] } as React.CSSProperties}>
               <span className="coverage-name"><b>{capabilityNames[index].slice(0, 1)}</b>{capabilityNames[index]}</span>
               <span className="coverage-stack" aria-label={`${capabilityNames[index]}: ${summary.direct} direct, ${summary.partial} partial, ${summary.none} not evaluated`}>
-                <i className="segment-direct" style={{ width: `${summary.directPct}%` }} />
-                <i className="segment-partial" style={{ width: `${summary.partialPct}%` }} />
-                <i className="segment-none" style={{ width: `${summary.nonePct}%` }} />
+                <i className="segment-direct" style={{ width: `${summary.directPct}%`, flexBasis: `${summary.directPct}%`, backgroundColor: coverageColors.direct }} />
+                <i className="segment-partial" style={{ width: `${summary.partialPct}%`, flexBasis: `${summary.partialPct}%`, backgroundColor: coverageColors.partial }} />
+                <i className="segment-none" style={{ width: `${summary.nonePct}%`, flexBasis: `${summary.nonePct}%`, backgroundColor: coverageColors.none }} />
               </span>
               <span className="coverage-counts"><b>{summary.direct}</b><b>{summary.partial}</b><b>{summary.none}</b></span>
             </button>
