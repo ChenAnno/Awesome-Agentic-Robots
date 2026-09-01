@@ -81,7 +81,6 @@ const comparisons: Array<{
 
 export default function SimilarityDifference() {
   const [active, setActive] = useState(0);
-  const [focus, setFocus] = useState<'overview' | 'left' | 'shared' | 'right'>('overview');
   const item = comparisons[active];
 
   return (
@@ -99,7 +98,7 @@ export default function SimilarityDifference() {
           <button
             type="button"
             key={entry.name}
-            onClick={() => { setActive(index); setFocus('overview'); }}
+            onClick={() => setActive(index)}
             className={active === index ? 'active' : ''}
             style={{ '--capability': entry.color } as CSSProperties}
             aria-pressed={active === index}
@@ -111,19 +110,7 @@ export default function SimilarityDifference() {
         ))}
       </div>
 
-      <div className="comparison-lens" aria-label="Focus comparison area">
-        <span>Focus lens</span>
-        {([
-          ['overview', 'Full map'],
-          ['left', 'MMA boundary'],
-          ['shared', 'Shared core'],
-          ['right', 'Robotics boundary'],
-        ] as const).map(([value, label]) => (
-          <button type="button" key={value} className={focus === value ? 'active' : ''} onClick={() => setFocus(value)} aria-pressed={focus === value}>{label}</button>
-        ))}
-      </div>
-
-      <div className={`triptych-visual focus-${focus}`} key={item.name} style={{ '--capability': item.color } as CSSProperties}>
+      <div className="triptych-visual" key={item.name} style={{ '--capability': item.color } as CSSProperties}>
         <ComparisonColumn label="Difference from MMA" note="Digital → physical evidence and action" flows={item.left} side="left" />
 
         <article className="shared-capability">
