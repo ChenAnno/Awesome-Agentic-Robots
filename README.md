@@ -5,14 +5,14 @@
 
 # PAPAV: A Capability-Centric Survey of Multimodal Embodied Agents
 
-Yanzhe Chen<sup>1</sup> · Qiming Huang<sup>1</sup> · Jifeng Zhu<sup>1</sup> ·
-Ziyi Yang<sup>1</sup> · Ruihe An<sup>1</sup> · Peiyao Xu<sup>1</sup> ·
-Hesen Yang<sup>1</sup> · Runda Liu<sup>1</sup> · Chang Gong<sup>1</sup> ·
-Zhijun Cao<sup>1</sup> · Zechen Bai<sup>1</sup> · Wenzheng Zeng<sup>1</sup> ·
-Kevin Qinghong Lin · Yiqi Lin<sup>1</sup> · Guoqiang Liang<sup>1</sup> ·
-Mike Zheng Shou<sup>1,†</sup>
+Yanzhe Chen · Qiming Huang · Jifeng Zhu ·
+Ziyi Yang · Ruihe An · Peiyao Xu ·
+Hesen Yang · Runda Liu · Chang Gong ·
+Zhijun Cao · Zechen Bai · Wenzheng Zeng ·
+Kevin Qinghong Lin · Yiqi Lin · Guoqiang Liang ·
+Mike Zheng Shou<sup>†</sup>
 
-<sup>1</sup>Show Lab, National University of Singapore<br>
+Show Lab, National University of Singapore<br>
 <sup>†</sup>Corresponding author
 
 [![Paper list](https://img.shields.io/badge/Resource-Paper_List-F4A12D?style=flat-square)](#contents)
@@ -57,7 +57,7 @@ multimodal agents, robotic systems, and MMEAs.
 ## Contents
 
 - [Taxonomy](#taxonomy) · [News](#news)
-- [A. Related Surveys](#a-related-surveys) [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys)
+- [A. Related Surveys](#a-related-surveys) [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys)
 - [B. Multimodal Embodied Agents](#b-multimodal-embodied-agents) [![MMEA](https://img.shields.io/badge/-MMEA-A8DDA8?style=flat)](#b-multimodal-embodied-agents)
 - [C. Multimodal Agents](#c-multimodal-agents) [![MMA](https://img.shields.io/badge/-MMA-A9D6F5?style=flat)](#c-multimodal-agents)
 - [D. Robotic Systems](#d-robotic-systems) [![RS](https://img.shields.io/badge/-RS-F6C58D?style=flat)](#d-robotic-systems)
@@ -75,37 +75,37 @@ multimodal agents, robotic systems, and MMEAs.
 Prior surveys and reviews adjacent to our scope.
 
 - **How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.13718)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.13718)
 
 - **Progress Reward Modeling for Robotic Learning: A Comprehensive Survey**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.21655) [![Code](https://img.shields.io/github/stars/sterzhang/Awesome-Progress-Models?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/sterzhang/Awesome-Progress-Models)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.21655) [![Code](https://img.shields.io/github/stars/sterzhang/Awesome-Progress-Models?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/sterzhang/Awesome-Progress-Models)
 
 - **Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.12560)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.12560)
 
 - **A Survey on Agentic Multimodal Large Language Models**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.10991) [![Code](https://img.shields.io/github/stars/HJYao00/Awesome-Agentic-MLLMs?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/HJYao00/Awesome-Agentic-MLLMs)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.10991) [![Code](https://img.shields.io/github/stars/HJYao00/Awesome-Agentic-MLLMs?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/HJYao00/Awesome-Agentic-MLLMs)
 
 - **Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.05294)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.05294)
 
 - **A Survey on (M)LLM-Based GUI Agents**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.13865) [![Code](https://img.shields.io/github/stars/zju-real/Awesome-GUI-Agents?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/zju-real/Awesome-GUI-Agents)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.13865) [![Code](https://img.shields.io/github/stars/zju-real/Awesome-GUI-Agents?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/zju-real/Awesome-GUI-Agents)
 
 - **Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2407.06886) [![Code](https://img.shields.io/github/stars/HCPLab-SYSU/Embodied_AI_Paper_List?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2407.06886) [![Code](https://img.shields.io/github/stars/HCPLab-SYSU/Embodied_AI_Paper_List?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List)
 
 - **A Survey on Vision-Language-Action Models for Embodied AI**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2405.14093) [![Code](https://img.shields.io/github/stars/yueen-ma/Awesome-VLA?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/yueen-ma/Awesome-VLA)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2405.14093) [![Code](https://img.shields.io/github/stars/yueen-ma/Awesome-VLA?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/yueen-ma/Awesome-VLA)
 
 - **Large Multimodal Agents: A Survey**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2402.15116) [![Code](https://img.shields.io/github/stars/jun0wanan/awesome-large-multimodal-agents?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/jun0wanan/awesome-large-multimodal-agents)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2402.15116) [![Code](https://img.shields.io/github/stars/jun0wanan/awesome-large-multimodal-agents?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/jun0wanan/awesome-large-multimodal-agents)
 
 - **Agent AI: Surveying the Horizons of Multimodal Interaction**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2401.03568)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2401.03568)
 
 - **Integrated Task and Motion Planning**  
-  [![Sur](https://img.shields.io/badge/-Sur-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2010.01083)
+  [![Survey](https://img.shields.io/badge/-Survey-F29A8F?style=flat)](#a-related-surveys) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2010.01083)
 
 <div align="right"><a href="#contents">&uarr; back to top</a></div>
 

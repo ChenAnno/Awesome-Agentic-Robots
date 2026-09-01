@@ -48,7 +48,7 @@ What to put in each slot:
 | Slot | Replace with | Notes |
 | :-- | :-- | :-- |
 | `Paper Title Goes Here` | The title as printed | Lead with the short name if it has one: `RT-2: Vision-Language-Action Models...` |
-| `MMEA` section badge | The badge for the selected section | Use `Sur`, `MMEA`, `MMA`, `RS`, or `Bench` from the table below; it always comes first |
+| `MMEA` section badge | The badge for the selected section | Use `Survey`, `MMEA`, `MMA`, `RS`, or `Bench` from the table below; it always comes first |
 | `https://arxiv.org/abs/0000.00000` | arXiv **abs** page, or the DOI / publisher page | **Required.** Use the coral `Paper` badge with the arXiv logo for arXiv sources and the light-blue `Paper` badge for DOI or publisher sources; link the abstract, not the `/pdf/` URL |
 | `https://github.com/org/repo` | Official code repo | Use the dynamic `Code` badge shown above so its right side displays the live star count; delete the whole badge if there is no official repository |
 | `https://org.github.io/project` | Project page | Delete the whole `Project` badge if there is none |
@@ -59,7 +59,7 @@ section badge, the `arXiv`, `Paper`, or `Blog` badge always comes first.
 
 | Section | Badge | Color | Anchor |
 | :-- | :-- | :-- | :-- |
-| A. Related Surveys | `Sur` | `F29A8F` | `#a-related-surveys` |
+| A. Related Surveys | `Survey` | `F29A8F` | `#a-related-surveys` |
 | B. Multimodal Embodied Agents | `MMEA` | `A8DDA8` | `#b-multimodal-embodied-agents` |
 | C. Multimodal Agents | `MMA` | `A9D6F5` | `#c-multimodal-agents` |
 | D. Robotic Systems | `RS` | `F6C58D` | `#d-robotic-systems` |
@@ -84,7 +84,7 @@ The two trailing spaces on line 1 produce the line break between the title and b
    instead.
 2. **Newest first.** Insert at the top of the section unless that breaks the existing ordering.
 3. **Section semantics:**
-   - **A. Related Surveys (`Sur`)** — surveys covering digital multimodal agents, robotic systems,
+   - **A. Related Surveys (`Survey`)** — surveys covering digital multimodal agents, robotic systems,
      multimodal embodied agents, unified digital-physical frameworks, or gaps in agent evaluation.
    - **B. Multimodal Embodied Agents (`MMEA`)** — general multimodal task reasoning closed around
      physical execution. The system should support physical state change, maintain a task goal or belief
