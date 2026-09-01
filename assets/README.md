@@ -5,11 +5,11 @@ Figures used by `README.md` — brand artwork, taxonomy diagrams, and section ov
 Current README assets:
 
 - `readme/papav-logo.png` — official PAPAV banner used in the hero.
-- `readme/papav-taxonomy.png` — README rendering of the chronological research landscape from
-  `sec_1_tree.pdf`.
+- `readme/papav-taxonomy.svg` — transparent vector export of the latest chronological research
+  landscape.
 
 Keep files under ~1 MB, prefer PNG or SVG, and reference them with relative paths:
 
 ```markdown
-<img src="assets/readme/papav-taxonomy.png" width="100%" alt="Evolution of multimodal embodied agents">
+<img src="assets/readme/papav-taxonomy.svg" width="100%" alt="Evolution of multimodal embodied agents">
 ```
