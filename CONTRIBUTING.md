@@ -15,22 +15,20 @@ will add it for you.
 
 ## Entry format
 
-Each paper is a four-line block. Copy this and swap every value for the real one:
+Each paper is a four-line block. Copy this and swap every value for the real one. Paper entries do not
+use PAPAV stage labels or topic tags.
 
 ```markdown
-- **Paper Title Goes Here** `Tag1` `Tag2`  
+- **Paper Title Goes Here**  
   *Author One, Author Two, Author Three, et al.*  
   arXiv, 2026.08  
   [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/0000.00000) [![Code](https://img.shields.io/badge/-Code-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/org/repo) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://org.github.io/project)
 ```
 
-The same template sits at the top of sections A, B, and C in the README — copy from whichever section
-your paper goes in, then delete the template once that section has real papers in it.
-
 A filled-in entry:
 
 ```markdown
-- **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control** `VLA` `Manip.`  
+- **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**  
   *Anthony Brohan, Noah Brown, Justice Carbajal, et al.*  
   arXiv, 2023.07  
   [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?logo=arxiv&logoColor=white&style=flat-square)](https://arxiv.org/abs/2307.15818) [![Project](https://img.shields.io/badge/-Project-4285F4?logo=googlechrome&logoColor=white&style=flat-square)](https://robotics-transformer2.github.io)
@@ -40,7 +38,7 @@ Line by line:
 
 | Line | Contents |
 | :-- | :-- |
-| 1 | `- ` + **bold title** + optional backticked tags, then **two trailing spaces** |
+| 1 | `- ` + **bold title**, then **two trailing spaces** |
 | 2 | two spaces of indent + *italic* author list, then **two trailing spaces** |
 | 3 | two spaces of indent + venue + `, ` + `YYYY.MM`, then **two trailing spaces** |
 | 4 | two spaces of indent + Shields badge link group |
@@ -50,8 +48,7 @@ What to put in each slot:
 | Slot | Replace with | Notes |
 | :-- | :-- | :-- |
 | `Paper Title Goes Here` | The title as printed | Lead with the short name if it has one: `RT-2: Vision-Language-Action Models...` |
-| `` `Tag1` `Tag2` `` | Tags from the [legend below](#tag-legend) | Zero or more. Drop the backticks entirely if none apply |
-| `Author One, Author Two, ...` | Full author list if short, else first 3 + `et al.` | For major industry releases add a `Team: Lab or Company` line above (see section C) |
+| `Author One, Author Two, ...` | Full author list if short, else first 3 + `et al.` | For major industry releases, add a `Team: Lab or Company` line above |
 | `arXiv` | `arXiv` for preprints, else the venue | Once accepted: `CoRL 2025`, `CVPR 2026`, ... |
 | `2026.08` | `YYYY.MM` of the **first public version** | v1 on arXiv, not the camera-ready date — keeps ordering stable |
 | `https://arxiv.org/abs/0000.00000` | arXiv **abs** page, or the DOI / publisher page | **Required.** Use the red `arXiv` badge for arXiv and the blue `Paper` badge otherwise; link the abstract, not the `/pdf/` URL |
@@ -67,25 +64,10 @@ The `arXiv` or `Paper` badge always comes first.
 grep -n "Paper Title Goes Here\|Author One\|0000.00000" README.md
 ```
 
-The only matches should be the three templates in sections A, B, and C.
+The command should return no matches in `README.md`.
 
 The two trailing spaces on lines 1, 2, and 3 are what produce the line breaks. Without them the entry
 collapses into a single paragraph.
-
-### Tag legend
-
-| Tag | Meaning | Tag | Meaning |
-| :-- | :-- | :-- | :-- |
-| `Survey` | Survey / review | `VLA` | Vision-language-action model |
-| `MLLM` | Multi-modal LLM backbone | `Manip.` | Manipulation |
-| `GUI` | GUI / web / computer-use | `Nav.` | Navigation / locomotion |
-| `Tool Use` | External tool or API calling | `Humanoid` | Humanoid / whole-body control |
-| `Memory` | Memory or context management | `Sim2Real` | Sim-to-real transfer |
-| `Planning` | Task / motion planning | `World Model` | Learned world / dynamics model |
-| `Multi-Agent` | Multi-agent collaboration | `HRI` | Human-robot interaction |
-| `RL` | Reinforcement learning | `Bench` | Benchmark, dataset, or simulator |
-
-Add a new tag only if several papers would use it, and update this table in the same PR.
 
 ### Venue abbreviations
 
@@ -100,23 +82,28 @@ Add a new tag only if several papers would use it, and update this table in the 
    contribution. Do not duplicate entries — cross-reference in the PR description instead.
 2. **Newest first.** Insert at the top of the section unless that breaks the existing ordering.
 3. **Section semantics:**
-   - **A. Related Surveys** — surveys and reviews only.
-   - **B. Multi-Modal Agents** — agents acting in *digital* environments (screens, browsers, APIs). No
-     physical embodiment.
-   - **C. Robots** — robot learning, control, hardware, and data, plus embodied agents acting in the
-     *physical* world. The contribution is on the robotics side, even if a foundation model drives it.
-4. **Update the Table of Contents** if you add or rename a section.
+   - **A. Related Surveys** — surveys and reviews adjacent to the collection's scope.
+   - **B. Multimodal Embodied Agents** — foundation-model-driven agents that close a multimodal
+     perception, reasoning, and physical-action loop.
+   - **C. Multimodal Agents** — agents acting primarily in digital environments such as screens,
+     browsers, APIs, and software tools.
+   - **D. Robotic Systems** — robot learning, control, hardware, data, and task or motion planning where
+     the main contribution is on the robotics side.
+   - **E. Benchmarks** — datasets, simulators, and evaluation suites, grouped by target system and
+     simulated, real-world, or hybrid setting.
+4. **Update Contents** if you add or rename a section.
 5. **Add a News line** for a batch of additions (optional, but appreciated).
 
 ## Checklist before opening a PR
 
 - [ ] Entry follows the four-line format, including the two trailing spaces.
+- [ ] Entry contains no PAPAV stage label or topic tag.
 - [ ] No template values left over (`grep -n "Paper Title Goes Here\|Author One\|0000.00000" README.md`).
 - [ ] Paper is not already listed (search the title in `README.md`).
 - [ ] All links resolve.
 - [ ] Date is `YYYY.MM` of the first public version.
 - [ ] Placed in exactly one section, in the right position.
-- [ ] Table of Contents updated if sections changed.
+- [ ] Contents updated if sections changed.
 
 ## Style
 
