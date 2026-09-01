@@ -45,7 +45,14 @@ export default function Home() {
           <a href="#benchmarks">Benchmarks</a>
           <a href="#challenges">Challenges</a>
         </div>
-        <a className="nav-cta" href="#citation">Paper details <span>↓</span></a>
+        <a
+          className="nav-cta"
+          href="https://github.com/ChenAnno/Awesome-Agentic-Robots#e-benchmarks"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub <span>↗</span>
+        </a>
       </nav>
 
       <section className="hero" id="top">
@@ -172,7 +179,17 @@ export default function Home() {
             <p className="section-kicker">Benchmarks & evaluation</p>
             <h2 id="benchmarks-title">Coverage is broad.<br />Diagnosis is not.</h2>
           </div>
-          <p>The survey maps 62 benchmarks across three research families. Most evaluation still emphasizes aggregate outcomes, leaving capability bottlenecks and failure transitions difficult to identify.</p>
+          <div className="benchmark-intro-copy">
+            <p>The survey maps 62 benchmarks across three research families. Most evaluation still emphasizes aggregate outcomes, leaving capability bottlenecks and failure transitions difficult to identify.</p>
+            <a
+              className="benchmark-repo-link"
+              href="https://github.com/ChenAnno/Awesome-Agentic-Robots#e-benchmarks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View benchmark repository <span>↗</span>
+            </a>
+          </div>
         </div>
         <BenchmarkExplorer />
       </section>

@@ -151,7 +151,11 @@ h1 { margin: 0; letter-spacing: -.045em; }
 .capabilities-section { padding: 128px clamp(24px, 7vw, 108px) 142px; background: #f7f8f4; }
 .section-heading-row, .benchmark-intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 10vw; align-items: end; }
 .section-heading-row h2, .benchmark-intro h2, .domains-copy h2, .challenge-title-wrap h2 { margin: 25px 0 0; font: 400 clamp(40px, 5.5vw, 76px)/1.01 Georgia, serif; letter-spacing: -.05em; }
-.section-heading-row > p, .benchmark-intro > p { margin: 0; color: var(--muted); font-size: 18px; line-height: 1.72; }
+.section-heading-row > p, .benchmark-intro-copy > p { margin: 0; color: var(--muted); font-size: 18px; line-height: 1.72; }
+.benchmark-intro-copy { display: flex; flex-direction: column; align-items: flex-start; }
+.benchmark-repo-link { display: inline-flex; align-items: center; gap: 22px; margin-top: 23px; padding-bottom: 6px; color: #17313a; border-bottom: 1px solid #17313a; font-size: 12px; font-weight: 800; letter-spacing: .02em; transition: gap .25s ease,color .25s ease; }
+.benchmark-repo-link:hover { gap: 29px; color: #347fb8; }
+.benchmark-repo-link span { font-size: 16px; font-weight: 400; }
 .capability-cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; margin-top: 76px; background: var(--line); border: 1px solid var(--line); }
 .capability-cards article { --accent: #ccc; min-height: 416px; display: flex; flex-direction: column; padding: 20px 20px 26px; background: #fff; box-shadow: inset 0 4px 0 var(--accent); transition: transform .24s ease, background .24s ease; }
 .capability-cards article:hover { position: relative; z-index: 2; transform: translateY(-8px); background: color-mix(in srgb, var(--accent) 7%, white); }
