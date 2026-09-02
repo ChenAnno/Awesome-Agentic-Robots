@@ -72,7 +72,6 @@ export default function Home() {
             <p className="hero-authors">{authors.join(' · ')}</p>
             <div className="hero-paper-meta">
               <span>Show Lab, National University of Singapore</span>
-              <span>2026 · Preprint · Work in progress</span>
             </div>
           </div>
           <div className="hero-actions" id="paper">
@@ -157,7 +156,6 @@ export default function Home() {
               <span>OC{number}</span>
               <h3>{title}</h3>
               <p>{text}</p>
-              <i aria-hidden="true">↗</i>
             </article>
           ))}
         </div>

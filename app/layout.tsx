@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL ?? 'http://localhost:3000'),
   title: 'PAPAV — A Capability-Centric Survey of Multimodal Embodied Agents',
   description: 'A unified capability-centric survey of multimodal agents, robotic systems, and multimodal embodied agents.',
+  icons: { icon: '/favicon-show.png' },
   openGraph: {
     title: 'PAPAV — A Capability-Centric Survey of Multimodal Embodied Agents',
     description: 'A unified capability-centric survey across digital and physical worlds.',

@@ -90,7 +90,7 @@ export default function SimilarityDifference() {
           <p className="section-kicker">Similarity × Difference</p>
           <h2 id="comparison-title">One shared relation.<br />Two boundaries.</h2>
         </div>
-        <p>Following the paper figure, the center isolates the capability shared by MMA, MMEA, and robotic systems. The two sides show exactly how MMEA departs from each neighboring tradition.</p>
+        <p>The center isolates the capability shared by MMA, MMEA, and robotic systems. The two sides show exactly how MMEA departs from each neighboring tradition.</p>
       </div>
 
       <div className="comparison-tabs" aria-label="Select PAPAV capability">
