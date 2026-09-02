@@ -59,8 +59,8 @@ multimodal agents, robotic systems, and MMEAs.
 ## Taxonomy
 
 <p align="center">
-  <a href="./assets/readme/papav-taxonomy.svg">
-    <img src="./assets/readme/papav-taxonomy.svg" width="100%" alt="Evolution of multimodal embodied agents across robotic systems, multimodal embodied agents, and multimodal agents">
+  <a href="./assets/readme/tree.svg">
+    <img src="./assets/readme/tree.svg" width="100%" alt="Evolution of multimodal embodied agents across robotic systems, multimodal embodied agents, and multimodal agents">
   </a>
 </p>
 
