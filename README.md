@@ -1080,6 +1080,8 @@ manipulation, navigation, humanoids, and the data and simulators behind them.
 - **HomeRobot: Open-Vocabulary Mobile Manipulation**  
   [![Bench](https://img.shields.io/badge/-Bench-B9A3E3?style=flat)](#e-benchmarks) [![Paper](https://img.shields.io/badge/-Paper-E58A8F?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2306.11565) [![Code](https://img.shields.io/github/stars/facebookresearch/home-robot?style=flat-square&logo=github&label=Code&color=B7CADB)](https://github.com/facebookresearch/home-robot) [![Project](https://img.shields.io/badge/-Project-9AC7E8?logo=googlechrome&logoColor=white&style=flat-square)](https://ovmm.github.io/)
 
+<div align="right"><a href="#contents">&uarr; back to top</a></div>
+
 ## Contributing
 
 Contributions are very welcome — new papers, corrections, better categorization, or dead-link fixes.
