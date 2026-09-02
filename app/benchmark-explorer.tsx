@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { benchmarks, type Benchmark, type BenchmarkCategory, type Coverage } from './benchmark-data';
 
 const capabilityNames = ['Perceive', 'Anticipate', 'Plan', 'Act', 'Verify'];
@@ -65,13 +65,9 @@ export default function BenchmarkExplorer() {
     });
   }, [profileRows, coverageFilter, capability, sort]);
 
-  useEffect(() => {
-    setPage(0);
-    setExpanded(null);
-  }, [category, subcategory, coverageFilter, capability, query, sort]);
-
   const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
-  const visibleRows = filtered.slice(page * pageSize, page * pageSize + pageSize);
+  const currentPage = Math.min(page, pageCount - 1);
+  const visibleRows = filtered.slice(currentPage * pageSize, currentPage * pageSize + pageSize);
 
   const summaries = capabilityNames.map((_, index) => {
     const counts = { direct: 0, partial: 0, none: 0 };
@@ -93,6 +89,13 @@ export default function BenchmarkExplorer() {
   const chooseCategory = (next: CategoryFilter) => {
     setCategory(next);
     setSubcategory('ALL');
+    setPage(0);
+    setExpanded(null);
+  };
+
+  const resetView = () => {
+    setPage(0);
+    setExpanded(null);
   };
 
   return (
@@ -107,18 +110,18 @@ export default function BenchmarkExplorer() {
         </div>
         <label className="benchmark-search">
           <span aria-hidden="true">⌕</span>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search benchmark, task, venue…" aria-label="Search benchmarks" />
+          <input value={query} onChange={(event) => { setQuery(event.target.value); resetView(); }} placeholder="Search benchmark, task, venue…" aria-label="Search benchmarks" />
         </label>
         <label className="benchmark-select">
           <span>Environment</span>
-          <select value={subcategory} onChange={(event) => setSubcategory(event.target.value)}>
+          <select value={subcategory} onChange={(event) => { setSubcategory(event.target.value); resetView(); }}>
             <option value="ALL">All environments</option>
             {subcategories.map((item) => <option value={item} key={item}>{item}</option>)}
           </select>
         </label>
         <label className="benchmark-select">
           <span>Order by</span>
-          <select value={sort} onChange={(event) => setSort(event.target.value as SortMode)}>
+          <select value={sort} onChange={(event) => { setSort(event.target.value as SortMode); resetView(); }}>
             <option value="year-desc">Newest first</option>
             <option value="year-asc">Oldest first</option>
             <option value="name">Name A–Z</option>
@@ -148,7 +151,7 @@ export default function BenchmarkExplorer() {
         </div>
         <div className="coverage-bars">
           {summaries.map((summary, index) => (
-            <button type="button" key={capabilityNames[index]} className={capability === index ? 'active' : ''} onClick={() => setCapability(index)} style={{ '--capability': capabilityColors[index] } as React.CSSProperties}>
+            <button type="button" key={capabilityNames[index]} className={capability === index ? 'active' : ''} onClick={() => { setCapability(index); resetView(); }} style={{ '--capability': capabilityColors[index] } as React.CSSProperties}>
               <span className="coverage-name"><b>{capabilityNames[index].slice(0, 1)}</b>{capabilityNames[index]}</span>
               <span className="coverage-stack" aria-label={`${capabilityNames[index]}: ${summary.direct} direct, ${summary.partial} partial, ${summary.none} not evaluated`}>
                 <i className="segment-direct" style={{ width: `${summary.directPct}%`, flexBasis: `${summary.directPct}%`, backgroundColor: coverageColors.direct }} />
@@ -162,7 +165,7 @@ export default function BenchmarkExplorer() {
         <div className="coverage-status-filter">
           <span>Filter table by <b>{capabilityNames[capability]}</b></span>
           {(['all', 'direct', 'partial', 'none'] as CoverageFilter[]).map((value) => (
-            <button type="button" key={value} className={coverageFilter === value ? 'active' : ''} onClick={() => setCoverageFilter(value)}>
+            <button type="button" key={value} className={coverageFilter === value ? 'active' : ''} onClick={() => { setCoverageFilter(value); resetView(); }}>
               {value === 'all' ? 'Any coverage' : coverageLabels[value]}
             </button>
           ))}
@@ -181,14 +184,14 @@ export default function BenchmarkExplorer() {
         <table className="benchmark-table">
           <thead>
             <tr>
-              <th><button type="button" onClick={() => setSort('name')}>Benchmark ↕</button></th>
-              <th><button type="button" onClick={() => setSort(sort === 'year-asc' ? 'year-desc' : 'year-asc')}>Venue ↕</button></th>
+              <th><button type="button" onClick={() => { setSort('name'); resetView(); }}>Benchmark ↕</button></th>
+              <th><button type="button" onClick={() => { setSort(sort === 'year-asc' ? 'year-desc' : 'year-asc'); resetView(); }}>Venue ↕</button></th>
               <th>Task</th>
               <th>Family</th>
               <th>Setting</th>
               {capabilityNames.map((name, index) => (
                 <th key={name} className={capability === index ? 'selected-capability' : ''} style={{ '--capability': capabilityColors[index] } as React.CSSProperties}>
-                  <button type="button" onClick={() => setCapability(index)}>{index === 1 ? 'Ant.' : name.slice(0, 4) + '.'}</button>
+                  <button type="button" onClick={() => { setCapability(index); resetView(); }}>{index === 1 ? 'Ant.' : name.slice(0, 4) + '.'}</button>
                 </th>
               ))}
             </tr>
@@ -207,11 +210,11 @@ export default function BenchmarkExplorer() {
       </div>
 
       <div className="benchmark-pagination">
-        <span>Showing {filtered.length ? page * pageSize + 1 : 0}–{Math.min((page + 1) * pageSize, filtered.length)} of {filtered.length}</span>
+        <span>Showing {filtered.length ? currentPage * pageSize + 1 : 0}–{Math.min((currentPage + 1) * pageSize, filtered.length)} of {filtered.length}</span>
         <div>
-          <button type="button" onClick={() => setPage((value) => Math.max(0, value - 1))} disabled={page === 0}>← Previous</button>
-          <span>{page + 1} / {pageCount}</span>
-          <button type="button" onClick={() => setPage((value) => Math.min(pageCount - 1, value + 1))} disabled={page >= pageCount - 1}>Next →</button>
+          <button type="button" onClick={() => setPage((value) => Math.max(0, value - 1))} disabled={currentPage === 0}>← Previous</button>
+          <span>{currentPage + 1} / {pageCount}</span>
+          <button type="button" onClick={() => setPage((value) => Math.min(pageCount - 1, value + 1))} disabled={currentPage >= pageCount - 1}>Next →</button>
         </div>
       </div>
     </div>

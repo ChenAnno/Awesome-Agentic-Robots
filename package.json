@@ -10,7 +10,7 @@
     "build": "vinext build",
     "build:pages": "vite build --config github-pages-vite.config.ts",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern dist-pages --ignore-pattern .next"
   },
   "dependencies": {
     "next": "16.2.6",

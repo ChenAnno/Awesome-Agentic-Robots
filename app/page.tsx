@@ -61,7 +61,7 @@ export default function Home() {
           <p className="eyebrow"><span /> Capability-centric survey · 2026</p>
           <HeroCapabilityLogo capabilities={capabilities} />
           <h1>
-            <span className="title-rest">A Capability-Centric Survey of<br />Multimodal Embodied Agents</span>
+            <span className="title-rest">When Agents Enter the Physical World:<br />A Capability-Centric Survey of<br />Multimodal Embodied Agents</span>
           </h1>
           <p className="hero-deck">
             A unified lens for understanding how multimodal agents perceive,
@@ -98,12 +98,12 @@ export default function Home() {
       <section className="abstract-section" id="abstract">
         <div>
           <p className="section-kicker">Abstract</p>
-          <h2>Coming soon.</h2>
+          <h2>What changes when a multimodal agent enters the physical world?</h2>
         </div>
-        <div className="abstract-placeholder" aria-label="Abstract placeholder">
-          <span />
-          <span />
-          <span />
+        <div className="abstract-copy">
+          <p>Multimodal agents sustain interaction through reasoning, memory, tools, and feedback, while robots close sensing–action loops under physical dynamics. Multimodal Embodied Agents (MMEAs) bring these traditions together. This raises a central question: what changes when a multimodal agent enters the physical world?</p>
+          <p>We introduce PAPAV, a capability-centric framework organized around five functions in a recurring task loop: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an environment interface, and Verify the outcome. These functions support direct comparison across multimodal agents, robotic systems, and MMEAs because each is defined by its contribution to the task loop rather than by system architecture.</p>
+          <p>Across partial observability, imperfect simulation, irreversible actions, real-time interaction, and uncertain success signals, embodiment preserves the task loop but shifts responsibility from structured interfaces and design choices to the running agent. Applying PAPAV to 62 benchmarks shows that Act is usually evaluated directly, while only 4 benchmarks directly assess Anticipate and 3 assess Verify, leaving key parts of the loop hidden behind task success. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across the full interaction loop.</p>
         </div>
       </section>
 

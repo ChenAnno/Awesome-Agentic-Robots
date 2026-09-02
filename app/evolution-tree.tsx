@@ -17,31 +17,35 @@ type TreeNode = {
 
 const nodes: TreeNode[] = [
   { id: 'root', title: 'Embodied agency', year: 2017, x: 50, branch: 'root', kind: 'System', detail: 'The shared root: agents sensing, deciding, and intervening in an environment.' },
-  { id: 'dvf', title: 'Deep Visual Foresight', year: 2017, x: 18, branch: 'robotics', parent: 'root', kind: 'Model', detail: 'Visual prediction begins to support action selection for robotic manipulation.' },
-  { id: 'r2r', title: 'R2R-VLN', year: 2018, x: 33, branch: 'robotics', parent: 'root', kind: 'Benchmark', detail: 'Language-guided navigation links semantic goals to embodied trajectories.' },
-  { id: 'kimera', title: 'Kimera', year: 2020, x: 23, branch: 'robotics', parent: 'dvf', kind: 'System', detail: 'Persistent spatial and semantic representations ground embodied perception.' },
-  { id: 'alfred', title: 'ALFRED', year: 2020, x: 38, branch: 'robotics', parent: 'r2r', kind: 'Benchmark', detail: 'Long-horizon household tasks connect language, vision, and action.' },
-  { id: 'saycan', title: 'SayCan', year: 2022, x: 43, branch: 'embodied', parent: 'alfred', kind: 'System', detail: 'Language-model proposals are grounded through learned robotic affordances.' },
-  { id: 'inner', title: 'Inner Monologue', year: 2022, x: 57, branch: 'embodied', parent: 'alfred', kind: 'System', detail: 'Scene feedback and success signals close the planning loop.' },
-  { id: 'rt2', title: 'RT-2', year: 2023, x: 16, branch: 'robotics', parent: 'kimera', kind: 'Model', detail: 'Vision-language knowledge transfers into generalizable robotic control.' },
-  { id: 'reflect', title: 'REFLECT', year: 2023, x: 54, branch: 'embodied', parent: 'inner', kind: 'System', detail: 'Failure explanation and correction make verification operational.' },
-  { id: 'avis', title: 'AVIS', year: 2023, x: 73, branch: 'digital', parent: 'root', kind: 'System', detail: 'Adaptive tool use turns information seeking into a decision loop.' },
-  { id: 'mmreact', title: 'MM-REACT', year: 2023, x: 87, branch: 'digital', parent: 'avis', kind: 'System', detail: 'Multimodal reasoning coordinates specialist tools in digital environments.' },
-  { id: 'robodreamer', title: 'RoboDreamer', year: 2024, x: 10, branch: 'robotics', parent: 'rt2', kind: 'Model', detail: 'World-model imagination supports robotic planning before execution.' },
-  { id: 'explore', title: 'Explore Until Confident', year: 2024, x: 33, branch: 'embodied', parent: 'saycan', kind: 'System', detail: 'Active observation continues until evidence is sufficient for commitment.' },
-  { id: 'palme', title: 'PaLM-E', year: 2024, x: 47, branch: 'embodied', parent: 'saycan', kind: 'Model', detail: 'Embodied multimodal representations connect language and sensor streams.' },
-  { id: 'webarena', title: 'WebArena', year: 2024, x: 72, branch: 'digital', parent: 'avis', kind: 'Benchmark', detail: 'Realistic web tasks expose long-horizon digital interaction.' },
-  { id: 'osworld', title: 'OSWorld', year: 2024, x: 88, branch: 'digital', parent: 'mmreact', kind: 'Benchmark', detail: 'Computer-use agents are evaluated against observable application state.' },
-  { id: 'roboarena', title: 'RoboArena', year: 2025, x: 9, branch: 'robotics', parent: 'robodreamer', kind: 'Benchmark', detail: 'Real-world evaluation adds environmental and execution variability.' },
-  { id: 'evolve', title: 'EVOLVE-VLA', year: 2025, x: 36, branch: 'embodied', parent: 'explore', kind: 'Model', detail: 'Vision-language-action policies adapt within longer interaction loops.' },
-  { id: 'gemini', title: 'Gemini Robotics 1.5', year: 2025, x: 54, branch: 'embodied', parent: 'reflect', kind: 'System', detail: 'Generalist multimodal reasoning and physical action converge.' },
-  { id: 'agents2', title: 'Agent S2', year: 2025, x: 73, branch: 'digital', parent: 'webarena', kind: 'System', detail: 'Specialized agents coordinate perception, planning, and GUI interaction.' },
-  { id: 'uitars', title: 'UI-TARS', year: 2025, x: 89, branch: 'digital', parent: 'osworld', kind: 'Model', detail: 'Native GUI action modeling advances computer-use autonomy.' },
-  { id: 'activevla', title: 'ActiveVLA', year: 2026, x: 17, branch: 'robotics', parent: 'roboarena', kind: 'System', detail: 'Active perception is integrated directly into vision-language-action policy.' },
-  { id: 'planar', title: 'PLanAR', year: 2026, x: 40, branch: 'embodied', parent: 'evolve', kind: 'Benchmark', detail: 'Planning, checking, and recovery become observable evaluation signals.' },
-  { id: 'adapt', title: 'ADAPT', year: 2026, x: 56, branch: 'embodied', parent: 'gemini', kind: 'System', detail: 'Closed-loop adaptation connects PAPAV capabilities across task progress.' },
-  { id: 'osworld2', title: 'OSWorld 2.0', year: 2026, x: 75, branch: 'digital', parent: 'agents2', kind: 'Benchmark', detail: 'Broader operating-system tasks stress generalist digital agents.' },
-  { id: 'code2world', title: 'Code2World', year: 2026, x: 91, branch: 'digital', parent: 'uitars', kind: 'Model', detail: 'Executable world representations support prospective digital interaction.' },
+  { id: 'dvf', title: 'Deep Visual Foresight', year: 2017, x: 9, branch: 'robotics', parent: 'root', kind: 'Model', detail: 'Visual prediction supports action selection for robotic manipulation.' },
+  { id: 'dexnet', title: 'Dex-Net 2.0', year: 2017, x: 19, branch: 'robotics', parent: 'root', kind: 'Model', detail: 'Synthetic grasp data connects perception to robust physical control.' },
+  { id: 'r2r', title: 'R2R-VLN', year: 2018, x: 20, branch: 'robotics', parent: 'dexnet', kind: 'Benchmark', detail: 'Language-guided navigation links semantic goals to embodied trajectories.' },
+  { id: 'alfred', title: 'ALFRED', year: 2020, x: 10, branch: 'robotics', parent: 'r2r', kind: 'Benchmark', detail: 'Long-horizon household tasks connect language, vision, and action.' },
+  { id: 'kimera', title: 'Kimera', year: 2020, x: 28, branch: 'robotics', parent: 'r2r', kind: 'System', detail: 'Persistent spatial and semantic representations ground embodied perception.' },
+  { id: 'saycan', title: 'SayCan', year: 2022, x: 39, branch: 'embodied', parent: 'alfred', kind: 'System', detail: 'Language-model proposals are grounded through learned robotic affordances.' },
+  { id: 'inner', title: 'Inner Monologue', year: 2022, x: 54, branch: 'embodied', parent: 'alfred', kind: 'System', detail: 'Scene feedback and success signals close the planning loop.' },
+  { id: 'rt2', title: 'RT-2', year: 2023, x: 19, branch: 'robotics', parent: 'kimera', kind: 'Model', detail: 'Vision-language knowledge transfers into generalizable robotic control.' },
+  { id: 'palme', title: 'PaLM-E', year: 2023, x: 45, branch: 'embodied', parent: 'saycan', kind: 'Model', detail: 'Embodied multimodal representations connect language and sensor streams.' },
+  { id: 'reflect', title: 'REFLECT', year: 2023, x: 59, branch: 'embodied', parent: 'inner', kind: 'System', detail: 'Failure explanation and correction make verification operational.' },
+  { id: 'avis', title: 'AVIS', year: 2023, x: 77, branch: 'digital', parent: 'root', kind: 'System', detail: 'Adaptive tool use turns information seeking into a decision loop.' },
+  { id: 'mmreact', title: 'MM-REACT', year: 2023, x: 89, branch: 'digital', parent: 'avis', kind: 'System', detail: 'Multimodal reasoning coordinates specialist tools in digital environments.' },
+  { id: 'robodreamer', title: 'RoboDreamer', year: 2024, x: 19, branch: 'robotics', parent: 'rt2', kind: 'Model', detail: 'World-model imagination supports robotic planning before execution.' },
+  { id: 'aha', title: 'AHA', year: 2024, x: 36, branch: 'embodied', parent: 'saycan', kind: 'Benchmark', detail: 'Embodied evaluation exposes hallucination and recovery behavior.' },
+  { id: 'rekep', title: 'ReKep', year: 2024, x: 61, branch: 'embodied', parent: 'reflect', kind: 'System', detail: 'Relational keypoint constraints structure long-horizon manipulation.' },
+  { id: 'visualwebarena', title: 'VisualWebArena', year: 2024, x: 76, branch: 'digital', parent: 'avis', kind: 'Benchmark', detail: 'Visual web tasks expose grounded reasoning over realistic interfaces.' },
+  { id: 'osworld', title: 'OSWorld', year: 2024, x: 89, branch: 'digital', parent: 'mmreact', kind: 'Benchmark', detail: 'Computer-use agents are evaluated against observable application state.' },
+  { id: 'roboarena', title: 'RoboArena', year: 2025, x: 27, branch: 'robotics', parent: 'robodreamer', kind: 'Benchmark', detail: 'Real-world evaluation adds environmental and execution variability.' },
+  { id: 'reflective', title: 'Reflective Planning', year: 2025, x: 42, branch: 'embodied', parent: 'aha', kind: 'System', detail: 'Reflection links planning decisions to feedback and correction.' },
+  { id: 'gemini', title: 'Gemini Robotics 1.5', year: 2025, x: 61, branch: 'embodied', parent: 'rekep', kind: 'System', detail: 'Generalist multimodal reasoning and physical action converge.' },
+  { id: 'agents2', title: 'Agent S2', year: 2025, x: 73, branch: 'digital', parent: 'visualwebarena', kind: 'System', detail: 'Specialized agents coordinate perception, planning, and GUI interaction.' },
+  { id: 'showui', title: 'ShowUI', year: 2025, x: 89, branch: 'digital', parent: 'osworld', kind: 'Model', detail: 'Vision-language-action modeling advances generalist GUI interaction.' },
+  { id: 'metaworlds', title: 'Meta-Worlds', year: 2026, x: 8, branch: 'robotics', parent: 'roboarena', kind: 'Benchmark', detail: 'A current benchmark frontier for evaluating robotic interaction.' },
+  { id: 'robolab', title: 'RoboLab', year: 2026, x: 22, branch: 'robotics', parent: 'roboarena', kind: 'System', detail: 'An integrated platform for studying capable robotic agents.' },
+  { id: 'recursive', title: 'Recursive Belief VLA', year: 2026, x: 36, branch: 'embodied', parent: 'reflective', kind: 'Model', detail: 'Recursive belief updates connect observation, action, and task progress.' },
+  { id: 'wla', title: 'World-Language-Action', year: 2026, x: 50, branch: 'embodied', parent: 'reflective', kind: 'Model', detail: 'World modeling and language reasoning are coupled to physical action.' },
+  { id: 'adapt', title: 'ADAPT', year: 2026, x: 64, branch: 'embodied', parent: 'gemini', kind: 'System', detail: 'Closed-loop adaptation connects PAPAV capabilities across task progress.' },
+  { id: 'osworld2', title: 'OS World 2.0', year: 2026, x: 78, branch: 'digital', parent: 'agents2', kind: 'Benchmark', detail: 'Broader operating-system tasks stress generalist digital agents.' },
+  { id: 'code2world', title: 'Code2World', year: 2026, x: 91, branch: 'digital', parent: 'showui', kind: 'Model', detail: 'Executable world representations support prospective digital interaction.' },
 ];
 
 const branchLabels: Record<Branch, string> = {
@@ -84,9 +88,11 @@ export default function EvolutionTree() {
     const element = treeRef.current;
     if (!element) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setActiveYear(2026);
-      setHasEntered(true);
-      return;
+      const timer = window.setTimeout(() => {
+        setActiveYear(2026);
+        setHasEntered(true);
+      }, 0);
+      return () => window.clearTimeout(timer);
     }
 
     const observer = new IntersectionObserver(([entry]) => {
@@ -127,7 +133,7 @@ export default function EvolutionTree() {
         <div>
           <span className="tree-live-dot" />
           <strong>Evolution tree</strong>
-          <small>{hasEntered ? `Growing through ${activeYear}` : 'Ready to grow'}</small>
+          <small>{hasEntered ? `Latest paper · growing through ${activeYear}` : 'Latest paper · ready to grow'}</small>
         </div>
         <div className="tree-filters" aria-label="Filter evolution branches">
           {(['root', 'robotics', 'embodied', 'digital'] as Branch[]).map((branch) => (
@@ -215,7 +221,10 @@ export default function EvolutionTree() {
         <div><span>{selected.year}</span><small>{selected.kind}</small></div>
         <strong>{selected.title}</strong>
         <p>{selected.detail}</p>
-        <em>{branchLabels[selected.branch]}</em>
+        <div className="tree-detail-links">
+          <em>{branchLabels[selected.branch]}</em>
+          <a href="evolution-tree-2026.jpg" target="_blank" rel="noopener noreferrer">Full 112-entry tree ↗</a>
+        </div>
       </div>
     </div>
   );
