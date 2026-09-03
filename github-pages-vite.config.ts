@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: resolve(process.cwd(), 'github-pages'),
-  base: '/PAPAV/',
+  base: '/Awesome-Agentic-Robots/',
   publicDir: resolve(process.cwd(), 'public'),
   css: { postcss: { plugins: [tailwindcss()] } },
   plugins: [react()],
