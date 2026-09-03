@@ -9,7 +9,7 @@
 
 <a href="https://chenanno.github.io/">Yanzhe Chen</a> · 
 <a href="https://github.com/ceilingFan456/">Qiming Huang</a> · 
-Jifeng Zhu ·
+<a href="https://github.com/ZEN-Weiss1984">Jifeng Zhu</a> ·
 <a href="https://ziyi510.github.io/">Ziyi Yang</a> · 
 <a href="https://andy4evertot1.github.io/anruihe/">Ruihe An</a> ·
 <a href="https://github.com/xupeiyao-dev">Peiyao Xu</a> ·
