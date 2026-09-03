@@ -8,7 +8,7 @@
 
 
 <a href="https://chenanno.github.io/">Yanzhe Chen</a> · 
-Qiming Huang · 
+<a href="https://github.com/ceilingFan456/">Qiming Huang</a> · 
 Jifeng Zhu ·
 <a href="https://ziyi510.github.io/">Ziyi Yang</a> · 
 <a href="https://andy4evertot1.github.io/anruihe/">Ruihe An</a> ·
