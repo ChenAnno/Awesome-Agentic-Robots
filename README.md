@@ -12,7 +12,7 @@ Qiming Huang ·
 Jifeng Zhu ·
 <a href="https://ziyi510.github.io/">Ziyi Yang</a> · 
 <a href="https://andy4evertot1.github.io/anruihe/">Ruihe An</a> ·
-Peiyao Xu ·
+<a href="https://github.com/xupeiyao-dev">Peiyao Xu</a> ·
 Hesen Yang · 
 <a href="https://github.com/Jackupjcup">Runda Liu</a> ·
 Chang Gong ·
