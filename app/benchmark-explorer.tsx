@@ -16,8 +16,8 @@ const categoryLabels: Record<BenchmarkCategory, string> = {
   RS: 'Robotic systems',
 };
 const coverageLabels: Record<Coverage, string> = {
-  direct: 'Direct',
-  partial: 'Partial',
+  direct: 'Explicit',
+  partial: 'Implicit',
   none: 'Not evaluated',
 };
 
@@ -82,7 +82,7 @@ export default function BenchmarkExplorer() {
   });
 
   const totalCells = Math.max(filtered.length * 5, 1);
-  const directCells = filtered.reduce((sum, item) => sum + item.coverage.filter((value) => value === 'direct').length, 0);
+  const explicitCells = filtered.reduce((sum, item) => sum + item.coverage.filter((value) => value === 'direct').length, 0);
   const latestYear = filtered.length ? Math.max(...filtered.map((item) => item.year)) : '—';
   const venueCount = new Set(filtered.map((item) => item.venue.replace(/'\d{2}$/, ''))).size;
 
@@ -104,7 +104,7 @@ export default function BenchmarkExplorer() {
         <div className="benchmark-tabs" aria-label="Benchmark category">
           {(['ALL', 'MMEA', 'MMA', 'RS'] as CategoryFilter[]).map((item) => (
             <button key={item} type="button" className={category === item ? 'active' : ''} onClick={() => chooseCategory(item)} aria-pressed={category === item}>
-              {item === 'ALL' ? 'All 62' : categoryLabels[item]}
+              {item === 'ALL' ? 'All' : categoryLabels[item]}
             </button>
           ))}
         </div>
@@ -132,7 +132,7 @@ export default function BenchmarkExplorer() {
 
       <div className="benchmark-live-stats" aria-live="polite">
         <div><strong>{filtered.length}</strong><span>visible benchmarks</span></div>
-        <div><strong>{Math.round((directCells / totalCells) * 100)}%</strong><span>direct PAPAV coverage</span></div>
+        <div><strong>{Math.round((explicitCells / totalCells) * 100)}%</strong><span>explicit PAPAV coverage</span></div>
         <div><strong>{venueCount}</strong><span>venue families</span></div>
         <div><strong>{latestYear}</strong><span>latest publication year</span></div>
       </div>
@@ -144,8 +144,8 @@ export default function BenchmarkExplorer() {
             <h3>{category === 'ALL' ? 'All benchmark families' : categoryLabels[category]}</h3>
           </div>
           <div className="coverage-legend" aria-label="Coverage legend">
-            <span><i className="legend-direct" /> Direct</span>
-            <span><i className="legend-partial" /> Partial</span>
+            <span><i className="legend-direct" /> Explicit</span>
+            <span><i className="legend-partial" /> Implicit</span>
             <span><i className="legend-none" /> Not evaluated</span>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function BenchmarkExplorer() {
           {summaries.map((summary, index) => (
             <button type="button" key={capabilityNames[index]} className={capability === index ? 'active' : ''} onClick={() => { setCapability(index); resetView(); }} style={{ '--capability': capabilityColors[index] } as React.CSSProperties}>
               <span className="coverage-name"><b>{capabilityNames[index].slice(0, 1)}</b>{capabilityNames[index]}</span>
-              <span className="coverage-stack" aria-label={`${capabilityNames[index]}: ${summary.direct} direct, ${summary.partial} partial, ${summary.none} not evaluated`}>
+              <span className="coverage-stack" aria-label={`${capabilityNames[index]}: ${summary.direct} explicit, ${summary.partial} implicit, ${summary.none} not evaluated`}>
                 <i className="segment-direct" style={{ width: `${summary.directPct}%`, flexBasis: `${summary.directPct}%`, backgroundColor: coverageColors.direct }} />
                 <i className="segment-partial" style={{ width: `${summary.partialPct}%`, flexBasis: `${summary.partialPct}%`, backgroundColor: coverageColors.partial }} />
                 <i className="segment-none" style={{ width: `${summary.nonePct}%`, flexBasis: `${summary.nonePct}%`, backgroundColor: coverageColors.none }} />
@@ -222,8 +222,8 @@ export default function BenchmarkExplorer() {
 }
 
 function BenchmarkRow({ row, expanded, onToggle, selectedCapability }: { row: Benchmark; expanded: boolean; onToggle: () => void; selectedCapability: number }) {
-  const direct = row.coverage.filter((value) => value === 'direct').length;
-  const partial = row.coverage.filter((value) => value === 'partial').length;
+  const explicit = row.coverage.filter((value) => value === 'direct').length;
+  const implicit = row.coverage.filter((value) => value === 'partial').length;
 
   return (
     <>
@@ -244,8 +244,8 @@ function BenchmarkRow({ row, expanded, onToggle, selectedCapability }: { row: Be
           <td colSpan={10}>
             <div>
               <span><b>{row.year}</b> publication year</span>
-              <span><b>{direct}</b> directly evaluated capabilities</span>
-              <span><b>{partial}</b> implicitly involved capabilities</span>
+              <span><b>{explicit}</b> explicitly evaluated capabilities</span>
+              <span><b>{implicit}</b> implicitly involved capabilities</span>
               <p><strong>Task profile</strong>{row.name} evaluates {row.task.toLowerCase()} in a {row.subcategory.toLowerCase()} setting, positioned within {categoryLabels[row.category].toLowerCase()}.</p>
             </div>
           </td>

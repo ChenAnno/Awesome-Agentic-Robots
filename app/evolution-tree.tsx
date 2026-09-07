@@ -223,7 +223,7 @@ export default function EvolutionTree() {
         <p>{selected.detail}</p>
         <div className="tree-detail-links">
           <em>{branchLabels[selected.branch]}</em>
-          <a href="evolution-tree-2026.jpg" target="_blank" rel="noopener noreferrer">Full 112-entry tree ↗</a>
+          <a href="/evolution-tree-2026.pdf" target="_blank" rel="noopener noreferrer">Full 112-entry tree ↗</a>
         </div>
       </div>
     </div>

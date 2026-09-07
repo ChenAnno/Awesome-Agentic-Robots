@@ -6,7 +6,7 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vinext dev",
+    "dev": "vite",
     "build": "vinext build",
     "build:pages": "vite build --config github-pages-vite.config.ts",
     "start": "vinext start",
