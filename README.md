@@ -1,7 +1,7 @@
 <div align="center">
 <br>
 
-# PAPAV: A Capability-Centric Survey of Multimodal Embodied Agents
+# When Agents Meet the Physical World: A Survey of Multimodal Embodied Agents
 
 <img src="./assets/readme/papav-logo.svg" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
 
