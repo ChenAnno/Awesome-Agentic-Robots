@@ -62,9 +62,8 @@ export default function Home() {
           <HeroCapabilityLogo capabilities={capabilities} />
           <h1>
             <span className="title-rest">
-              When Agents Meet the <span className="keep-together">Physical World:</span>{' '}
-              A Survey of Multimodal{' '}
-              <span className="keep-together">Embodied Agents</span>
+              Survey on Multimodal Embodied Agents:{' '}
+              A Unified Capability-Centric Perspective from Digital Task Automation to Physical Robotic Autonomy
             </span>
           </h1>
           <p className="hero-deck">
@@ -102,12 +101,12 @@ export default function Home() {
       <section className="abstract-section" id="abstract">
         <div>
           <p className="section-kicker">Abstract</p>
-          <h2>What changes when a multimodal agent enters the physical world?</h2>
+          <h2>What changes when a multimodal agent moves from digital task automation to physical robotic autonomy?</h2>
         </div>
         <div className="abstract-copy">
-          <p>Multimodal agents sustain interaction through reasoning, memory, tools, and feedback, while robotic systems close sensing–action loops under physical dynamics. We define <em>multimodal embodied agent</em> (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action, using the resulting feedback to revise later decisions. This integration raises a central question: <em>what changes when a multimodal agent enters the physical world?</em></p>
-          <p>We introduce <strong>PAPAV</strong>, a capability-centric framework for a recurring task loop: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface, and Verify the outcome.</p>
-          <p>By defining capabilities by function, PAPAV identifies what all three share, then separately compares MMEAs with MMAs and with RSs. Physical interaction leaves fewer choices fixed by interfaces or system design and less room to reverse errors. Across 62 benchmarks, explicit evaluation centers on Act; only 4 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across the full interaction loop.</p>
+          <p>Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, while robotic systems (RSs) close sensing–action loops under physical dynamics. We define <em>multimodal embodied agents</em> (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: <em>what changes when a multimodal agent moves from digital task automation to physical robotic autonomy?</em></p>
+          <p>We introduce <strong>PAPAV</strong>, a unified capability-centric framework for a recurring task loop: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome.</p>
+          <p>Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 62 benchmarks, explicit evaluation centers on Act; only 4 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across the full interaction loop.</p>
         </div>
       </section>
 
