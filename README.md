@@ -1,7 +1,7 @@
 <div align="center">
 <br>
 
-# Survey on Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use
+# Awesome Multimodal Embodied Agents: from Computer-Use to Robot-Use
 
 <img src="./assets/readme/papav-logo.svg" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
 
@@ -28,9 +28,9 @@ Show Lab @ National University of Singapore<br>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2510.01174">📄 Paper</a> &nbsp; | &nbsp;
-  <a href="https://huggingface.co/papers/2510.01174">🤗 Daily Paper</a> &nbsp; | &nbsp;
-  <a href="https://seizethe-day.github.io/PAPAV/">🌐 Project Website</a> &nbsp; | &nbsp;
-  <a href="https://x.com/KevinQHLin/status/1974199353695941114">💬 X (Twitter)</a>
+  <!--<a href="https://huggingface.co/papers/2510.01174">🤗 Daily Paper</a> &nbsp; | &nbsp;-->
+  <a href="https://seizethe-day.github.io/PAPAV/">🌐 Project Website</a>
+  <!--<a href="https://x.com/KevinQHLin/status/1974199353695941114">💬 X (Twitter)</a>-->
 </p>
 
 <!--[![Paper list](https://img.shields.io/badge/Resource-Paper_List-F4A12D?style=flat-square)](#contents)
