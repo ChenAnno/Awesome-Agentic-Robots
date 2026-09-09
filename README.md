@@ -1,16 +1,16 @@
 <div align="center">
 <br>
 
-# Awesome Multimodal Embodied Agents: from Computer-Use to Robot-Use
+# Awesome Multimodal Embodied Agents:<br>From Computer-Use to Robot-Use
 
 <img src="./assets/readme/papav-logo.svg" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
 
 
 
 <a href="https://chenanno.github.io/">Yanzhe Chen</a> · 
-<a href="https://github.com/ceilingFan456/">Qiming Huang</a> · 
-<a href="https://github.com/ZEN-Weiss1984">Jifeng Zhu</a> ·
 <a href="https://ziyi510.github.io/">Ziyi Yang</a> · 
+<a href="https://github.com/ZEN-Weiss1984">Jifeng Zhu</a> ·
+<a href="https://github.com/ceilingFan456/">Qiming Huang</a> · 
 <a href="https://anruihe.github.io/">Ruihe An</a> ·
 <a href="https://github.com/xupeiyao-dev">Peiyao Xu</a> ·
 <a href="https://academic.hesenyang-ethan.com/">Hesen Yang</a> ·
