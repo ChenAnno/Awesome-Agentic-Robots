@@ -1,7 +1,7 @@
 <div align="center">
 <br>
 
-# When Agents Meet the Physical World: A Survey of Multimodal Embodied Agents
+# Survey on Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use
 
 <img src="./assets/readme/papav-logo.svg" width="39%" alt="PAPAV: Perceive, Anticipate, Plan, Act, Verify">
 
@@ -17,11 +17,11 @@
 <a href="https://github.com/Jackupjcup">Runda Liu</a> ·
 <a href="https://github.com/seizethe-day">Chang Gong</a> ·
 <a href="https://caozhijun.top/">Zhijun Cao</a> · 
-Zechen Bai · 
-Wenzheng Zeng ·
+<a href="https://www.baizechen.site/">Zechen Bai</a><sup>*</sup> ·
+<a href="https://wenzhengzeng.github.io/">Wenzheng Zeng</a><sup>*</sup> ·
 <a href="https://qhlin.me/">Kevin Qinghong Lin</a> · 
-Yiqi Lin · 
-Guoqiang Liang ·
+<a href="https://linyq17.github.io/">Yiqi Lin</a> ·
+<a href="https://ethanliang99.github.io/">Guoqiang Liang</a> ·
 <a href="https://sites.google.com/view/showlab/home">Mike Zheng Shou<sup>†</sup>
 
 Show Lab @ National University of Singapore<br>
