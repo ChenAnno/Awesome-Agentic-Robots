@@ -17,8 +17,8 @@
 <a href="https://github.com/Jackupjcup">Runda Liu</a> &middot;
 <a href="https://github.com/seizethe-day">Chang Gong</a> &middot;
 <a href="https://caozhijun.top/">Zhijun Cao</a> &middot;
-<a href="https://www.baizechen.site/">Zechen Bai</a><sup>&#42;</sup> &middot;
-<a href="https://wenzhengzeng.github.io/">Wenzheng Zeng</a><sup>&#42;</sup><br>
+<a href="https://www.baizechen.site/">Zechen Bai</a> &middot;
+<a href="https://wenzhengzeng.github.io/">Wenzheng Zeng</a><br>
 <a href="https://linyq17.github.io/">Yiqi Lin</a> &middot;
 <a href="https://ethanliang99.github.io/">Guoqiang Liang</a> &middot;
 <a href="https://kevinskwk.github.io/">Kevin Yuchen Ma</a> &middot;
