@@ -47,7 +47,7 @@
 
 This repository accompanies our survey on **multimodal embodied agents (MMEAs)**: systems that couple
 multimodal reasoning with physical action and learn from the resulting feedback. It asks one question:
-*what changes when a multimodal agent moves from computer-use to robot-use?*
+***what changes when a multimodal agent moves from computer-use to robot-use?***
 
 <p align="center">
   <a href="./assets/readme/papav-teaser.png">
