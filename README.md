@@ -25,7 +25,7 @@
 <a href="https://qhlin.me/">Kevin Qinghong Lin</a> &middot;
 <a href="https://sites.google.com/view/showlab/home">Mike Zheng Shou</a><sup>&dagger;</sup>
 
-Show Lab @ National University of Singapore<br>
+<a href="https://sites.google.com/view/showlab/home">Show Lab</a> @ National University of Singapore<br>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2510.01174">📄 Paper</a> &nbsp; | &nbsp;
