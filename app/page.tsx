@@ -1,180 +1,268 @@
-import EvolutionTree from './evolution-tree';
-import BenchmarkExplorer from './benchmark-explorer';
-import SimilarityDifference from './similarity-difference';
-import ImmersiveMotion from './immersive-motion';
-import HeroCapabilityLogo from './hero-capability-logo';
-import HeroCapabilityOrbit from './hero-capability-orbit';
+import BenchmarkExplorer from "./benchmark-explorer";
+import SimilarityDifference from "./similarity-difference";
+import EvolutionTree from "./evolution-tree";
+import PapavFramework from "./papav-framework";
+import { benchmarks } from "./benchmark-data";
+import {
+  authors,
+  authorHomepages,
+  capabilities,
+  challenges,
+} from "./survey-content";
 
-const capabilities = [
-  { letter: 'P', name: 'Perceive', color: '#F57C6E', tag: 'Ground', question: 'What is true now?', text: 'Construct an action-relevant belief from heterogeneous, partial observations.' },
-  { letter: 'A', name: 'Anticipate', color: '#F2B56F', tag: 'Forecast', question: 'What may happen next?', text: 'Estimate action-conditioned futures, risks, rewards, and task progress before commitment.' },
-  { letter: 'P', name: 'Plan', color: '#84C3B7', tag: 'Decide', question: 'What should be done?', text: 'Select an executable course of action under the current belief and applicable constraints.' },
-  { letter: 'A', name: 'Act', color: '#71B7ED', tag: 'Intervene', question: 'How is it executed?', text: 'Realize a selected decision as an environment-valid, revisable intervention.' },
-  { letter: 'V', name: 'Verify', color: '#B8AEEB', tag: 'Judge', question: 'Did the change occur?', text: 'Use post-action evidence to determine whether the intended change actually occurred.' },
+const authorRows = [
+  authors.slice(0, 6),
+  authors.slice(6, 12),
+  authors.slice(12),
 ];
 
-const challenges = [
-  ['01', 'Persistent physical belief', 'What should an embodied agent retain, revise, or forget as the world changes?'],
-  ['02', 'Decision-relevant prediction', 'What future information must an embodied agent predict to make a good decision?'],
-  ['03', 'Adaptive commitment', 'How long should an agent continue executing before observing and replanning?'],
-  ['04', 'Uncertainty-conditioned control', 'When uncertain, should an agent act, gather more information, or ask for help?'],
-  ['05', 'Learning from verification', 'How can verification guide reliable improvement across the PAPAV loop?'],
-];
+const total = benchmarks.length;
+const explicit = (index: number) =>
+  benchmarks.filter((row) => row.coverage[index] === "direct").length;
 
-const authors = [
-  'Yanzhe Chen', 'Qiming Huang', 'Jifeng Zhu', 'Ziyi Yang', 'Ruihe An', 'Peiyao Xu',
-  'Hesen Yang', 'Runda Liu', 'Chang Gong', 'Zhijun Cao', 'Zechen Bai', 'Wenzheng Zeng',
-  'Kevin Qinghong Lin', 'Yiqi Lin', 'Guoqiang Liang', 'Mike Zheng Shou',
-];
+function PapavName() {
+  return (
+    <strong className="keep-together">
+      {capabilities.map((item) => (
+        <span key={item.name} style={{ color: item.color }}>
+          {item.name[0]}
+        </span>
+      ))}
+    </strong>
+  );
+}
+
+function CapabilityName({ index }: { index: number }) {
+  const item = capabilities[index];
+  return (
+    <span className="keep-together">
+      <span style={{ color: item.color, fontWeight: 700 }}>{item.name[0]}</span>
+      {item.name.slice(1)}
+    </span>
+  );
+}
 
 export default function Home() {
   return (
-    <main>
-      <ImmersiveMotion />
-      <nav className="site-nav" aria-label="Primary navigation">
-        <a className="brand" href="#top" aria-label="PAPAV home">
-          <span className="brand-word" aria-hidden="true">
-            {'PAPAV'.split('').map((letter, index) => (
-              <i key={`${letter}-${index}`} style={{ color: capabilities[index].color }}>{letter}</i>
+    <>
+      <a className="skip-link" href="#abstract">
+        Skip to content
+      </a>
+      <header className="hero" id="top">
+        <div className="hero-inner">
+          <p className="wordmark" aria-label="PAPAV">
+            {capabilities.map((item) => (
+              <span key={item.name} style={{ color: item.color }}>
+                {item.name[0]}
+              </span>
             ))}
-          </span>
-        </a>
-        <div className="nav-links">
-          <a href="#framework">Framework</a>
-          <a href="#abstract">Abstract</a>
-          <a href="#comparison">Comparison</a>
-          <a href="#benchmarks">Benchmarks</a>
-          <a href="#challenges">Challenges</a>
-        </div>
-        <a
-          className="nav-cta"
-          href="https://github.com/ChenAnno/Awesome-Agentic-Robots#e-benchmarks"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub <span>↗</span>
-        </a>
-      </nav>
-
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span /> Capability-centric survey · 2026</p>
-          <HeroCapabilityLogo capabilities={capabilities} />
+          </p>
           <h1>
-            <span className="title-rest">
-              Survey on Multimodal Embodied Agents:{' '}
-              A Unified Capability-Centric Perspective from Digital Task Automation to Physical Robotic Autonomy
+            <span>Survey on Multimodal Embodied Agents:</span>
+            <span>
+              A Unified Capability-centric Perspective from Computer-Use to
+              Robot-Use
             </span>
           </h1>
-          <p className="hero-deck">
-            A unified lens for understanding how multimodal agents perceive,
-            anticipate, plan, act, and verify across digital and physical worlds.
+          <p className="hero-subtitle">
+            Perceive · Anticipate · Plan · Act · Verify
           </p>
-          <div className="hero-paper-details" id="citation" aria-label="Paper details">
-            <p className="hero-paper-label">Paper details</p>
-            <p className="hero-authors">{authors.join(' · ')}</p>
-            <div className="hero-paper-meta">
-              <span>Show Lab, National University of Singapore</span>
-            </div>
+          <div
+            className="authors"
+            id="citation"
+            aria-label="Paper authors in manuscript order"
+          >
+            {authorRows.map((row) => (
+              <div className="author-row" key={row[0]}>
+                {row.map((name) => (
+                  <span className="author" key={name}>
+                    <a
+                      href={authorHomepages[name]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {name}
+                    </a>
+                    {name === "Mike Zheng Shou" && <sup>†</sup>}
+                  </span>
+                ))}
+              </div>
+            ))}
           </div>
+          <p className="affiliation">
+            Show Lab, National University of Singapore
+          </p>
+          <p className="author-note">† Corresponding author</p>
           <div className="hero-actions" id="paper">
-            <a className="button primary" href="#framework">Explore the framework <span>↓</span></a>
-            <a className="button secondary" href="#abstract">Read abstract</a>
-          </div>
-        </div>
-
-        <HeroCapabilityOrbit capabilities={capabilities} />
-      </section>
-
-      <figure className="teaser-section" id="framework" aria-labelledby="teaser-caption">
-        <img
-          src="papav-teaser.webp"
-          width="2048"
-          height="844"
-          alt="Five PAPAV capability columns, Perceive, Anticipate, Plan, Act, and Verify, each pairing a digital interface illustration with an embodied robot illustration"
-        />
-        <figcaption id="teaser-caption">
-          This illustration presents the five-stage PAPAV framework, in which an embodied agent perceives the environment, anticipates potential failures, plans an appropriate action sequence, executes the task, and verifies the outcome.
-        </figcaption>
-      </figure>
-
-      <section className="abstract-section" id="abstract">
-        <div>
-          <p className="section-kicker">Abstract</p>
-          <h2>What changes when a multimodal agent moves from digital task automation to physical robotic autonomy?</h2>
-        </div>
-        <div className="abstract-copy">
-          <p>Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, while robotic systems (RSs) close sensing–action loops under physical dynamics. We define <em>multimodal embodied agents</em> (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: <em>what changes when a multimodal agent moves from digital task automation to physical robotic autonomy?</em></p>
-          <p>We introduce <strong>PAPAV</strong>, a unified capability-centric framework for a recurring task loop: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome.</p>
-          <p>Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across the full interaction loop.</p>
-        </div>
-      </section>
-
-      <SimilarityDifference />
-
-      <section className="domains-section" aria-labelledby="domains-title">
-        <div className="domains-copy">
-          <p className="section-kicker">Across digital and physical worlds</p>
-          <h2 id="domains-title">A common function. Different constraints.</h2>
-          <p>Robotic systems, multimodal embodied agents, and multimodal agents can instantiate similar capability relations while operating under very different evidence, action, and verification conditions.</p>
-          <div className="domain-list">
-            <div><span>01</span><strong>Robotic systems</strong><small>Sensors · control signals · physical state</small></div>
-            <div><span>02</span><strong>MM embodied agents</strong><small>Agentic reasoning under embodied constraints</small></div>
-            <div><span>03</span><strong>Multimodal agents</strong><small>Tool calls · GUI actions · digital feedback</small></div>
-          </div>
-        </div>
-        <EvolutionTree />
-      </section>
-
-      <section className="benchmarks-section" id="benchmarks" aria-labelledby="benchmarks-title">
-        <div className="benchmark-intro">
-          <div>
-            <p className="section-kicker">Benchmarks & evaluation</p>
-            <h2 id="benchmarks-title">Coverage is broad. Diagnosis is not.</h2>
-          </div>
-          <div className="benchmark-intro-copy">
-            <p>The survey maps 64 benchmarks across three research families. Most evaluation still emphasizes aggregate outcomes, leaving capability bottlenecks and failure transitions difficult to identify.</p>
             <a
-              className="benchmark-repo-link"
-              href="https://github.com/ChenAnno/Awesome-Agentic-Robots#e-benchmarks"
+              className="pill"
+              href="https://github.com/ChenAnno/Awesome-Agentic-Robots"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View benchmark repository <span>↗</span>
+              GitHub
             </a>
+            <button className="pill paper-placeholder" type="button" disabled>
+              Paper
+            </button>
           </div>
         </div>
-        <BenchmarkExplorer />
-      </section>
+      </header>
+      <nav className="section-nav" aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#framework">Framework</a>
+        <a href="#comparison">Capabilities</a>
+        <a href="#landscape">Research landscape</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#challenges">Open challenges</a>
+      </nav>
+      <main>
+        <section
+          className="paper-section prose-column"
+          id="abstract"
+          aria-labelledby="abstract-title"
+        >
+          <h2 id="abstract-title">Abstract</h2>
+          <p className="abstract-copy">
+            Multimodal agents (MMAs) sustain interaction through reasoning,
+            memory, tools, and feedback, most visibly as computer-use agents,
+            while robotic systems (RSs) couple sensing and actuation under
+            physical dynamics. We define <em>multimodal embodied agents</em>{" "}
+            (MMEAs) as goal-directed systems that couple multimodal task
+            reasoning with physical action and revise decisions from the
+            resulting feedback. This raises a central question:{" "}
+            <em>
+              what changes when a multimodal agent moves from computer-use to
+              robot-use?
+            </em>{" "}
+            We introduce <PapavName />, a unified capability-centric framework
+            of five recurring functions:{" "}
+            <strong>
+              <CapabilityName index={0} />
+            </strong>{" "}
+            the current state,{" "}
+            <strong>
+              <CapabilityName index={1} />
+            </strong>{" "}
+            action effects,{" "}
+            <strong>
+              <CapabilityName index={2} />
+            </strong>{" "}
+            a feasible course,{" "}
+            <strong>
+              <CapabilityName index={3} />
+            </strong>{" "}
+            through an interface or body, and{" "}
+            <strong>
+              <CapabilityName index={4} />
+            </strong>{" "}
+            the outcome. Defined by function rather than architecture, these
+            capabilities let PAPAV identify what all three share and then
+            compare MMEAs with MMAs and with RSs. Five physical constraints,
+            from partial observability to unverifiable outcomes, leave fewer
+            choices fixed in advance and less room to reverse errors. Across{" "}
+            {total} benchmarks, explicit evaluation centers on Act; only{" "}
+            {explicit(1)} assess Anticipate and {explicit(4)} assess Verify,
+            leaving both largely hidden behind task success. These constraints
+            also frame the open challenges we identify. PAPAV therefore provides
+            a common basis for designing reliable physical agents and measuring
+            progress across all five capabilities rather than task success
+            alone.
+          </p>
+        </section>
 
-      <section className="challenges-section" id="challenges" aria-labelledby="challenges-title">
-        <div className="challenge-title-wrap">
-          <p className="section-kicker">Open challenges</p>
-          <h2 id="challenges-title">The loop is only as strong as its transitions.</h2>
-          <p>Stronger components do not by themselves keep the PAPAV loop coordinated under partial observation, environmental change, uncertainty, and difficult-to-verify outcomes.</p>
-        </div>
-        <div className="challenge-list">
-          {challenges.map(([number, title, text]) => (
-            <article key={number}>
-              <span>OC{number}</span>
-              <h3>{title}</h3>
-              <p>{text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <footer>
-        <a className="brand footer-brand" href="#top" aria-label="PAPAV home">
-          <span className="brand-word" aria-hidden="true">
-            {'PAPAV'.split('').map((letter, index) => (
-              <i key={`${letter}-${index}`} style={{ color: capabilities[index].color }}>{letter}</i>
+        <section
+          className="paper-section wide-column"
+          id="framework"
+          aria-labelledby="framework-title"
+        >
+          <div className="section-intro">
+            <h2 id="framework-title">The PAPAV framework</h2>
+          </div>
+          <PapavFramework />
+          <div className="capability-list">
+            {capabilities.map((item) => (
+              <div key={item.name}>
+                <h3 style={{ borderColor: item.color }}>{item.name}</h3>
+                <p>{item.role}</p>
+              </div>
             ))}
-          </span>
+          </div>
+        </section>
+
+        <SimilarityDifference />
+
+        <section
+          className="paper-section wide-column"
+          id="landscape"
+          aria-labelledby="landscape-title"
+        >
+          <div className="section-intro">
+            <h2 id="landscape-title">Research landscape</h2>
+          </div>
+          <EvolutionTree />
+        </section>
+
+        <section
+          className="paper-section wide-column"
+          id="benchmarks"
+          aria-labelledby="benchmarks-title"
+        >
+          <div className="section-intro">
+            <h2 id="benchmarks-title">Benchmarks & evaluation</h2>
+            <p>
+              <a
+                href="https://github.com/ChenAnno/Awesome-Agentic-Robots#e-benchmarks"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Benchmark references on GitHub
+              </a>
+            </p>
+          </div>
+          <BenchmarkExplorer />
+        </section>
+
+        <section
+          className="paper-section prose-column"
+          id="challenges"
+          aria-labelledby="challenges-title"
+        >
+          <h2 id="challenges-title">Open challenges</h2>
+          <div className="challenge-list">
+            {challenges.map(([title, question], index) => (
+              <article key={title}>
+                <h3>
+                  <span
+                    className="challenge-index"
+                    style={{ backgroundColor: capabilities[index].color }}
+                  >
+                    OC{index + 1}.
+                  </span>{" "}
+                  {title}
+                </h3>
+                <p className="challenge-question">{question}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a
+          href="https://sites.google.com/view/showlab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="assets/showlab-logo.png"
+            alt="Show Lab"
+            width="110"
+            height="42"
+          />
         </a>
-        <p>Multimodal Embodied Agents Survey · 2026</p>
+        <p>Show Lab, National University of Singapore · 2026</p>
         <a href="#top">Back to top ↑</a>
       </footer>
-    </main>
+    </>
   );
 }
