@@ -7,9 +7,23 @@
 
 
 
-<a href="https://chenanno.github.io/">Yanzhe Chen</a> &middot; <a href="https://ziyi510.github.io/">Ziyi Yang</a> &middot; <a href="https://github.com/ZEN-Weiss1984">Jifeng Zhu</a> &middot; <a href="https://github.com/ceilingFan456/">Qiming Huang</a> &middot; <a href="https://anruihe.github.io/">Ruihe An</a> &middot; <a href="https://github.com/xupeiyao-dev">Peiyao Xu</a><br>
-<a href="https://academic.hesenyang-ethan.com/">Hesen Yang</a> &middot; <a href="https://github.com/Jackupjcup">Runda Liu</a> &middot; <a href="https://github.com/seizethe-day">Chang Gong</a> &middot; <a href="https://caozhijun.top/">Zhijun Cao</a> &middot; <a href="https://www.baizechen.site/">Zechen Bai</a><sup>*</sup> &middot; <a href="https://wenzhengzeng.github.io/">Wenzheng Zeng</a><sup>*</sup><br>
-<a href="https://qhlin.me/">Kevin Qinghong Lin</a> &middot; <a href="https://linyq17.github.io/">Yiqi Lin</a> &middot; <a href="https://ethanliang99.github.io/">Guoqiang Liang</a> &middot; <a href="https://sites.google.com/view/showlab/home">Mike Zheng Shou</a><sup>&dagger;</sup>
+<a href="https://chenanno.github.io/">Yanzhe Chen</a> &middot;
+<a href="https://ziyi510.github.io/">Ziyi Yang</a> &middot;
+<a href="https://github.com/ZEN-Weiss1984">Jifeng Zhu</a> &middot;
+<a href="https://github.com/ceilingFan456/">Qiming Huang</a> &middot;
+<a href="https://anruihe.github.io/">Ruihe An</a> &middot;
+<a href="https://github.com/xupeiyao-dev">Peiyao Xu</a><br>
+<a href="https://academic.hesenyang-ethan.com/">Hesen Yang</a> &middot;
+<a href="https://github.com/Jackupjcup">Runda Liu</a> &middot;
+<a href="https://github.com/seizethe-day">Chang Gong</a> &middot;
+<a href="https://caozhijun.top/">Zhijun Cao</a> &middot;
+<a href="https://www.baizechen.site/">Zechen Bai</a><sup>&#42;</sup> &middot;
+<a href="https://wenzhengzeng.github.io/">Wenzheng Zeng</a><sup>&#42;</sup><br>
+<a href="https://linyq17.github.io/">Yiqi Lin</a> &middot;
+<a href="https://ethanliang99.github.io/">Guoqiang Liang</a> &middot;
+<a href="https://kevinskwk.github.io/">Kevin Yuchen Ma</a> &middot;
+<a href="https://qhlin.me/">Kevin Qinghong Lin</a> &middot;
+<a href="https://sites.google.com/view/showlab/home">Mike Zheng Shou</a><sup>&dagger;</sup>
 
 Show Lab @ National University of Singapore<br>
 
