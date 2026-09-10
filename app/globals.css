@@ -36,6 +36,8 @@ a { color: inherit; text-decoration: none; }
 .scroll-progress { position: fixed; z-index: 100; top: 0; left: 0; width: 100%; height: 3px; pointer-events: none; transform: scaleX(var(--page-progress,0)); transform-origin: left center; background: linear-gradient(90deg,#f57c6e 0 20%,#f2b56f 20% 40%,#84c3b7 40% 60%,#71b7ed 60% 80%,#8f78dc 80%); box-shadow: 0 0 18px rgba(113,183,237,.45); }
 .motion-ready .motion-item, .motion-ready .motion-stagger { opacity: 0; filter: blur(9px); transform: translate3d(0,52px,0) scale(.985); transition: opacity .9s cubic-bezier(.2,.75,.2,1) var(--motion-delay,0ms),transform 1.05s cubic-bezier(.16,1,.3,1) var(--motion-delay,0ms),filter .9s ease var(--motion-delay,0ms); will-change: opacity,transform,filter; }
 .motion-ready .motion-item.is-visible, .motion-ready .motion-stagger.is-visible { opacity: 1; filter: blur(0); transform: translate3d(0,0,0) scale(1); }
+.motion-ready .teaser-section .motion-item { filter: blur(3px); transform: translate3d(0,22px,0); transition-duration: .7s,.85s,.7s; }
+.motion-ready .teaser-section .motion-item.is-visible { filter: blur(0); transform: translate3d(0,0,0); }
 
 .site-nav {
   position: fixed;
@@ -171,16 +173,16 @@ h1 { margin: 0; letter-spacing: -.045em; }
 @keyframes node-float { from { transform: translateY(-5px) scale(.985); } to { transform: translateY(7px) scale(1.02); } }
 @keyframes core-breathe { 0%,100% { box-shadow: 0 20px 90px rgba(0,0,0,.32),0 0 0 0 rgba(113,183,237,0); } 50% { box-shadow: 0 24px 100px rgba(0,0,0,.38),0 0 0 18px rgba(113,183,237,.035); } }
 
-.intro-section { padding: 104px clamp(24px, 7vw, 108px) 110px; }
 .section-kicker { color: #344b55; font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-.intro-grid { display: grid; grid-template-columns: minmax(0,1.14fr) minmax(0,.86fr); gap: clamp(48px,7vw,108px); align-items: end; margin: 28px 0 0; }
-.intro-grid h2, .abstract-section h2 { margin: 0; font: 400 var(--type-section)/1.07 var(--font-display); letter-spacing: -.038em; }
-.intro-grid p { margin: 0; color: var(--muted); font-size: var(--type-lead); line-height: 1.66; }
+.abstract-section h2 { margin: 0; font: 400 var(--type-section)/1.07 var(--font-display); letter-spacing: -.038em; }
 .abstract-section { min-height: 580px; display: grid; grid-template-columns: minmax(300px,.72fr) minmax(0,1.28fr); gap: clamp(48px,8vw,128px); padding: 104px clamp(24px, 7vw, 108px); color: #eef4f2; background: #172a32; }
 .abstract-section .section-kicker { color: #8ba0a7; margin: 0 0 25px; }
 .abstract-copy { align-self: center; padding: 28px 0; border-top: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); }
 .abstract-copy p { margin: 0; color: #cfdbdd; font-size: var(--type-body); line-height: 1.68; }
 .abstract-copy p + p { margin-top: 17px; }
+.teaser-section { margin: 0; padding: 32px clamp(24px,7vw,108px) 48px; scroll-margin-top: 68px; background: #fff; }
+.teaser-section img { display: block; width: 100%; height: auto; }
+.teaser-section figcaption { margin: 16px 0 0; color: var(--muted); font: 400 var(--type-lead)/1.68 var(--font-ui); }
 
 .section-heading-row, .benchmark-intro { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(48px,7vw,108px); align-items: end; }
 .section-heading-row h2, .benchmark-intro h2, .domains-copy h2, .challenge-title-wrap h2 { margin: 25px 0 0; font: 400 var(--type-section)/1.06 var(--font-display); letter-spacing: -.04em; }
@@ -805,14 +807,14 @@ footer > a:last-child { justify-self: end; }
   .loop-core.selected p { line-height: 1.35; }
   .loop-core.selected small { display: none; }
   .cap-node { width: 82px; height: 82px; }
-  .intro-section { padding-top: 86px; padding-bottom: 90px; }
-  .intro-grid, .abstract-section { grid-template-columns: 1fr; }
-  .intro-grid { gap: 30px; margin-bottom: 46px; }
+  .abstract-section { grid-template-columns: 1fr; }
   .abstract-section { min-height: 420px; padding-top: 80px; padding-bottom: 80px; }
   .section-heading-row, .benchmark-intro, .challenge-title-wrap { grid-template-columns: 1fr; gap: 30px; }
   .capability-cards { grid-template-columns: 1fr; margin-top: 50px; }
   .capability-cards article, .capability-cards article:last-child { grid-column: auto; min-height: 315px; }
   .cap-letter { margin-top: 35px; }
+  .teaser-section { padding: 28px 22px 36px; }
+  .teaser-section figcaption { margin-top: 14px; }
   .comparison-section { padding: 86px 22px 96px; }
   .comparison-tabs { display: flex; overflow-x: auto; margin-top: 50px; }
   .comparison-tabs button { min-width: 155px; }

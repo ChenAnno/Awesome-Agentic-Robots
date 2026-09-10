@@ -27,7 +27,7 @@ export default function ImmersiveMotion() {
     }, { threshold: 0.13, rootMargin: '0px 0px -8% 0px' });
 
     const revealTargets = new Set<Element>();
-    document.querySelectorAll('main > section:not(.hero)').forEach((section) => {
+    document.querySelectorAll('main > section:not(.hero), main > figure.teaser-section').forEach((section) => {
       section.classList.add('motion-chapter');
       Array.from(section.children).forEach((child, index) => {
         child.classList.add('motion-item');

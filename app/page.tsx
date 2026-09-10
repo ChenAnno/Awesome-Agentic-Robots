@@ -14,11 +14,11 @@ const capabilities = [
 ];
 
 const challenges = [
-  ['01', 'Persistent state & memory', 'What should an agent retain, update, retrieve, and forget under partial observability?'],
-  ['02', 'Planning & execution granularity', 'How long should an agent commit before it looks, thinks, and decides again?'],
-  ['03', 'Verification architecture', 'Should the acting model judge its own outcome, or should a dedicated verifier intervene?'],
-  ['04', 'Future prediction & world modeling', 'What is the minimal predictive representation sufficient for reliable decisions?'],
-  ['05', 'Acting under uncertainty', 'When should an agent act, gather more evidence, ask for help, or abstain?'],
+  ['01', 'Persistent physical belief', 'What should an embodied agent retain, revise, or forget as the world changes?'],
+  ['02', 'Decision-relevant prediction', 'What future information must an embodied agent predict to make a good decision?'],
+  ['03', 'Adaptive commitment', 'How long should an agent continue executing before observing and replanning?'],
+  ['04', 'Uncertainty-conditioned control', 'When uncertain, should an agent act, gather more information, or ask for help?'],
+  ['05', 'Learning from verification', 'How can verification guide reliable improvement across the PAPAV loop?'],
 ];
 
 const authors = [
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#framework">Framework</a>
           <a href="#abstract">Abstract</a>
-          <a href="#comparison">Compare</a>
+          <a href="#comparison">Comparison</a>
           <a href="#benchmarks">Benchmarks</a>
           <a href="#challenges">Challenges</a>
         </div>
@@ -86,17 +86,17 @@ export default function Home() {
         <HeroCapabilityOrbit capabilities={capabilities} />
       </section>
 
-      <section className="intro-section" id="framework">
-        <div className="section-kicker">The PAPAV framework</div>
-        <div className="intro-grid">
-          <h2>One coordinate system. Three agent traditions.</h2>
-          <p>
-            PAPAV abstracts recurring input-output relations into five capabilities,
-            making it possible to compare multimodal agents, robotic systems, and
-            multimodal embodied agents without prescribing a fixed architecture.
-          </p>
-        </div>
-      </section>
+      <figure className="teaser-section" id="framework" aria-labelledby="teaser-caption">
+        <img
+          src="papav-teaser.webp"
+          width="2048"
+          height="844"
+          alt="Five PAPAV capability columns, Perceive, Anticipate, Plan, Act, and Verify, each pairing a digital interface illustration with an embodied robot illustration"
+        />
+        <figcaption id="teaser-caption">
+          This illustration presents the five-stage PAPAV framework, in which an embodied agent perceives the environment, anticipates potential failures, plans an appropriate action sequence, executes the task, and verifies the outcome.
+        </figcaption>
+      </figure>
 
       <section className="abstract-section" id="abstract">
         <div>
@@ -106,7 +106,7 @@ export default function Home() {
         <div className="abstract-copy">
           <p>Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, while robotic systems (RSs) close sensing–action loops under physical dynamics. We define <em>multimodal embodied agents</em> (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: <em>what changes when a multimodal agent moves from digital task automation to physical robotic autonomy?</em></p>
           <p>We introduce <strong>PAPAV</strong>, a unified capability-centric framework for a recurring task loop: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome.</p>
-          <p>Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 62 benchmarks, explicit evaluation centers on Act; only 4 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across the full interaction loop.</p>
+          <p>Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across the full interaction loop.</p>
         </div>
       </section>
 
@@ -133,7 +133,7 @@ export default function Home() {
             <h2 id="benchmarks-title">Coverage is broad. Diagnosis is not.</h2>
           </div>
           <div className="benchmark-intro-copy">
-            <p>The survey maps 62 benchmarks across three research families. Most evaluation still emphasizes aggregate outcomes, leaving capability bottlenecks and failure transitions difficult to identify.</p>
+            <p>The survey maps 64 benchmarks across three research families. Most evaluation still emphasizes aggregate outcomes, leaving capability bottlenecks and failure transitions difficult to identify.</p>
             <a
               className="benchmark-repo-link"
               href="https://github.com/ChenAnno/Awesome-Agentic-Robots#e-benchmarks"
@@ -151,7 +151,7 @@ export default function Home() {
         <div className="challenge-title-wrap">
           <p className="section-kicker">Open challenges</p>
           <h2 id="challenges-title">The loop is only as strong as its transitions.</h2>
-          <p>Stronger components do not by themselves resolve the architectural choices that emerge when all five capabilities must operate together.</p>
+          <p>Stronger components do not by themselves keep the PAPAV loop coordinated under partial observation, environmental change, uncertainty, and difficult-to-verify outcomes.</p>
         </div>
         <div className="challenge-list">
           {challenges.map(([number, title, text]) => (

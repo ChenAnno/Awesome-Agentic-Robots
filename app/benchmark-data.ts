@@ -124,7 +124,7 @@ export const benchmarks: Benchmark[] = [
     ]
   },
   {
-    "name": "PLanAR",
+    "name": "AgenticLab",
     "venue": "arXiv'26",
     "year": 2026,
     "task": "Verified replanning",
@@ -484,6 +484,21 @@ export const benchmarks: Benchmark[] = [
     ]
   },
   {
+    "name": "HarnessEval-W",
+    "venue": "arXiv'26",
+    "year": 2026,
+    "task": "Interactive world prediction",
+    "category": "MMA",
+    "subcategory": "Generation",
+    "coverage": [
+      "partial",
+      "direct",
+      "none",
+      "none",
+      "none"
+    ]
+  },
+  {
     "name": "Room-to-Room (R2R)",
     "venue": "CVPR'18",
     "year": 2018,
@@ -668,6 +683,21 @@ export const benchmarks: Benchmark[] = [
     "venue": "arXiv'26",
     "year": 2026,
     "task": "Robust manipulation",
+    "category": "RS",
+    "subcategory": "Simulation",
+    "coverage": [
+      "direct",
+      "partial",
+      "partial",
+      "direct",
+      "none"
+    ]
+  },
+  {
+    "name": "LIBERO-Plus",
+    "venue": "CVPR'26",
+    "year": 2026,
+    "task": "VLA robustness",
     "category": "RS",
     "subcategory": "Simulation",
     "coverage": [
